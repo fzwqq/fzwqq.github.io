@@ -365,31 +365,16 @@
       
         
           
-            <h3 id="Human-level-control-through-deep-reinforcement-learning"><a href="#Human-level-control-through-deep-reinforcement-learning" class="headerlink" title=" Human-level control through deep reinforcement learning "></a><center> Human-level control through deep reinforcement learning </center></h3><ul>
-<li><p>使用CNN 近似Q值计算</p>
-<script type="math/tex; mode=display">Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​</script></li>
-<li><p>Loss funciton:</p>
-<p>$L_i(\theta_i) =  \mathbb{E}_{(s, a, r, s’) \sim U(D) }[( r + \gamma {\max \limits_{a’} } Q(s’, a’; \theta_i^-)  -Q(s,a;\theta_i))^2]  ​$</p>
-</li>
-<li><p>DQN 经验回放算法流程 $y_j$更新Q值.</p>
-</li>
-</ul>
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg" alt=""></p>
-<p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubwta5z9j30hs0dc3yo.jpg" alt=""></p>
-<p>DQN 特性</p>
-<ul>
-<li>$e$-greedy — Exploration-Exploitation 均衡</li>
-</ul>
-<ul>
-<li>Off-policy — 更新策略和选择的策略不一定要求同一个.</li>
-<li><strong>Experience replay</strong> — 打乱相关性, 存储&lt;$s_j , aj, r_j , s_{j+1}$&gt;再随机获取学习</li>
-<li>Fixed Q-targets — 保证更新Q值时的稳定</li>
-</ul>
-<hr>
-<h3 id="用Pytorch-Tutorial训练结果"><a href="#用Pytorch-Tutorial训练结果" class="headerlink" title="用Pytorch Tutorial训练结果"></a><strong>用Pytorch Tutorial训练结果</strong></h3><p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubvw9arsj30hs0dcwf4.jpg" alt=""></p>
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2ucdcp9fqj30hs0dc3yt.jpg" alt=""></p>
-
-          
+           Human-level control through deep reinforcement learning 
+使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/08/DQN_cartpole/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -529,17 +514,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/03/hello-world/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
