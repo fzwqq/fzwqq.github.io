@@ -79,16 +79,22 @@
 
 
 
-<meta name="description" content="萌新锦仔成长记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jinger&#39;s Home">
-<meta property="og:url" content="http://yoursite.com/archives/2018/11/index.html">
+<meta name="description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$  Loss funcito">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DQN in CartPole">
+<meta property="og:url" content="http://yoursite.com/2019/05/08/DQN_cartpole/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
-<meta property="og:description" content="萌新锦仔成长记">
+<meta property="og:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$  Loss funcito">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubwta5z9j30hs0dc3yo.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubvw9arsj30hs0dcwf4.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubw9lxq5j30hs0dcab5.jpg">
+<meta property="og:updated_time" content="2019-05-08T15:42:34.137Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jinger&#39;s Home">
-<meta name="twitter:description" content="萌新锦仔成长记">
+<meta name="twitter:title" content="DQN in CartPole">
+<meta name="twitter:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$  Loss funcito">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/11/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/08/DQN_cartpole/">
 
 
 
 
 
-  <title>Archive | Jinger's Home</title>
+  <title>DQN in CartPole | Jinger's Home</title>
   
 
 
@@ -153,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -257,72 +263,185 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 2 posts in total. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/08/DQN_cartpole/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiangJin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jinger's Home">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/11/03/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">DQN in CartPole</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-03T12:28:26+08:00" content="2018-11-03">
-          11-03
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-08T17:01:43+08:00">
+                2019-05-08
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Reinforcement-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Reinforcement Learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <h3 id="Human-level-control-through-deep-reinforcement-learning"><a href="#Human-level-control-through-deep-reinforcement-learning" class="headerlink" title=" Human-level control through deep reinforcement learning "></a><center> Human-level control through deep reinforcement learning </center></h3><ul>
+<li><p>使用CNN 近似Q值计算<br>$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$</p>
+</li>
+<li><p>Loss funciton:</p>
+<p>$L_i(\theta_i) =  \mathbb{E}<em>{(s, a, r, s’) \sim U(D) }[( r + \gamma {\max \limits</em>{a’} } Q(s’, a’; \theta_i^-)  -Q(s,a;\theta_i))^2]  ​$</p>
+</li>
+<li><p>DQN 经验回放算法流程 $y_j$更新Q值.</p>
+</li>
+</ul>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg" alt="image-20190508190046095"></p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubwta5z9j30hs0dc3yo.jpg" alt="image-20190508233218578"></p>
+<p>DQN 特性</p>
+<ul>
+<li>$e$-greedy — Exploration-Exploitation 均衡</li>
+</ul>
+<ul>
+<li>Off-policy — 更新策略和选择的策略不一定要求同一个.</li>
+<li><strong>Experience replay</strong> — 打乱相关性, 存储&lt;$s_j , aj, r_j , s_{j+1}$&gt;再随机获取学习</li>
+<li>Fixed Q-targets — 保证更新Q值时的稳定</li>
+</ul>
+<hr>
+<h3 id="用Pytorch-Tutorial训练结果"><a href="#用Pytorch-Tutorial训练结果" class="headerlink" title="用Pytorch Tutorial训练结果"></a><strong>用Pytorch Tutorial训练结果</strong></h3><p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubvw9arsj30hs0dcwf4.jpg" alt="image-20190508233122772"></p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubw9lxq5j30hs0dcab5.jpg" alt="image-20190508232559018"></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/03/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -330,6 +449,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -350,8 +473,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -402,6 +534,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Human-level-control-through-deep-reinforcement-learning"><span class="nav-number">1.</span> <span class="nav-text"> Human-level control through deep reinforcement learning </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用Pytorch-Tutorial训练结果"><span class="nav-number">2.</span> <span class="nav-text">用Pytorch Tutorial训练结果</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -535,6 +683,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
