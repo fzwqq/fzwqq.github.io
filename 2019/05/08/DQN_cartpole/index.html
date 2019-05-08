@@ -79,21 +79,21 @@
 
 
 
-<meta name="description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$  Loss funcito">
+<meta name="description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算 Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​ Loss funciton: $">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DQN in CartPole">
 <meta property="og:url" content="http://yoursite.com/2019/05/08/DQN_cartpole/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
-<meta property="og:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$  Loss funcito">
+<meta property="og:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算 Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​ Loss funciton: $">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubwta5z9j30hs0dc3yo.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubvw9arsj30hs0dcwf4.jpg">
-<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubw9lxq5j30hs0dcab5.jpg">
-<meta property="og:updated_time" content="2019-05-08T15:42:34.137Z">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2ucdcp9fqj30hs0dc3yt.jpg">
+<meta property="og:updated_time" content="2019-05-08T15:48:44.530Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DQN in CartPole">
-<meta name="twitter:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$  Loss funcito">
+<meta name="twitter:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算 Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​ Loss funciton: $">
 <meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg">
 
 
@@ -367,16 +367,16 @@
 
       
         <h3 id="Human-level-control-through-deep-reinforcement-learning"><a href="#Human-level-control-through-deep-reinforcement-learning" class="headerlink" title=" Human-level control through deep reinforcement learning "></a><center> Human-level control through deep reinforcement learning </center></h3><ul>
-<li><p>使用CNN 近似Q值计算<br>$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​$$</p>
-</li>
+<li><p>使用CNN 近似Q值计算</p>
+<script type="math/tex; mode=display">Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]​</script></li>
 <li><p>Loss funciton:</p>
-<p>$L_i(\theta_i) =  \mathbb{E}<em>{(s, a, r, s’) \sim U(D) }[( r + \gamma {\max \limits</em>{a’} } Q(s’, a’; \theta_i^-)  -Q(s,a;\theta_i))^2]  ​$</p>
+<p>$L_i(\theta_i) =  \mathbb{E}_{(s, a, r, s’) \sim U(D) }[( r + \gamma {\max \limits_{a’} } Q(s’, a’; \theta_i^-)  -Q(s,a;\theta_i))^2]  ​$</p>
 </li>
 <li><p>DQN 经验回放算法流程 $y_j$更新Q值.</p>
 </li>
 </ul>
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg" alt="image-20190508190046095"></p>
-<p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubwta5z9j30hs0dc3yo.jpg" alt="image-20190508233218578"></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2u42c6h8aj30my0idtft.jpg" alt=""></p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubwta5z9j30hs0dc3yo.jpg" alt=""></p>
 <p>DQN 特性</p>
 <ul>
 <li>$e$-greedy — Exploration-Exploitation 均衡</li>
@@ -387,8 +387,8 @@
 <li>Fixed Q-targets — 保证更新Q值时的稳定</li>
 </ul>
 <hr>
-<h3 id="用Pytorch-Tutorial训练结果"><a href="#用Pytorch-Tutorial训练结果" class="headerlink" title="用Pytorch Tutorial训练结果"></a><strong>用Pytorch Tutorial训练结果</strong></h3><p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubvw9arsj30hs0dcwf4.jpg" alt="image-20190508233122772"></p>
-<p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubw9lxq5j30hs0dcab5.jpg" alt="image-20190508232559018"></p>
+<h3 id="用Pytorch-Tutorial训练结果"><a href="#用Pytorch-Tutorial训练结果" class="headerlink" title="用Pytorch Tutorial训练结果"></a><strong>用Pytorch Tutorial训练结果</strong></h3><p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1g2ubvw9arsj30hs0dcwf4.jpg" alt=""></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2ucdcp9fqj30hs0dc3yt.jpg" alt=""></p>
 
       
     </div>
@@ -744,6 +744,8 @@
   
 
   
+  
+
 
   
 
