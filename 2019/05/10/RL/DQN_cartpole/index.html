@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Reforcement Learning,Algorithm,Deep Learning,">
 
 
 
@@ -79,16 +79,22 @@
 
 
 
-<meta name="description" content="萌新Jinger成长记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jinger&#39;s Home">
-<meta property="og:url" content="http://yoursite.com/tags/Deep-Learning/index.html">
+<meta name="description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$  Loss funciton">
+<meta name="keywords" content="Reforcement Learning,Algorithm,Deep Learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DQN in CartPole">
+<meta property="og:url" content="http://yoursite.com/2019/05/10/RL/DQN_cartpole/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
-<meta property="og:description" content="萌新Jinger成长记">
+<meta property="og:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$  Loss funciton">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511125151010.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190508233218578.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511134150729.png">
+<meta property="og:updated_time" content="2019-05-12T04:26:54.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jinger&#39;s Home">
-<meta name="twitter:description" content="萌新Jinger成长记">
+<meta name="twitter:title" content="DQN in CartPole">
+<meta name="twitter:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$  Loss funciton">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511125151010.png">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Deep-Learning/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/10/RL/DQN_cartpole/">
 
 
 
 
 
-  <title>Tag: Deep Learning | Jinger's Home</title>
+  <title>DQN in CartPole | Jinger's Home</title>
   
 
 
@@ -153,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -257,104 +263,212 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Deep Learning<small>Tag</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/10/RL/DQN_cartpole/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiangJin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jinger's Home">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/05/13/ML/Lee-1/" itemprop="url">
-              
-                <span itemprop="name">ML-Lee Task1</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">DQN in CartPole</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-13T20:10:00+08:00" content="2019-05-13">
-          05-13
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-10T20:10:00+08:00">
+                2019-05-10
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Reinforcement-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Reinforcement Learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05/11/RS/Recommendation_system/" itemprop="url">
-              
-                <span itemprop="name">Comparison of three recommendation systems based on collaborative filtering neural network model</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-11T20:10:00+08:00" content="2019-05-11">
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05/10/RL/DQN_cartpole/" itemprop="url">
-              
-                <span itemprop="name">DQN in CartPole</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-10T20:10:00+08:00" content="2019-05-10">
-          05-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h3 id="Human-level-control-through-deep-reinforcement-learning"><a href="#Human-level-control-through-deep-reinforcement-learning" class="headerlink" title=" Human-level control through deep reinforcement learning "></a><center> Human-level control through deep reinforcement learning </center></h3><ul>
+<li><p>使用CNN 近似Q值计算<br>$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$</p>
+</li>
+<li><p>Loss funciton</p>
+<p>$$L_i(\theta_i) =  \mathbb{E} _ {(s, a, r, s’) \sim U(D) }[( r + \gamma {\max \limits_ { a’} } Q(s’, a’; \theta_i^-)  -Q(s,a; \theta _i))^2]​$$</p>
+</li>
+<li><p>DQN 经验回放算法流程 $y_j​$更新Q值.</p>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511125151010.png" alt=""></p>
+</li>
+<li><p>DQN 特性</p>
+<ul>
+<li><p>$e​$-greedy — Exploration-Exploitation 均衡</p>
+</li>
+<li><p>Off-policy — 更新策略和选择的策略不一定要求同一个.</p>
+</li>
+<li><strong>Experience replay</strong> — 打乱相关性, 存储&lt;$s_j , aj, r_j , s_{j+1}$&gt;再随机获取学习</li>
+<li>Fixed Q-targets — 保证更新Q值时的稳定</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="用Pytorch-Tutorial训练结果"><a href="#用Pytorch-Tutorial训练结果" class="headerlink" title="用Pytorch Tutorial训练结果"></a><strong>用Pytorch Tutorial训练结果</strong></h3><p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190508233218578.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511134150729.png" alt="image-20190511134150729"></p>
+<blockquote>
+<p>本地训练300次episodes, 发现确实有学到,当网络并不稳定, 尝试DDQN等优化</p>
+</blockquote>
+<hr>
+<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献:"></a>参考文献:</h3><ol>
+<li><p><a href="https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html" target="_blank" rel="noopener">https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html</a></p>
+</li>
+<li><p><a href="https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf" target="_blank" rel="noopener">https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf</a></p>
+</li>
+<li><p><a href="https://towardsdatascience.com/cartpole-introduction-to-reinforcement-learning-ed0eb5b58288" target="_blank" rel="noopener">https://towardsdatascience.com/cartpole-introduction-to-reinforcement-learning-ed0eb5b58288</a></p>
+</li>
+</ol>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Reforcement-Learning/" rel="tag"># Reforcement Learning</a>
+          
+            <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+          
+            <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/09/Tools/oh-my-zsh/" rel="next" title="oh my zsh">
+                <i class="fa fa-chevron-left"></i> oh my zsh
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/11/RS/Recommendation_system/" rel="prev" title="Comparison of three recommendation systems based on collaborative filtering neural network model">
+                Comparison of three recommendation systems based on collaborative filtering neural network model <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -362,6 +476,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -382,8 +500,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -443,6 +570,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Human-level-control-through-deep-reinforcement-learning"><span class="nav-number">1.</span> <span class="nav-text"> Human-level control through deep reinforcement learning </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用Pytorch-Tutorial训练结果"><span class="nav-number">2.</span> <span class="nav-text">用Pytorch Tutorial训练结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献:</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -576,6 +719,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
