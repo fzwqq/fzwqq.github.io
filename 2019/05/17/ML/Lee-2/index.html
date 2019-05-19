@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="萌新Jinger成长记">
-<meta property="og:type" content="website">
+<meta name="description" content="理解偏差和方差   学习误差为什么是偏差和方差而产生的，并且推导数学公式   过拟合，欠拟合，分别对应bias和variance什么情况   学习鞍点，复习上次任务学习的全局最优和局部最优  解决办法有哪些   梯度下降  学习Mini-Batch与SGD 学习Batch与Mini-Batch，SGD梯度下降的区别 如何根据样本大小选择哪个梯度下降(批量梯度下降，Mini-Batch） 写出SG">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Jinger&#39;s Home">
-<meta property="og:url" content="http://yoursite.com/categories/Recommendation-System/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/05/17/ML/Lee-2/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
-<meta property="og:description" content="萌新Jinger成长记">
+<meta property="og:description" content="理解偏差和方差   学习误差为什么是偏差和方差而产生的，并且推导数学公式   过拟合，欠拟合，分别对应bias和variance什么情况   学习鞍点，复习上次任务学习的全局最优和局部最优  解决办法有哪些   梯度下降  学习Mini-Batch与SGD 学习Batch与Mini-Batch，SGD梯度下降的区别 如何根据样本大小选择哪个梯度下降(批量梯度下降，Mini-Batch） 写出SG">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-05-17T18:49:35.780Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jinger&#39;s Home">
-<meta name="twitter:description" content="萌新Jinger成长记">
+<meta name="twitter:description" content="理解偏差和方差   学习误差为什么是偏差和方差而产生的，并且推导数学公式   过拟合，欠拟合，分别对应bias和variance什么情况   学习鞍点，复习上次任务学习的全局最优和局部最优  解决办法有哪些   梯度下降  学习Mini-Batch与SGD 学习Batch与Mini-Batch，SGD梯度下降的区别 如何根据样本大小选择哪个梯度下降(批量梯度下降，Mini-Batch） 写出SG">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/Recommendation-System/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/17/ML/Lee-2/">
 
 
 
 
 
-  <title>Category: Recommendation System | Jinger's Home</title>
+  <title> | Jinger's Home</title>
   
 
 
@@ -153,7 +154,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -257,79 +258,175 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Recommendation System<small>Category</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/17/ML/Lee-2/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiangJin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jinger's Home">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/05/13/DL/2019-05-13-Fastai-L4/" itemprop="url">
-              
-                <span itemprop="name">Fastai-L4</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-13T01:23:14+08:00" content="2019-05-13">
-          05-13
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-17T19:51:34+08:00">
+                2019-05-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05/11/RS/Recommendation_system/" itemprop="url">
-              
-                <span itemprop="name">Comparison of three recommendation systems based on collaborative filtering neural network model</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-11T20:10:00+08:00" content="2019-05-11">
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
+        <ul>
+<li>理解偏差和方差</li>
+</ul>
+<ul>
+<li>学习误差为什么是偏差和方差而产生的，并且推导数学公式</li>
+</ul>
+<ul>
+<li>过拟合，欠拟合，分别对应bias和variance什么情况</li>
+</ul>
+<ul>
+<li><p>学习鞍点，复习上次任务学习的全局最优和局部最优</p>
+<ul>
+<li>解决办法有哪些</li>
+</ul>
+</li>
+<li><p>梯度下降</p>
+<ul>
+<li>学习Mini-Batch与SGD</li>
+<li>学习Batch与Mini-Batch，SGD梯度下降的区别</li>
+<li>如何根据样本大小选择哪个梯度下降(批量梯度下降，Mini-Batch）</li>
+<li>写出SGD和Mini-Batch的代码</li>
+</ul>
+</li>
+<li><p>学习交叉验证</p>
+</li>
+<li><p>学习归一化 </p>
+</li>
+<li><p>学习回归模型评价指标</p>
+</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/13/ML/Lee-1/" rel="next" title="ML-Lee Task1">
+                <i class="fa fa-chevron-left"></i> ML-Lee Task1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/19/mRTS/microRTS_2/" rel="prev" title="MicroRTS-2">
+                MicroRTS-2 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -337,6 +434,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -551,6 +652,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -608,26 +713,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
