@@ -91,7 +91,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519223217062.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224033881.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224346372.png">
-<meta property="og:updated_time" content="2019-05-19T14:57:56.397Z">
+<meta property="og:updated_time" content="2019-05-19T15:04:18.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MicroRTS-2">
 <meta name="twitter:description" content="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
@@ -368,11 +368,9 @@
       
 
       
-        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件"></a>进展一 跑通了gui的SSS<em> 能生成对战的SSS</em> trace.xml文件</h3><blockquote>
+        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件"></a>进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件</h3><blockquote>
 <p>作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPlayoutLookahead</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> LOOKAHEAD;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPlayoutLookahead</span><span class="params">(<span class="keyword">int</span> a_pola)</span> </span>&#123;</span><br><span class="line">&gt;         LOOKAHEAD = a_pola;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;     </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getI</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> I;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setI</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         I = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getR</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> R;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setR</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         R = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> EvaluationFunction <span class="title">getEvaluationFunction</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> evaluation;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setEvaluationFunction</span><span class="params">(EvaluationFunction a_ef)</span> </span>&#123;</span><br><span class="line">&gt;         evaluation = a_ef;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> PathFinding <span class="title">getPathFinding</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPathFinding</span><span class="params">(PathFinding a_pf)</span> </span>&#123;</span><br><span class="line">&gt;         pf = a_pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519223510530.png" alt="image-20190519223510530"></p>
 <h3 id="进展二-跑通了作者提供的GA-能生成一堆script-table-以便于我们调参-产生新的scripts"><a href="#进展二-跑通了作者提供的GA-能生成一堆script-table-以便于我们调参-产生新的scripts" class="headerlink" title="进展二 跑通了作者提供的GA, 能生成一堆script table , 以便于我们调参,产生新的scripts"></a>进展二 跑通了作者提供的GA, 能生成一堆script table , 以便于我们调参,产生新的scripts</h3><blockquote>
@@ -387,9 +385,9 @@
 <ul>
 <li><p>目前遇到的障碍:   </p>
 <ul>
-<li><p>作者提供的脚本运行<strong>环境都是基于<em>torque PBS cluster</em></strong> ;</p>
+<li><p>作者提供的脚本运行*环境都是基于torque PBS cluster* ;</p>
 <ul>
-<li><p>里面使用的命令<strong>qsub</strong>等都基于<strong>PBS</strong> ,本机macOS无法安装. ((而且部分路径还需要一个个手动调整))</p>
+<li><p>里面使用的命令*qsub**等都基于**PBS* ,本机macOS无法安装. ((而且部分路径还需要一个个手动调整))</p>
 </li>
 <li><p>部分故障:</p>
 </li>
@@ -398,9 +396,11 @@
 <li><blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> No available formula with the name "qsub"</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching for a previously deleted formula (in the last month)...</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
+<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> brew install PBS</span><br><span class="line"><span class="meta">&gt;</span> Error: No available formula with the name "pbs"</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
+<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> ./UpGASOA.sh: line 8: module: command not found</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
@@ -423,10 +423,10 @@
 <li>以下是scriptstable 部分, 表示没看懂.</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224033881.png" alt="image-20190519224033881"> </p>
-<ol start="2">
+<ol>
 <li><p>需要将他代码几乎看懂,才方便修改参数,但是:</p>
 <ul>
-<li>这是什么鬼注释.</li>
+<li>注释看不懂.</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224346372.png" alt="image-20190519224346372"></p>
 <ul>
@@ -466,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/17/ML/Lee-2/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2019/05/13/ML/Lee-1/" rel="next" title="ML-Lee Task1">
+                <i class="fa fa-chevron-left"></i> ML-Lee Task1
               </a>
             
           </div>
@@ -551,7 +551,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
