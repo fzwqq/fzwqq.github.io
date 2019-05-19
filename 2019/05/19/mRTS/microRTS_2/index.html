@@ -91,7 +91,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519223217062.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224033881.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224346372.png">
-<meta property="og:updated_time" content="2019-05-19T15:04:18.782Z">
+<meta property="og:updated_time" content="2019-05-19T15:15:38.878Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MicroRTS-2">
 <meta name="twitter:description" content="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
@@ -368,7 +368,7 @@
       
 
       
-        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件"></a>进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件</h3><blockquote>
+        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件"></a>进展一 跑通了gui的SSS<em> 能生成对战的SSS</em> trace.xml文件</h3><blockquote>
 <p>作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPlayoutLookahead</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> LOOKAHEAD;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPlayoutLookahead</span><span class="params">(<span class="keyword">int</span> a_pola)</span> </span>&#123;</span><br><span class="line">&gt;         LOOKAHEAD = a_pola;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;     </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getI</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> I;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setI</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         I = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getR</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> R;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setR</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         R = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> EvaluationFunction <span class="title">getEvaluationFunction</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> evaluation;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setEvaluationFunction</span><span class="params">(EvaluationFunction a_ef)</span> </span>&#123;</span><br><span class="line">&gt;         evaluation = a_ef;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> PathFinding <span class="title">getPathFinding</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPathFinding</span><span class="params">(PathFinding a_pf)</span> </span>&#123;</span><br><span class="line">&gt;         pf = a_pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
@@ -377,7 +377,7 @@
 <p>需本地新建代码中所涉及所有文件夹,和文件</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519223217062.png" alt="image-20190519223217062"></p>
-<h3 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h3><h4 id="目标需求与目前障碍"><a href="#目标需求与目前障碍" class="headerlink" title="目标需求与目前障碍"></a>目标需求与目前障碍</h4><ul>
+<h3 id="问题一-缺少运行sh文件的torque-PBS-cluster环境"><a href="#问题一-缺少运行sh文件的torque-PBS-cluster环境" class="headerlink" title="问题一 缺少运行sh文件的torque PBS cluster环境"></a>问题一 缺少运行sh文件的torque PBS cluster环境</h3><h4 id="目标需求与目前障碍"><a href="#目标需求与目前障碍" class="headerlink" title="目标需求与目前障碍"></a>目标需求与目前障碍</h4><ul>
 <li><h4 id="18年winner作者提供18年比赛的循环赛代码-可用他"><a href="#18年winner作者提供18年比赛的循环赛代码-可用他" class="headerlink" title="18年winner作者提供18年比赛的循环赛代码, 可用他:"></a>18年winner作者提供18年比赛的循环赛代码, 可用他:</h4><ol>
 <li>将我们的AI 和18年的参赛AI进行循环赛,以测试我们试图进行调优的AI在真实比赛环境下的水平— 18比赛地图,18比赛AI 做为baseline</li>
 <li>复盘18年整体比赛状况</li>
@@ -385,9 +385,9 @@
 <ul>
 <li><p>目前遇到的障碍:   </p>
 <ul>
-<li><p>作者提供的脚本运行*环境都是基于torque PBS cluster* ;</p>
+<li><p>作者提供的脚本运行<strong>环境都是基于 * torque PBS cluster</strong> * ;</p>
 <ul>
-<li><p>里面使用的命令*qsub**等都基于**PBS* ,本机macOS无法安装. ((而且部分路径还需要一个个手动调整))</p>
+<li><p>里面使用的命令<strong>qsub</strong>等都基于<strong>PBS</strong> ,本机macOS无法安装. ((而且部分路径还需要一个个手动调整))</p>
 </li>
 <li><p>部分故障:</p>
 </li>
@@ -396,18 +396,15 @@
 <li><blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> No available formula with the name "qsub"</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching for a previously deleted formula (in the last month)...</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
-<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> brew install PBS</span><br><span class="line"><span class="meta">&gt;</span> Error: No available formula with the name "pbs"</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
-<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> ./UpGASOA.sh: line 8: module: command not found</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 <ul>
 <li><p>Modules 解释</p>
-</li>
-<li><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>Modules是什么</span><br><span class="line">在linux服务器上，有时需要安装同一个软件的不同版本，按照需要调用。比如，g03和g09。不幸的是，它们的环境变量会互相冲突，不能共存，鱼和熊掌只能选择选择其一。这个问题在大型超算服务器上更为严重。很多软件依赖的环境变量、动态库各不相同。环境变量模块化工具modules。它的功能很简单，将每个软件的环境变量写一个模块文件modulefile，需调用哪个软件就加载其环境变量模块，执行完成后卸载模块，与之相关的环境变量全部消除。这个神奇的工具是个开源软件。目前，在大型超算服务器上，PBS+modules已经成为标配。</span><br></pre></td></tr></table></figure>
+<p>Modules是什么<br>在linux服务器上，有时需要安装同一个软件的不同版本，按照需要调用。比如，g03和g09。不幸的是，它们的环境变量会互相冲突，不能共存，鱼和熊掌只能选择选择其一。这个问题在大型超算服务器上更为严重。很多软件依赖的环境变量、动态库各不相同。环境变量模块化工具modules。它的功能很简单，将每个软件的环境变量写一个模块文件modulefile，需调用哪个软件就加载其环境变量模块，执行完成后卸载模块，与之相关的环境变量全部消除。这个神奇的工具是个开源软件。目前，在大型超算服务器上，PBS+modules已经成为标配。</p>
 </li>
 </ul>
 </li>
@@ -423,14 +420,14 @@
 <li>以下是scriptstable 部分, 表示没看懂.</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224033881.png" alt="image-20190519224033881"> </p>
-<ol>
+<ol start="2">
 <li><p>需要将他代码几乎看懂,才方便修改参数,但是:</p>
 <ul>
-<li>注释看不懂.</li>
+<li>注释如下??</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224346372.png" alt="image-20190519224346372"></p>
 <ul>
-<li>代码设计大量底层文件操作,表示看起来很吃力</li>
+<li>代码设计大量底层文件操作,看起来很吃力</li>
 </ul>
 </li>
 </ol>
@@ -562,7 +559,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -573,7 +570,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -606,7 +603,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><span class="nav-number">1.</span> <span class="nav-text">进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进展二-跑通了作者提供的GA-能生成一堆script-table-以便于我们调参-产生新的scripts"><span class="nav-number">2.</span> <span class="nav-text">进展二 跑通了作者提供的GA, 能生成一堆script table , 以便于我们调参,产生新的scripts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题一"><span class="nav-number">3.</span> <span class="nav-text">问题一</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#目标需求与目前障碍"><span class="nav-number">3.1.</span> <span class="nav-text">目标需求与目前障碍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18年winner作者提供18年比赛的循环赛代码-可用他"><span class="nav-number">3.2.</span> <span class="nav-text">18年winner作者提供18年比赛的循环赛代码, 可用他:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题二-trace-xml-数据不足"><span class="nav-number">4.</span> <span class="nav-text">问题二 trace.xml 数据不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题三-scrite-table-难懂-原代码可读性太差"><span class="nav-number">5.</span> <span class="nav-text">问题三 scrite table 难懂, 原代码可读性太差</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><span class="nav-number">1.</span> <span class="nav-text">进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进展二-跑通了作者提供的GA-能生成一堆script-table-以便于我们调参-产生新的scripts"><span class="nav-number">2.</span> <span class="nav-text">进展二 跑通了作者提供的GA, 能生成一堆script table , 以便于我们调参,产生新的scripts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题一-缺少运行sh文件的torque-PBS-cluster环境"><span class="nav-number">3.</span> <span class="nav-text">问题一 缺少运行sh文件的torque PBS cluster环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#目标需求与目前障碍"><span class="nav-number">3.1.</span> <span class="nav-text">目标需求与目前障碍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18年winner作者提供18年比赛的循环赛代码-可用他"><span class="nav-number">3.2.</span> <span class="nav-text">18年winner作者提供18年比赛的循环赛代码, 可用他:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题二-trace-xml-数据不足"><span class="nav-number">4.</span> <span class="nav-text">问题二 trace.xml 数据不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题三-scrite-table-难懂-原代码可读性太差"><span class="nav-number">5.</span> <span class="nav-text">问题三 scrite table 难懂, 原代码可读性太差</span></a></li></ol></div>
             
 
           </div>
