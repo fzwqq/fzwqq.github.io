@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Deep Learning,Reforcement Learning,Algorithm,">
+  <meta name="keywords" content="Reforcement Learning,Algorithm,Deep Learning,">
 
 
 
@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算 Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi] Loss funciton L_i">
-<meta name="keywords" content="Deep Learning,Reforcement Learning,Algorithm">
+<meta name="description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$  Loss funciton">
+<meta name="keywords" content="Reforcement Learning,Algorithm,Deep Learning">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DQN in CartPole">
 <meta property="og:url" content="http://yoursite.com/Reinforcement-Learning/RL/DQN_cartpole/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
-<meta property="og:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算 Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi] Loss funciton L_i">
+<meta property="og:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$  Loss funciton">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511125151010.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190508233218578.png">
@@ -93,7 +93,7 @@
 <meta property="og:updated_time" content="2019-05-19T18:33:07.228Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DQN in CartPole">
-<meta name="twitter:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算 Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi] Loss funciton L_i">
+<meta name="twitter:description" content="Human-level control through deep reinforcement learning  使用CNN 近似Q值计算$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$  Loss funciton">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511125151010.png">
 
 
@@ -378,10 +378,11 @@
 
       
         <h3 id="Human-level-control-through-deep-reinforcement-learning"><a href="#Human-level-control-through-deep-reinforcement-learning" class="headerlink" title=" Human-level control through deep reinforcement learning "></a><center> Human-level control through deep reinforcement learning </center></h3><ul>
-<li><p>使用CNN 近似Q值计算</p>
-<script type="math/tex; mode=display">Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]</script></li>
+<li><p>使用CNN 近似Q值计算<br>$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$</p>
+</li>
 <li><p>Loss funciton</p>
-<script type="math/tex; mode=display">L_i(\theta_i) =  \mathbb{E} _ {(s, a, r, s') \sim U(D) }[( r + \gamma {\max \limits_ { a'} } Q(s', a'; \theta_i^-)  -Q(s,a; \theta _i))^2]​</script></li>
+<p>$$L_i(\theta_i) =  \mathbb{E} _ {(s, a, r, s’) \sim U(D) }[( r + \gamma {\max \limits_ { a’} } Q(s’, a’; \theta_i^-)  -Q(s,a; \theta _i))^2]​$$</p>
+</li>
 <li><p>DQN 经验回放算法流程 $y_j​$更新Q值.</p>
 </li>
 <li><p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511125151010.png" alt=""></p>
@@ -392,13 +393,13 @@
 </li>
 <li><p>Off-policy — 更新策略和选择的策略不一定要求同一个.</p>
 </li>
-<li>*Experience replay* — 打乱相关性, 存储&lt;$s_j , aj, r_j , s_{j+1}$&gt;再随机获取学习</li>
+<li><strong>Experience replay</strong> — 打乱相关性, 存储&lt;$s_j , aj, r_j , s_{j+1}$&gt;再随机获取学习</li>
 <li>Fixed Q-targets — 保证更新Q值时的稳定</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h3 id="用Pytorch-Tutorial训练结果"><a href="#用Pytorch-Tutorial训练结果" class="headerlink" title="*用Pytorch Tutorial训练结果*"></a>*用Pytorch Tutorial训练结果*</h3><p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190508233218578.png" alt=""></p>
+<h3 id="用Pytorch-Tutorial训练结果"><a href="#用Pytorch-Tutorial训练结果" class="headerlink" title="用Pytorch Tutorial训练结果"></a><strong>用Pytorch Tutorial训练结果</strong></h3><p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190508233218578.png" alt=""></p>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511134150729.png" alt="image-20190511134150729"></p>
 <blockquote>
 <p>本地训练300次episodes, 发现确实有学到,当结果并不稳定,可能是超参数敏感,也可能是DQN本身的遗忘,或者训练次数依旧不足</p>
@@ -429,11 +430,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
-          
             <a href="/tags/Reforcement-Learning/" rel="tag"># Reforcement Learning</a>
           
             <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+          
+            <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
           
         </div>
       
@@ -593,7 +594,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Human-level-control-through-deep-reinforcement-learning"><span class="nav-number">1.</span> <span class="nav-text"> Human-level control through deep reinforcement learning </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用Pytorch-Tutorial训练结果"><span class="nav-number">2.</span> <span class="nav-text">*用Pytorch Tutorial训练结果*</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Human-level-control-through-deep-reinforcement-learning"><span class="nav-number">1.</span> <span class="nav-text"> Human-level control through deep reinforcement learning </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用Pytorch-Tutorial训练结果"><span class="nav-number">2.</span> <span class="nav-text">用Pytorch Tutorial训练结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献:</span></a></li></ol></div>
             
 
           </div>
@@ -791,7 +792,7 @@
         appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz',
         appKey: 'G6SmeDMX7JvgVm1QIU6do732',
         placeholder: '',
-        avatar:'mm',
+        avatar:'mp',
         guest_info:guest,
         pageSize:'10' || 10,
     });
