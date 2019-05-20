@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Deep Learning,Machine Learning,Lee,Algorithm,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="what is Machine learning *Machine learning** (**ML*) is the scientific study of algorithms and statistical models that computer systems use to effectively perform a specific task without using explic">
+<meta name="keywords" content="Deep Learning,Machine Learning,Lee,Algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ML-Lee Task1">
+<meta property="og:url" content="http://yoursite.com/2019/05/13/ML/Lee-1/index.html">
+<meta property="og:site_name" content="Jinger&#39;s Home">
+<meta property="og:description" content="what is Machine learning *Machine learning** (**ML*) is the scientific study of algorithms and statistical models that computer systems use to effectively perform a specific task without using explic">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190513162112957.png">
+<meta property="og:updated_time" content="2019-05-13T13:27:05.531Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ML-Lee Task1">
+<meta name="twitter:description" content="what is Machine learning *Machine learning** (**ML*) is the scientific study of algorithms and statistical models that computer systems use to effectively perform a specific task without using explic">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190513162112957.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/05/13/ML/Lee-1/">
+
+
+
+
+
+  <title>ML-Lee Task1 | Jinger's Home</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3b988a83bdbcec8fd63041f1d384c5ca";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jinger's Home</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/13/ML/Lee-1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiangJin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jinger's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ML-Lee Task1</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-13T20:10:00+08:00">
+                2019-05-13
+              </time>
+            
+
+            
+
+            
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine Learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/13/ML/Lee-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/13/ML/Lee-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<h3 id="what-is-Machine-learning"><a href="#what-is-Machine-learning" class="headerlink" title="what is Machine learning"></a>what is Machine learning</h3><ul>
+<li>*Machine learning** (**ML*) is the <a href="https://en.wikipedia.org/wiki/Branches_of_science" target="_blank" rel="noopener">scientific study</a> of <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank" rel="noopener">algorithms</a> and <a href="https://en.wikipedia.org/wiki/Statistical_model" target="_blank" rel="noopener">statistical models</a> that <a href="https://en.wikipedia.org/wiki/Computer_systems" target="_blank" rel="noopener">computer systems</a> use to effectively perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" rel="noopener">artificial intelligence</a>. Machine learning algorithms build a <a href="https://en.wikipedia.org/wiki/Mathematical_model" target="_blank" rel="noopener">mathematical model</a> based on sample data, known as “<a href="https://en.wikipedia.org/wiki/Training_data" target="_blank" rel="noopener">training data</a>“, in order to make predictions or decisions without being explicitly programmed to perform the task.Machine learning algorithms are used in a wide variety of applications, such as <a href="https://en.wikipedia.org/wiki/Email_filtering" target="_blank" rel="noopener">email filtering</a>, and <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" rel="noopener">computer vision</a>, where it is infeasible to develop an algorithm of specific instructions for performing the task. Machine learning is closely related to <a href="https://en.wikipedia.org/wiki/Computational_statistics" target="_blank" rel="noopener">computational statistics</a>, which focuses on making predictions using computers. The study of <a href="https://en.wikipedia.org/wiki/Mathematical_optimization" target="_blank" rel="noopener">mathematical optimization</a> delivers methods, theory and application domains to the field of machine learning. <a href="https://en.wikipedia.org/wiki/Data_mining" target="_blank" rel="noopener">Data mining</a> is a field of study within machine learning, and focuses on <a href="https://en.wikipedia.org/wiki/Exploratory_data_analysis" target="_blank" rel="noopener">exploratory data analysis</a>through. In its application across business problems, machine learning is also referred to as <a href="https://en.wikipedia.org/wiki/Predictive_analytics" target="_blank" rel="noopener">predictive analytics</a>.</li>
+</ul>
+<h3 id="Central-limit-theorem，Normal-distribution，Maximum-likelihood-estimation"><a href="#Central-limit-theorem，Normal-distribution，Maximum-likelihood-estimation" class="headerlink" title="Central limit theorem，Normal distribution，Maximum likelihood estimation"></a>Central limit theorem，Normal distribution，Maximum likelihood estimation</h3><h4 id="Central-limit-theorem"><a href="#Central-limit-theorem" class="headerlink" title="* Central limit theorem*"></a>* Central limit theorem*</h4><ul>
+<li>In <a href="https://en.wikipedia.org/wiki/Probability_theory" target="_blank" rel="noopener">probability theory</a>, the *central limit theorem** (**CLT**) establishes that, in some situations, when [independent random variables](https://en.wikipedia.org/wiki/Statistical_independence) are added, their properly normalized sum tends toward a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) (informally a "bell curve*”) even if the original variables themselves are not normally distributed. The theorem is a key concept in probability theory because it implies that probabilistic and statistical methods that work for normal distributions can be applicable to many problems involving other types of distributions.</li>
+</ul>
+<h4 id="Normal-distribution"><a href="#Normal-distribution" class="headerlink" title="* Normal distribution*"></a>* Normal distribution*</h4><ul>
+<li><p>In <a href="https://en.wikipedia.org/wiki/Probability_theory" target="_blank" rel="noopener">probability theory</a>, the *normal** (or **Gaussian** or **Gauss** or **Laplace–Gauss**) **distribution** is a very common [continuous probability distribution](https://en.wikipedia.org/wiki/Continuous_probability_distribution). Normal distributions are important in [statistics](https://en.wikipedia.org/wiki/Statistics) and are often used in the [natural](https://en.wikipedia.org/wiki/Natural_science) and [social sciences](https://en.wikipedia.org/wiki/Social_science) to represent real-valued [random variables](https://en.wikipedia.org/wiki/Random_variable) whose distributions are not known.[[1\]](https://en.wikipedia.org/wiki/Normal_distribution#cite_note-1)[[2\]](https://en.wikipedia.org/wiki/Normal_distribution#cite_note-2) A [random variable](https://en.wikipedia.org/wiki/Random_variable) with a Gaussian distribution is said to be **normally distributed** and is called a **normal deviate*. </p>
+</li>
+<li><p>The <a href="https://en.wikipedia.org/wiki/Probability_density" target="_blank" rel="noopener">probability density</a> of the normal distribution is:</p>
+<script type="math/tex; mode=display">f(x\mid \mu ,\sigma ^{2})={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}</script></li>
+</ul>
+<h4 id="Maximum-likelihood-estimation"><a href="#Maximum-likelihood-estimation" class="headerlink" title="* Maximum likelihood estimation*"></a>* Maximum likelihood estimation*</h4><ul>
+<li>In statistics, *maximum likelihood estimation** (**MLE**) is a method of [estimating](https://en.wikipedia.org/wiki/Estimator) the [parameters](https://en.wikipedia.org/wiki/Statistical_parameter) of a [statistical model](https://en.wikipedia.org/wiki/Statistical_model), given observations. The method obtains the parameter estimates by finding the parameter values that maximize the [likelihood function](https://en.wikipedia.org/wiki/Likelihood_function). The estimates are called **maximum likelihood estimates*, which is also abbreviated as MLE.</li>
+</ul>
+<h3 id="Regression-Loss"><a href="#Regression-Loss" class="headerlink" title="Regression Loss"></a>Regression Loss</h3><h4 id="loss-function"><a href="#loss-function" class="headerlink" title="*loss function*"></a>*loss function*</h4><ul>
+<li><p>In <a href="https://en.wikipedia.org/wiki/Mathematical_optimization" target="_blank" rel="noopener">mathematical optimization</a>, <a href="https://en.wikipedia.org/wiki/Statistics" target="_blank" rel="noopener">statistics</a>, <a href="https://en.wikipedia.org/wiki/Econometrics" target="_blank" rel="noopener">econometrics</a>, <a href="https://en.wikipedia.org/wiki/Decision_theory" target="_blank" rel="noopener">decision theory</a>, <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener">machine learning</a> and <a href="https://en.wikipedia.org/wiki/Computational_neuroscience" target="_blank" rel="noopener">computational neuroscience</a>, a *loss function** or **cost function** is a function that maps an [event](https://en.wikipedia.org/wiki/Event_(probability_theory)) or values of one or more variables onto a [real number](https://en.wikipedia.org/wiki/Real_number) intuitively representing some "cost" associated with the event. An [optimization problem](https://en.wikipedia.org/wiki/Optimization_problem) seeks to minimize a loss function. An **objective function*is either a loss function or its negative (in specific domains, variously called a <a href="https://en.wikipedia.org/wiki/Reward_function" target="_blank" rel="noopener">reward function</a>, a <a href="https://en.wikipedia.org/wiki/Profit_function" target="_blank" rel="noopener">profit function</a>, a <a href="https://en.wikipedia.org/wiki/Utility_function" target="_blank" rel="noopener">utility function</a>, a <a href="https://en.wikipedia.org/wiki/Fitness_function" target="_blank" rel="noopener">fitness function</a>, etc.), in which case it is to be maximized.</p>
+</li>
+<li><p>Loss functions can be broadly categorized into 2 types: *Classification and Regression Loss*.</p>
+<ul>
+<li><blockquote>
+<p>*Regression functions predict a quantity, and classification functions predict a label.**</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190513162112957.png" alt=""></p>
+</li>
+</ul>
+<h5 id="Mean-squared-error-Quadratic-loss-L2-Loss"><a href="#Mean-squared-error-Quadratic-loss-L2-Loss" class="headerlink" title="*Mean squared error, Quadratic loss, L2 Loss*"></a>*Mean squared error, Quadratic loss, L2 Loss*</h5><ul>
+<li><a href="https://medium.freecodecamp.org/machine-learning-mean-squared-error-regression-line-c7dde9a26b93" target="_blank" rel="noopener">Mean Square Error (MSE)</a> is the most commonly used regression loss function. MSE is the sum of squared distances between our target variable and predicted values.<ul>
+<li><script type="math/tex; mode=display">{  {MSE} = { \frac {1} { n } } \sum _ { i=1 } ^ { n }(Y_{ i } - { \hat { Y_{ i } } }  ) ^ {2}}</script></li>
+</ul>
+</li>
+</ul>
+<h5 id="Mean-Absolute-Error-L1-Loss"><a href="#Mean-Absolute-Error-L1-Loss" class="headerlink" title="*Mean Absolute Error, L1 Loss*"></a>*Mean Absolute Error, L1 Loss*</h5><ul>
+<li>The Mean Absolute Error is given by:<ul>
+<li><script type="math/tex; mode=display">{ MAE = { \frac { \sum _ { i = 1 }^ { n } \left | y_ { i } - \hat {y_{ i } } \right | } { n } } }</script></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h6 id="MSE-vs-MAE-L2-loss-vs-L1-loss"><a href="#MSE-vs-MAE-L2-loss-vs-L1-loss" class="headerlink" title="*MSE vs. MAE (L2 loss vs L1 loss)*"></a>*MSE vs. MAE (L2 loss vs L1 loss)*</h6><p>*L1 loss is more robust to outliers, but its derivatives are not continuous, making it inefficient to find the solution. L2 loss is sensitive to outliers, but gives a more stable and closed form solution (by setting its derivative to 0.)*</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mse</span><span class="params">(y,y_hat)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> np.sum((y - y_hat)**<span class="number">2</span>) / y.size</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mae</span><span class="params">(y, y_hat)</span>:</span></span><br><span class="line">  <span class="keyword">return</span> np.sum(np.abs(y - y_hat)) / y.size</span><br><span class="line"><span class="comment">#or use sklearn</span></span><br><span class="line"><span class="comment">#from sklearn.metrics import mean_squared_error</span></span><br><span class="line"><span class="comment">#from sklearn.metrics import mean_absolute_error</span></span><br></pre></td></tr></table></figure>
+<h4 id="损失函数与凸函数之间的关系-全局最优和局部最优"><a href="#损失函数与凸函数之间的关系-全局最优和局部最优" class="headerlink" title="损失函数与凸函数之间的关系; 全局最优和局部最优"></a>损失函数与凸函数之间的关系; 全局最优和局部最优</h4><ul>
+<li><p>A convex loss function makes it easier to find a global optimum and to know when one is reached.</p>
+<blockquote>
+<p>Popular loss functions are convex because a local minimum of a convex function is a global minimum. Also, a strictly convex function has a single global minimum. Therefore, we can use a local optimization algorithm, such as gradient descent, to find the best parameters globally.</p>
+</blockquote>
+</li>
+<li><p>推导梯度下降公式</p>
+<ul>
+<li><p>given the loss function:</p>
+</li>
+<li><script type="math/tex; mode=display">
+{f(m,b)} = { \frac {1} { n } } \sum _ { i=1 } ^ { n } ( y_i - (m x_i + b)^{2})</script><p>The gradient can be calculated as:</p>
+<script type="math/tex; mode=display">
+{ { f^{'} (m,b) } ={\begin {bmatrix} \frac {df} {dm} \\ \frac{df}{db}{} \\ \end{bmatrix} } = {\begin {bmatrix} \frac {1} {N} \sum (-2x_i (y_i - (m  x_i + b)))       \\ \frac {1} {N} \sum {(- 2( y_i - ( m x_i + b ) ))} \\ \end {bmatrix} }}</script></li>
+</ul>
+<ul>
+<li><p>*Code*</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gradient_descent</span><span class="params">(X, Y, m, b, lr)</span>:</span></span><br><span class="line">  m_deriv = <span class="number">0</span></span><br><span class="line">  b_deriv = <span class="number">0</span></span><br><span class="line">  N = len(X)</span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(N):</span><br><span class="line">    m_deriv += (<span class="number">-2</span> * X[i] * (Y[i] - (m * X[i] + b)) )</span><br><span class="line">    b_deriv += (<span class="number">-2</span> * (Y[i] - (m * X[i] + b)))</span><br><span class="line">  m -= lr * ( m_deriv / float(N))</span><br><span class="line">  b -= lr * ( b_deriv / float(N))</span><br><span class="line">  <span class="keyword">return</span> m, b</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="L2-Norm，L1-Norm，L0-Norm"><a href="#L2-Norm，L1-Norm，L0-Norm" class="headerlink" title="* L2-Norm，L1-Norm，L0-Norm*"></a>* L2-Norm，L1-Norm，L0-Norm*</h4><blockquote>
+<p> *In Linear Algebra, a Norm refers to the total length of all the vectors in a space.*</p>
+</blockquote>
+<h5 id="L1-Norm"><a href="#L1-Norm" class="headerlink" title="L1-Norm"></a>L1-Norm</h5><ul>
+<li>The *taxicab metric** is also known as **rectilinear distance**, **L1 distance**, **L1-Norm** , **Manhattan distance** or **Manhattan length*, with corresponding variations in the name of the geometry. Formally, </li>
+</ul>
+<blockquote>
+<script type="math/tex; mode=display">d_{1}( {p} , {q} )=\| {p} -  {q} \ |_{1} = \sum _ {i=1}^ {n} | p_ {i}-q_ {i} |​</script><p>where (p,q) are vectors.</p>
+</blockquote>
+<h5 id="L2-Norm"><a href="#L2-Norm" class="headerlink" title="L2-Norm"></a>L2-Norm</h5><ul>
+<li><p>Euclidean norm — On an n-dimensional <a href="https://en.wikipedia.org/wiki/Euclidean_space" target="_blank" rel="noopener">Euclidean space</a> *R**n, the intuitive notion of length of the vector **x** = (x1, x2, …, xn) is captured by the formula</p>
+<blockquote>
+<script type="math/tex; mode=display">{ \left \| {  {x} } \right \| _ {2} : = { \sqrt {x_ {1}^{2} + \cdots +x_ {n} ^ { 2 } } } }</script></blockquote>
+</li>
+</ul>
+<h5 id="L0-Norm"><a href="#L0-Norm" class="headerlink" title="L0-Norm"></a>L0-Norm</h5><ul>
+<li>The L0 norm is the number of non-zero elements in a vector.</li>
+</ul>
+<h5 id="L0-Norm-L1-Norm-L2-Norm分析"><a href="#L0-Norm-L1-Norm-L2-Norm分析" class="headerlink" title="L0-Norm, L1-Norm, L2-Norm分析"></a>L0-Norm, L1-Norm, L2-Norm分析</h5><ol>
+<li><p>L0-Norm: </p>
+<ul>
+<li>L0-Norm 优化的目标是使大多数参数为0, 即W是稀疏的.但L0范数的优化问题是NP hard. 且可证L1范数是L0范数的最优凸近似，因此通常使用L1范数来代替。</li>
+</ul>
+</li>
+<li><p>L1—Norm </p>
+<ul>
+<li>由于参数值大小和模型复杂度成正比。复杂的模型，L1范数大，损失函数就大</li>
+</ul>
+</li>
+<li>L2-Norm <ul>
+<li>L2— Ridge Regression.它会使得模型参数接近0而不是直接优化到0. 参数小,模型简单,不容易过拟合.</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><p>为什么只对w/Θ做限制，不对b做限制</p>
+<ul>
+<li><script type="math/tex; mode=display">
+为防止机器学习过拟合而限制w / \theta 参数. 也即限制模型变得过复杂. b对学习到的模型进行平移修正操作,而不至于增加模型复杂度</script></li>
+</ul>
+<hr>
+</li>
+</ul>
+<h3 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h3><ol>
+<li><p><a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener">Machine Learning</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank" rel="noopener">Central limit theorem</a></p>
+</li>
+<li><p><a href="Normal distribution">Normal distribution</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation" target="_blank" rel="noopener">Maximum likelihood estimation</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Loss_function" target="_blank" rel="noopener">Loss function</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Mean_squared_error" target="_blank" rel="noopener">Mean Squared Error</a></p>
+</li>
+<li><p><a href="https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0" target="_blank" rel="noopener">Regression Loss Functions All Machine Learners Should Know</a></p>
+</li>
+<li><p><a href="https://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html" target="_blank" rel="noopener">Gradient Descent</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Taxicab_geometry" target="_blank" rel="noopener">Taxicab geometry</a></p>
+</li>
+<li><p><a href="https://www.jianshu.com/p/475d2c3197d2" target="_blank" rel="noopener">L1,L2,L0区别，为什么可以防止过拟合</a></p>
+</li>
+<li><p><a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses.html" target="_blank" rel="noopener">Regression Hung-yi Lee</a></p>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
+          
+            <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+          
+            <a href="/tags/Lee/" rel="tag"># Lee</a>
+          
+            <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/12/mRTS/microRTS/" rel="next" title="MicroRTS">
+                <i class="fa fa-chevron-left"></i> MicroRTS
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/18/DL/collafiltering/" rel="prev" title="Collaborative filtering">
+                Collaborative filtering <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">JiangJin</p>
+              <p class="site-description motion-element" itemprop="description">萌新Jinger成长记</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-Machine-learning"><span class="nav-number">1.</span> <span class="nav-text">what is Machine learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Central-limit-theorem，Normal-distribution，Maximum-likelihood-estimation"><span class="nav-number">2.</span> <span class="nav-text">Central limit theorem，Normal distribution，Maximum likelihood estimation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Central-limit-theorem"><span class="nav-number">2.1.</span> <span class="nav-text">* Central limit theorem*</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Normal-distribution"><span class="nav-number">2.2.</span> <span class="nav-text">* Normal distribution*</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Maximum-likelihood-estimation"><span class="nav-number">2.3.</span> <span class="nav-text">* Maximum likelihood estimation*</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Regression-Loss"><span class="nav-number">3.</span> <span class="nav-text">Regression Loss</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#loss-function"><span class="nav-number">3.1.</span> <span class="nav-text">*loss function*</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Mean-squared-error-Quadratic-loss-L2-Loss"><span class="nav-number">3.1.1.</span> <span class="nav-text">*Mean squared error, Quadratic loss, L2 Loss*</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Mean-Absolute-Error-L1-Loss"><span class="nav-number">3.1.2.</span> <span class="nav-text">*Mean Absolute Error, L1 Loss*</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#MSE-vs-MAE-L2-loss-vs-L1-loss"><span class="nav-number">3.1.2.1.</span> <span class="nav-text">*MSE vs. MAE (L2 loss vs L1 loss)*</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#损失函数与凸函数之间的关系-全局最优和局部最优"><span class="nav-number">3.2.</span> <span class="nav-text">损失函数与凸函数之间的关系; 全局最优和局部最优</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#L2-Norm，L1-Norm，L0-Norm"><span class="nav-number">3.3.</span> <span class="nav-text">* L2-Norm，L1-Norm，L0-Norm*</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#L1-Norm"><span class="nav-number">3.3.1.</span> <span class="nav-text">L1-Norm</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#L2-Norm"><span class="nav-number">3.3.2.</span> <span class="nav-text">L2-Norm</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#L0-Norm"><span class="nav-number">3.3.3.</span> <span class="nav-text">L0-Norm</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#L0-Norm-L1-Norm-L2-Norm分析"><span class="nav-number">3.3.4.</span> <span class="nav-text">L0-Norm, L1-Norm, L2-Norm分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">4.</span> <span class="nav-text">References:</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JiangJin</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732',
+        placeholder: '',
+        avatar:'mp',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
