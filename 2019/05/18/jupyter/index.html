@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Deep Learning,Recommendation System,Fast ai,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -79,15 +79,14 @@
 
 
 
-<meta name="keywords" content="Deep Learning,Recommendation System,Fast ai">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Collaborative filtering">
-<meta property="og:url" content="http://yoursite.com/2019/05/20/DL/collafiltering/index.html">
+<meta property="og:title" content="jupyter">
+<meta property="og:url" content="http://yoursite.com/2019/05/18/jupyter/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-20T06:27:00.776Z">
+<meta property="og:updated_time" content="2019-05-20T06:45:00.857Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Collaborative filtering">
+<meta name="twitter:title" content="jupyter">
 
 
 
@@ -117,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/20/DL/collafiltering/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/18/jupyter/">
 
 
 
 
 
-  <title>Collaborative filtering | Jinger's Home</title>
+  <title>jupyter | Jinger's Home</title>
   
 
 
@@ -270,7 +269,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/20/DL/collafiltering/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/18/jupyter/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JiangJin">
@@ -287,7 +286,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Collaborative filtering</h1>
+          <h1 class="post-title" itemprop="name headline">jupyter</h1>
         
 
         <div class="post-meta">
@@ -299,8 +298,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-20T01:23:14+08:00">
-                2019-05-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-18T13:09:16+08:00">
+                2019-05-18
               </time>
             
 
@@ -310,28 +309,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Recommendation-System/" itemprop="url" rel="index">
-                    <span itemprop="name">Recommendation System</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -360,10 +337,7 @@
       
 
       
-        <hr>
-<script src="http://code.jquery.com/jquery-2.0.0.js"></script> 
-
-
+        <p><script src="http://code.jquery.com/jquery-2.0.0.js"></script><br>
 <iframe id="ipynb" marginheight="0" frameborder="0" width="924px" height="680px" srcdoc="<!DOCTYPE html>
 <html>
 <head><meta charset='utf-8' />
@@ -13496,7 +13470,7 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[51]:</div>
+<div class='prompt input_prompt'>In&nbsp;[2]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='o'>%</span><span class='k'>reload_ext</span> autoreload
@@ -13511,7 +13485,7 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[2]:</div>
+<div class='prompt input_prompt'>In&nbsp;[3]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>user</span><span class='p'>,</span> <span class='n'>item</span><span class='p'>,</span> <span class='n'>title</span> <span class='o'>=</span> <span class='s1'>&#39;userId&#39;</span><span class='p'>,</span><span class='s1'>&#39;movieId&#39;</span><span class='p'>,</span><span class='s1'>&#39;title&#39;</span>
@@ -13524,7 +13498,7 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[3]:</div>
+<div class='prompt input_prompt'>In&nbsp;[4]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>path</span> <span class='o'>=</span> <span class='n'>untar_data</span><span class='p'>(</span><span class='n'>URLs</span><span class='o'>.</span><span class='n'>ML_SAMPLE</span><span class='p'>)</span>
@@ -13541,7 +13515,7 @@ div#notebook {
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[3]:</div>
+    <div class='prompt output_prompt'>Out[4]:</div>
 
 
 
@@ -13558,7 +13532,7 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[4]:</div>
+<div class='prompt input_prompt'>In&nbsp;[5]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>ratings</span> <span class='o'>=</span> <span class='n'>pd</span><span class='o'>.</span><span class='n'>read_csv</span><span class='p'>(</span><span class='n'>path</span><span class='o'>/</span><span class='s1'>&#39;ratings.csv&#39;</span><span class='p'>)</span>
@@ -13575,7 +13549,7 @@ div#notebook {
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[4]:</div>
+    <div class='prompt output_prompt'>Out[5]:</div>
 
 
 
@@ -13653,7 +13627,7 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[5]:</div>
+<div class='prompt input_prompt'>In&nbsp;[6]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>data</span> <span class='o'>=</span> <span class='n'>CollabDataBunch</span><span class='o'>.</span><span class='n'>from_df</span><span class='p'>(</span><span class='n'>ratings</span><span class='p'>,</span> <span class='n'>seed</span><span class='o'>=</span><span class='mi'>42</span><span class='p'>)</span>
@@ -13666,7 +13640,7 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[6]:</div>
+<div class='prompt input_prompt'>In&nbsp;[7]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>y_range</span> <span class='o'>=</span> <span class='p'>[</span><span class='mi'>0</span><span class='p'>,</span><span class='mf'>5.5</span><span class='p'>]</span>
@@ -13679,7 +13653,7 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[7]:</div>
+<div class='prompt input_prompt'>In&nbsp;[8]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>learn</span> <span class='o'>=</span> <span class='n'>collab_learner</span><span class='p'>(</span><span class='n'>data</span><span class='p'>,</span> <span class='n'>n_factors</span><span class='o'>=</span><span class='mi'>50</span><span class='p'>,</span> <span class='n'>y_range</span><span class='o'>=</span><span class='n'>y_range</span><span class='p'>)</span>
@@ -13725,20 +13699,20 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
   <tbody>
     <tr>
       <td>0</td>
-      <td>1.616975</td>
-      <td>0.948524</td>
+      <td>1.619946</td>
+      <td>0.903159</td>
       <td>00:00</td>
     </tr>
     <tr>
       <td>1</td>
-      <td>0.846624</td>
-      <td>0.680674</td>
+      <td>0.864582</td>
+      <td>0.675887</td>
       <td>00:00</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>0.651073</td>
-      <td>0.671800</td>
+      <td>0.669438</td>
+      <td>0.671112</td>
       <td>00:00</td>
     </tr>
   </tbody>
@@ -13753,7 +13727,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[14]:</div>
+<div class='prompt input_prompt'>In&nbsp;[10]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>path</span> <span class='o'>=</span> <span class='n'>Path</span><span class='p'>(</span><span class='s1'>&#39;../input/&#39;</span><span class='p'>)</span>
@@ -13770,7 +13744,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[14]:</div>
+    <div class='prompt output_prompt'>Out[10]:</div>
 
 
 
@@ -13787,7 +13761,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[19]:</div>
+<div class='prompt input_prompt'>In&nbsp;[11]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>path</span> <span class='o'>=</span> <span class='n'>Config</span><span class='o'>.</span><span class='n'>data_path</span><span class='p'>()</span><span class='o'>/</span><span class='s1'>&#39;ml-100k&#39;</span>
@@ -13804,7 +13778,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[19]:</div>
+    <div class='prompt output_prompt'>Out[11]:</div>
 
 
 
@@ -13821,7 +13795,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[21]:</div>
+<div class='prompt input_prompt'>In&nbsp;[12]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>ratings</span> <span class='o'>=</span> <span class='n'>pd</span><span class='o'>.</span><span class='n'>read_csv</span><span class='p'>(</span><span class='n'>path</span><span class='o'>/</span><span class='s1'>&#39;u.data&#39;</span><span class='p'>,</span> <span class='n'>delimiter</span><span class='o'>=</span><span class='s1'>&#39;</span><span class='se'>\t</span><span class='s1'>&#39;</span><span class='p'>,</span> <span class='n'>header</span><span class='o'>=</span><span class='kc'>None</span><span class='p'>,</span>
@@ -13839,7 +13813,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[21]:</div>
+    <div class='prompt output_prompt'>Out[12]:</div>
 
 
 
@@ -13917,7 +13891,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[27]:</div>
+<div class='prompt input_prompt'>In&nbsp;[13]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='c1'># -*- coding: utf-8 -*- </span>
@@ -13932,7 +13906,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[28]:</div>
+<div class='prompt input_prompt'>In&nbsp;[14]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>movies</span><span class='o'>.</span><span class='n'>head</span><span class='p'>()</span>
@@ -13948,7 +13922,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[28]:</div>
+    <div class='prompt output_prompt'>Out[14]:</div>
 
 
 
@@ -14129,7 +14103,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[30]:</div>
+<div class='prompt input_prompt'>In&nbsp;[15]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>rating_movie</span> <span class='o'>=</span> <span class='n'>ratings</span><span class='o'>.</span><span class='n'>merge</span><span class='p'>(</span><span class='n'>movies</span><span class='p'>[[</span><span class='n'>item</span><span class='p'>,</span><span class='n'>title</span><span class='p'>]])</span>
@@ -14146,7 +14120,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[30]:</div>
+    <div class='prompt output_prompt'>Out[15]:</div>
 
 
 
@@ -14230,7 +14204,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[33]:</div>
+<div class='prompt input_prompt'>In&nbsp;[16]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>data</span> <span class='o'>=</span> <span class='n'>CollabDataBunch</span><span class='o'>.</span><span class='n'>from_df</span><span class='p'>(</span><span class='n'>rating_movie</span><span class='p'>,</span> <span class='n'>seed</span> <span class='o'>=</span> <span class='mi'>42</span><span class='p'>,</span> <span class='n'>valid_pct</span> <span class='o'>=</span> <span class='mf'>0.1</span><span class='p'>,</span> <span class='n'>item_name</span><span class='o'>=</span><span class='n'>title</span><span class='p'>)</span>
@@ -14262,28 +14236,28 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
   </thead>
   <tbody>
     <tr>
-      <td>435</td>
-      <td>Halloween: The Curse of Michael Myers (1995)</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>666</td>
-      <td>Feeling Minnesota (1996)</td>
+      <td>862</td>
+      <td>Lost World: Jurassic Park, The (1997)</td>
       <td>3.0</td>
     </tr>
     <tr>
-      <td>301</td>
-      <td>Usual Suspects, The (1995)</td>
+      <td>872</td>
+      <td>Twister (1996)</td>
       <td>4.0</td>
     </tr>
     <tr>
-      <td>43</td>
-      <td>Mrs. Doubtfire (1993)</td>
+      <td>214</td>
+      <td>True Romance (1993)</td>
       <td>4.0</td>
     </tr>
     <tr>
-      <td>659</td>
-      <td>Silence of the Lambs, The (1991)</td>
+      <td>786</td>
+      <td>Killing Fields, The (1984)</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>682</td>
+      <td>Groundhog Day (1993)</td>
       <td>4.0</td>
     </tr>
   </tbody>
@@ -14298,7 +14272,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[34]:</div>
+<div class='prompt input_prompt'>In&nbsp;[17]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>y_range</span> <span class='o'>=</span> <span class='p'>[</span><span class='mi'>0</span><span class='p'>,</span><span class='mf'>5.5</span><span class='p'>]</span>
@@ -14311,7 +14285,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[39]:</div>
+<div class='prompt input_prompt'>In&nbsp;[18]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>learn</span> <span class='o'>=</span> <span class='n'>collab_learner</span><span class='p'>(</span><span class='n'>data</span><span class='p'>,</span><span class='n'>n_factors</span><span class='o'>=</span><span class='mi'>40</span><span class='p'>,</span><span class='n'>y_range</span><span class='o'>=</span><span class='n'>y_range</span><span class='p'>,</span><span class='n'>wd</span><span class='o'>=</span><span class='mf'>1e-1</span><span class='p'>)</span>
@@ -14328,7 +14302,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[39]:</div>
+    <div class='prompt output_prompt'>Out[18]:</div>
 
 
 
@@ -14350,7 +14324,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[36]:</div>
+<div class='prompt input_prompt'>In&nbsp;[19]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>learn</span><span class='o'>.</span><span class='n'>lr_find</span><span class='p'>()</span>
@@ -14396,7 +14370,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 
 <div class='output_png output_subarea '>
-<img src='data:image/png;base64,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
+<img src='data:image/png;base64,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
 '
 >
 </div>
@@ -14409,7 +14383,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[37]:</div>
+<div class='prompt input_prompt'>In&nbsp;[20]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>learn</span><span class='o'>.</span><span class='n'>fit_one_cycle</span><span class='p'>(</span><span class='mi'>5</span><span class='p'>,</span><span class='mf'>5e-3</span><span class='p'>)</span>
@@ -14430,7 +14404,7 @@ Total time: 00:01 <p><table border='1' class='dataframe'>
 
 
 <div class='output_html rendered_html output_subarea '>
-Total time: 00:23 <p><table border='1' class='dataframe'>
+Total time: 00:20 <p><table border='1' class='dataframe'>
   <thead>
     <tr style='text-align: left;'>
       <th>epoch</th>
@@ -14442,32 +14416,32 @@ Total time: 00:23 <p><table border='1' class='dataframe'>
   <tbody>
     <tr>
       <td>0</td>
-      <td>0.960414</td>
-      <td>0.941522</td>
-      <td>00:04</td>
+      <td>0.962776</td>
+      <td>0.945836</td>
+      <td>00:03</td>
     </tr>
     <tr>
       <td>1</td>
-      <td>0.880322</td>
-      <td>0.885875</td>
+      <td>0.866833</td>
+      <td>0.884584</td>
       <td>00:04</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>0.732798</td>
-      <td>0.845417</td>
+      <td>0.780481</td>
+      <td>0.833849</td>
       <td>00:04</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>0.634256</td>
-      <td>0.818301</td>
+      <td>0.652318</td>
+      <td>0.814431</td>
       <td>00:04</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>0.544424</td>
-      <td>0.817420</td>
+      <td>0.570442</td>
+      <td>0.812707</td>
       <td>00:04</td>
     </tr>
   </tbody>
@@ -14482,7 +14456,7 @@ Total time: 00:23 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[38]:</div>
+<div class='prompt input_prompt'>In&nbsp;[21]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>learn</span><span class='o'>.</span><span class='n'>save</span><span class='p'>(</span><span class='s1'>&#39;dotprod&#39;</span><span class='p'>)</span>
@@ -14495,7 +14469,7 @@ Total time: 00:23 <p><table border='1' class='dataframe'>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[40]:</div>
+<div class='prompt input_prompt'>In&nbsp;[22]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>learn</span><span class='o'>.</span><span class='n'>load</span><span class='p'>(</span><span class='s1'>&#39;dotprod&#39;</span><span class='p'>)</span>
@@ -14511,7 +14485,7 @@ Total time: 00:23 <p><table border='1' class='dataframe'>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[40]:</div>
+    <div class='prompt output_prompt'>Out[22]:</div>
 
 
 
@@ -14554,7 +14528,7 @@ Test: None, model=EmbeddingDotBias(
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[63]:</div>
+<div class='prompt input_prompt'>In&nbsp;[23]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>g</span> <span class='o'>=</span> <span class='n'>rating_movie</span><span class='o'>.</span><span class='n'>groupby</span><span class='p'>(</span><span class='n'>title</span><span class='p'>)[</span><span class='s1'>&#39;rating&#39;</span><span class='p'>]</span><span class='o'>.</span><span class='n'>count</span><span class='p'>()</span>
@@ -14572,7 +14546,7 @@ Test: None, model=EmbeddingDotBias(
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[63]:</div>
+    <div class='prompt output_prompt'>Out[23]:</div>
 
 
 
@@ -14600,7 +14574,7 @@ Name: rating, dtype: int64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[67]:</div>
+<div class='prompt input_prompt'>In&nbsp;[24]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>top_movies</span> <span class='o'>=</span> <span class='n'>g</span><span class='o'>.</span><span class='n'>sort_values</span><span class='p'>(</span><span class='n'>ascending</span> <span class='o'>=</span> <span class='kc'>False</span><span class='p'>)</span><span class='o'>.</span><span class='n'>index</span><span class='o'>.</span><span class='n'>values</span><span class='p'>[:</span><span class='mi'>1000</span><span class='p'>]</span>
@@ -14619,7 +14593,7 @@ Name: rating, dtype: int64</pre>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[67]:</div>
+    <div class='prompt output_prompt'>Out[24]:</div>
 
 
 
@@ -14641,7 +14615,7 @@ Name: rating, dtype: int64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[54]:</div>
+<div class='prompt input_prompt'>In&nbsp;[25]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>movie_bias</span> <span class='o'>=</span> <span class='n'>learn</span><span class='o'>.</span><span class='n'>bias</span><span class='p'>(</span><span class='n'>top_movies</span><span class='p'>,</span> <span class='n'>is_item</span><span class='o'>=</span><span class='kc'>True</span><span class='p'>)</span>
@@ -14659,14 +14633,14 @@ Name: rating, dtype: int64</pre>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[54]:</div>
+    <div class='prompt output_prompt'>Out[25]:</div>
 
 
 
 
 <div class='output_text output_subarea output_execute_result'>
-<pre>tensor([0.5020, 0.4056, 0.3919, 0.3860, 0.1011, 0.1411, 0.2134, 0.3091, 0.2633,
-        0.1890])</pre>
+<pre>tensor([0.5078, 0.4129, 0.3721, 0.4021, 0.0974, 0.1465, 0.1944, 0.3225, 0.2715,
+        0.1710])</pre>
 </div>
 
 </div>
@@ -14677,7 +14651,7 @@ Name: rating, dtype: int64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[60]:</div>
+<div class='prompt input_prompt'>In&nbsp;[26]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>mean_ratings</span> <span class='o'>=</span> <span class='n'>rating_movie</span><span class='o'>.</span><span class='n'>groupby</span><span class='p'>(</span><span class='n'>title</span><span class='p'>)[</span><span class='s1'>&#39;rating&#39;</span><span class='p'>]</span><span class='o'>.</span><span class='n'>mean</span><span class='p'>()</span>
@@ -14694,7 +14668,7 @@ Name: rating, dtype: int64</pre>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[60]:</div>
+    <div class='prompt output_prompt'>Out[26]:</div>
 
 
 
@@ -14773,11 +14747,11 @@ Name: rating, Length: 1664, dtype: float64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[58]:</div>
+<div class='prompt input_prompt'>In&nbsp;[28]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>movie_ratings</span> <span class='o'>=</span> <span class='p'>[(</span><span class='n'>b</span><span class='p'>,</span> <span class='n'>i</span><span class='p'>,</span> <span class='n'>mean_ratings</span><span class='o'>.</span><span class='n'>loc</span><span class='p'>[</span><span class='n'>i</span><span class='p'>])</span> <span class='k'>for</span> <span class='n'>i</span><span class='p'>,</span><span class='n'>b</span> <span class='ow'>in</span> <span class='nb'>zip</span><span class='p'>(</span><span class='n'>top_movieOs</span><span class='p'>,</span><span class='n'>movie_bias</span><span class='p'>)]</span>
-<span class='n'>movie_ratings</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>movie_ratings</span> <span class='o'>=</span> <span class='p'>[(</span><span class='n'>b</span><span class='p'>,</span> <span class='n'>i</span><span class='p'>,</span> <span class='n'>mean_ratings</span><span class='o'>.</span><span class='n'>loc</span><span class='p'>[</span><span class='n'>i</span><span class='p'>])</span> <span class='k'>for</span> <span class='n'>i</span><span class='p'>,</span><span class='n'>b</span> <span class='ow'>in</span> <span class='nb'>zip</span><span class='p'>(</span><span class='n'>top_movies</span><span class='p'>,</span><span class='n'>movie_bias</span><span class='p'>)]</span>
+<span class='n'>movie_ratings</span><span class='p'>[:</span><span class='mi'>10</span><span class='p'>]</span>
 </pre></div>
 
     </div>
@@ -14790,1132 +14764,22 @@ Name: rating, Length: 1664, dtype: float64</pre>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[58]:</div>
+    <div class='prompt output_prompt'>Out[28]:</div>
 
 
 
 
 <div class='output_text output_subarea output_execute_result'>
-<pre>[(tensor(0.5020), &#39;Star Wars (1977)&#39;, 4.3584905660377355),
- (tensor(0.4056), &#39;Contact (1997)&#39;, 3.8035363457760316),
- (tensor(0.3919), &#39;Fargo (1996)&#39;, 4.155511811023622),
- (tensor(0.3860), &#39;Return of the Jedi (1983)&#39;, 4.007889546351085),
- (tensor(0.1011), &#39;Liar Liar (1997)&#39;, 3.156701030927835),
- (tensor(0.1411), &#39;English Patient, The (1996)&#39;, 3.656964656964657),
- (tensor(0.2134), &#39;Scream (1996)&#39;, 3.4414225941422596),
- (tensor(0.3091), &#39;Toy Story (1995)&#39;, 3.8783185840707963),
- (tensor(0.2633), &#39;Air Force One (1997)&#39;, 3.6310904872389793),
- (tensor(0.1890), &#39;Independence Day (ID4) (1996)&#39;, 3.438228438228438),
- (tensor(0.4219), &#39;Raiders of the Lost Ark (1981)&#39;, 4.252380952380952),
- (tensor(0.4501), &#39;Godfather, The (1972)&#39;, 4.283292978208232),
- (tensor(0.3021), &#39;Pulp Fiction (1994)&#39;, 4.060913705583756),
- (tensor(0.2765), &#39;Twelve Monkeys (1995)&#39;, 3.798469387755102),
- (tensor(0.5441), &#39;Silence of the Lambs, The (1991)&#39;, 4.28974358974359),
- (tensor(0.2207), &#39;Jerry Maguire (1996)&#39;, 3.7109375),
- (tensor(0.1506), &#39;Chasing Amy (1997)&#39;, 3.8390501319261214),
- (tensor(0.2600), &#39;Rock, The (1996)&#39;, 3.693121693121693),
- (tensor(0.3601), &#39;Empire Strikes Back, The (1980)&#39;, 4.204359673024523),
- (tensor(0.2316), &#39;Star Trek: First Contact (1996)&#39;, 3.66027397260274),
- (tensor(0.2499), &#39;Back to the Future (1985)&#39;, 3.834285714285714),
- (tensor(0.5731), &#39;Titanic (1997)&#39;, 4.2457142857142856),
- (tensor(0.1153), &#39;Mission: Impossible (1996)&#39;, 3.313953488372093),
- (tensor(0.4096), &#39;Fugitive, The (1993)&#39;, 4.044642857142857),
- (tensor(0.3555),
-  &#39;Indiana Jones and the Last Crusade (1989)&#39;,
-  3.930513595166163),
- (tensor(0.1490),
-  &#39;Willy Wonka and the Chocolate Factory (1971)&#39;,
-  3.6319018404907975),
- (tensor(0.3741), &#39;Princess Bride, The (1987)&#39;, 4.172839506172839),
- (tensor(0.2357), &#39;Forrest Gump (1994)&#39;, 3.853582554517134),
- (tensor(0.3237),
-  &#39;Monty Python and the Holy Grail (1974)&#39;,
-  4.0664556962025316),
- (tensor(0.0317), &#39;Saint, The (1997)&#39;, 3.1234177215189876),
- (tensor(0.3768), &#39;Full Monty, The (1997)&#39;, 3.926984126984127),
- (tensor(0.2325), &#39;Men in Black (1997)&#39;, 3.745874587458746),
- (tensor(0.3205), &#39;Terminator, The (1984)&#39;, 3.9335548172757475),
- (tensor(0.2274), &#39;E.T. the Extra-Terrestrial (1982)&#39;, 3.8333333333333335),
- (tensor(0.2585), &#39;Dead Man Walking (1995)&#39;, 3.8963210702341136),
- (tensor(0.6243), &#34;Schindler&#39;s List (1993)&#34;, 4.466442953020135),
- (tensor(0.1655), &#39;Leaving Las Vegas (1995)&#39;, 3.697986577181208),
- (tensor(0.3401), &#39;Braveheart (1995)&#39;, 4.151515151515151),
- (tensor(0.5476), &#39;L.A. Confidential (1997)&#39;, 4.161616161616162),
- (tensor(0.3501), &#39;Terminator 2: Judgment Day (1991)&#39;, 4.0067796610169495),
- (tensor(0.2111), &#39;Conspiracy Theory (1997)&#39;, 3.4237288135593222),
- (tensor(0.2152), &#34;Mr. Holland&#39;s Opus (1995)&#34;, 3.7781569965870307),
- (tensor(0.1439), &#39;Birdcage, The (1996)&#39;, 3.4436860068259385),
- (tensor(0.0320), &#39;Twister (1996)&#39;, 3.2150170648464163),
- (tensor(0.3224), &#39;Alien (1979)&#39;, 4.034364261168385),
- (tensor(0.3094), &#39;When Harry Met Sally... (1989)&#39;, 3.910344827586207),
- (tensor(0.2730), &#39;Aliens (1986)&#39;, 3.9471830985915495),
- (tensor(0.5525), &#39;Shawshank Redemption, The (1994)&#39;, 4.445229681978798),
- (tensor(0.2289), &#39;Groundhog Day (1993)&#39;, 3.7642857142857142),
- (tensor(0.1867), &#39;Jaws (1975)&#39;, 3.775),
- (tensor(0.3575), &#39;Amadeus (1984)&#39;, 4.163043478260869),
- (tensor(0.3584), &#39;Apollo 13 (1995)&#39;, 3.931159420289855),
- (tensor(0.3727), &#39;Blade Runner (1982)&#39;, 4.138181818181818),
- (tensor(0.1546), &#39;Truth About Cats &amp; Dogs, The (1996)&#39;, 3.485294117647059),
- (tensor(0.3140), &#39;Sense and Sensibility (1995)&#39;, 4.0111940298507465),
- (tensor(0.2563), &#39;Ransom (1996)&#39;, 3.644194756554307),
- (tensor(0.4913), &#39;Usual Suspects, The (1995)&#39;, 4.385767790262173),
- (tensor(0.4584), &#34;One Flew Over the Cuckoo&#39;s Nest (1975)&#34;, 4.291666666666667),
- (tensor(0.2534), &#39;Jurassic Park (1993)&#39;, 3.7203065134099615),
- (tensor(0.2024), &#39;2001: A Space Odyssey (1968)&#39;, 3.969111969111969),
- (tensor(-0.0516), &#39;Evita (1996)&#39;, 2.9806949806949805),
- (tensor(0.1790), &#39;Dances with Wolves (1990)&#39;, 3.79296875),
- (tensor(0.2632), &#39;Raising Arizona (1987)&#39;, 3.875),
- (tensor(-0.0548), &#39;Broken Arrow (1996)&#39;, 3.031496062992126),
- (tensor(0.2053), &#39;Game, The (1997)&#39;, 3.593625498007968),
- (tensor(0.1826), &#39;Four Weddings and a Funeral (1994)&#39;, 3.6613545816733066),
- (tensor(0.3252), &#39;Dead Poets Society (1989)&#39;, 3.9163346613545817),
- (tensor(0.2998), &#39;Blues Brothers, The (1980)&#39;, 3.8366533864541834),
- (tensor(0.1831), &#39;Trainspotting (1996)&#39;, 3.884),
- (tensor(0.2061), &#39;Fish Called Wanda, A (1988)&#39;, 3.785425101214575),
- (tensor(0.2668), &#39;Wizard of Oz, The (1939)&#39;, 4.0772357723577235),
- (tensor(0.2275), &#39;Star Trek: The Wrath of Khan (1982)&#39;, 3.8155737704918034),
- (tensor(0.1630), &#39;Phenomenon (1996)&#39;, 3.557377049180328),
- (tensor(0.2494), &#39;Die Hard (1988)&#39;, 3.8724279835390947),
- (tensor(0.4530), &#39;Casablanca (1942)&#39;, 4.45679012345679),
- (tensor(0.3170), &#39;Sting, The (1973)&#39;, 4.058091286307054),
- (tensor(-0.0408), &#34;Dante&#39;s Peak (1997)&#34;, 2.933333333333333),
- (tensor(0.0493), &#34;Devil&#39;s Own, The (1997)&#34;, 3.1083333333333334),
- (tensor(0.3192), &#39;Psycho (1960)&#39;, 4.100418410041841),
- (tensor(0.2713), &#39;Graduate, The (1967)&#39;, 4.104602510460251),
- (tensor(0.2036), &#39;Seven (Se7en) (1995)&#39;, 3.847457627118644),
- (tensor(0.2053), &#39;Time to Kill, A (1996)&#39;, 3.685344827586207),
- (tensor(0.3425), &#34;It&#39;s a Wonderful Life (1946)&#34;, 4.121212121212121),
- (tensor(0.1827), &#39;Speed (1994)&#39;, 3.6478260869565218),
- (tensor(0.0967), &#39;In &amp; Out (1997)&#39;, 3.3043478260869565),
- (tensor(0.2489), &#39;Stand by Me (1986)&#39;, 3.881057268722467),
- (tensor(0.3014), &#39;Hunt for Red October, The (1990)&#39;, 3.8634361233480177),
- (tensor(0.2290), &#39;GoodFellas (1990)&#39;, 3.9513274336283186),
- (tensor(0.1988), &#39;Heat (1995)&#39;, 3.569506726457399),
- (tensor(0.2869), &#39;Sound of Music, The (1965)&#39;, 3.765765765765766),
- (tensor(0.2212), &#39;Courage Under Fire (1996)&#39;, 3.6108597285067874),
- (tensor(0.2258), &#39;Apocalypse Now (1979)&#39;, 4.04524886877828),
- (tensor(0.1920), &#39;Clockwork Orange, A (1971)&#39;, 3.909502262443439),
- (tensor(0.2318), &#39;Lion King, The (1994)&#39;, 3.7818181818181817),
- (tensor(0.1368), &#39;Top Gun (1986)&#39;, 3.481818181818182),
- (tensor(0.3318), &#39;Babe (1995)&#39;, 3.9954337899543377),
- (tensor(-0.0121), &#39;Volcano (1997)&#39;, 2.808219178082192),
- (tensor(0.4412), &#39;To Kill a Mockingbird (1962)&#39;, 4.292237442922374),
- (tensor(0.2095), &#39;Aladdin (1992)&#39;, 3.8127853881278537),
- (tensor(0.0841), &#39;Murder at 1600 (1997)&#39;, 3.0871559633027523),
- (tensor(-0.0512), &#39;Mars Attacks! (1996)&#39;, 2.847926267281106),
- (tensor(0.2356),
-  &#39;Butch Cassidy and the Sundance Kid (1969)&#39;,
-  3.949074074074074),
- (tensor(0.1677), &#39;People vs. Larry Flynt, The (1996)&#39;, 3.5953488372093023),
- (tensor(0.0370), &#39;Sleepless in Seattle (1993)&#39;, 3.539906103286385),
- (tensor(0.1008), &#39;Field of Dreams (1989)&#39;, 3.69811320754717),
- (tensor(0.1206), &#39;Starship Troopers (1997)&#39;, 3.2322274881516586),
- (tensor(0.3282), &#39;Godfather: Part II, The (1974)&#39;, 4.186602870813397),
- (tensor(0.5416), &#39;Rear Window (1954)&#39;, 4.3875598086124405),
- (tensor(0.0798), &#39;Get Shorty (1995)&#39;, 3.550239234449761),
- (tensor(0.1517), &#39;True Lies (1994)&#39;, 3.5625),
- (tensor(0.1696), &#39;Brazil (1985)&#39;, 3.8173076923076925),
- (tensor(0.2098), &#39;M*A*S*H (1970)&#39;, 3.912621359223301),
- (tensor(0.0434), &#39;Eraser (1996)&#39;, 3.150485436893204),
- (tensor(0.2072), &#39;Shining, The (1980)&#39;, 3.825242718446602),
- (tensor(0.1958), &#39;Beauty and the Beast (1991)&#39;, 3.792079207920792),
- (tensor(0.5113), &#39;Boot, Das (1981)&#39;, 4.203980099502488),
- (tensor(0.1334), &#39;Batman (1989)&#39;, 3.427860696517413),
- (tensor(0.3028), &#39;Young Frankenstein (1974)&#39;, 3.945),
- (tensor(0.0892), &#39;Star Trek IV: The Voyage Home (1986)&#39;, 3.4472361809045227),
- (tensor(0.5031), &#39;Good Will Hunting (1997)&#39;, 4.262626262626263),
- (tensor(0.3509), &#39;Citizen Kane (1941)&#39;, 4.292929292929293),
- (tensor(0.2340), &#39;Fifth Element, The (1997)&#39;, 3.4771573604060912),
- (tensor(0.3582), &#39;Gandhi (1982)&#39;, 4.02051282051282),
- (tensor(0.3921),
-  &#39;Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)&#39;,
-  4.252577319587629),
- (tensor(0.3036), &#39;Face/Off (1997)&#39;, 3.768041237113402),
- (tensor(0.0573), &#39;Tin Cup (1996)&#39;, 3.160621761658031),
- (tensor(0.1246), &#39;Mrs. Doubtfire (1993)&#39;, 3.4114583333333335),
- (tensor(0.2174), &#39;This Is Spinal Tap (1984)&#39;, 3.905759162303665),
- (tensor(0.1638), &#39;Sabrina (1995)&#39;, 3.5),
- (tensor(0.1760), &#39;Boogie Nights (1997)&#39;, 3.5873015873015874),
- (tensor(0.2052), &#34;Devil&#39;s Advocate, The (1997)&#34;, 3.515957446808511),
- (tensor(0.2784), &#39;Lone Star (1996)&#39;, 4.053475935828877),
- (tensor(0.1217), &#39;Long Kiss Goodnight, The (1996)&#39;, 3.4702702702702704),
- (tensor(0.0999), &#39;Mighty Aphrodite (1995)&#39;, 3.4184782608695654),
- (tensor(0.1664), &#34;Ulee&#39;s Gold (1997)&#34;, 3.760869565217391),
- (tensor(0.2710), &#39;Postino, Il (1994)&#39;, 3.9672131147540983),
- (tensor(0.3133), &#39;Taxi Driver (1976)&#39;, 4.1208791208791204),
- (tensor(0.2818), &#39;Unforgiven (1992)&#39;, 3.868131868131868),
- (tensor(0.2273), &#39;Fly Away Home (1996)&#39;, 3.6),
- (tensor(0.1686), &#39;Dave (1993)&#39;, 3.65),
- (tensor(0.1926), &#39;Tomorrow Never Dies (1997)&#39;, 3.4277777777777776),
- (tensor(0.1829), &#39;Annie Hall (1977)&#39;, 3.911111111111111),
- (tensor(0.4258), &#39;North by Northwest (1959)&#39;, 4.284916201117318),
- (tensor(0.1917), &#39;Clear and Present Danger (1994)&#39;, 3.569832402234637),
- (tensor(0.4816), &#39;Vertigo (1958)&#39;, 4.251396648044692),
- (tensor(0.2279), &#39;Mary Poppins (1964)&#39;, 3.7247191011235956),
- (tensor(0.2385), &#39;Primal Fear (1996)&#39;, 3.601123595505618),
- (tensor(0.2028), &#39;Emma (1996)&#39;, 3.7175141242937855),
- (tensor(0.3990), &#39;Much Ado About Nothing (1993)&#39;, 4.0625),
- (tensor(0.0827), &#39;That Thing You Do! (1996)&#39;, 3.465909090909091),
- (tensor(0.1054), &#39;Cop Land (1997)&#39;, 3.3771428571428572),
- (tensor(0.0652), &#39;G.I. Jane (1997)&#39;, 3.36),
- (tensor(0.1191), &#39;Quiz Show (1994)&#39;, 3.645714285714286),
- (tensor(0.2308), &#39;Fantasia (1940)&#39;, 3.7701149425287355),
- (tensor(0.1224), &#39;Rumble in the Bronx (1995)&#39;, 3.4482758620689653),
- (tensor(0.1364), &#34;Monty Python&#39;s Life of Brian (1979)&#34;, 3.7471264367816093),
- (tensor(0.3310), &#39;Lawrence of Arabia (1962)&#39;, 4.23121387283237),
- (tensor(0.0979), &#34;My Best Friend&#39;s Wedding (1997)&#34;, 3.36046511627907),
- (tensor(0.1806),
-  &#39;Snow White and the Seven Dwarfs (1937)&#39;,
-  3.7093023255813953),
- (tensor(0.2589), &#39;Gone with the Wind (1939)&#39;, 3.871345029239766),
- (tensor(0.1452), &#39;Big Night (1996)&#39;, 3.9005847953216373),
- (tensor(0.0458),
-  &#39;Star Trek III: The Search for Spock (1984)&#39;,
-  3.111111111111111),
- (tensor(0.1980), &#39;Heathers (1989)&#39;, 3.690058479532164),
- (tensor(0.3333), &#39;Glory (1989)&#39;, 4.076023391812866),
- (tensor(0.1660), &#39;Cape Fear (1991)&#39;, 3.456140350877193),
- (tensor(0.1648), &#39;Full Metal Jacket (1987)&#39;, 3.6823529411764704),
- (tensor(0.0927), &#39;Grease (1978)&#39;, 3.347058823529412),
- (tensor(0.2141), &#39;Clueless (1995)&#39;, 3.458823529411765),
- (tensor(0.0804), &#39;Ghost (1990)&#39;, 3.4647058823529413),
- (tensor(0.1782), &#39;Sleepers (1996)&#39;, 3.514792899408284),
- (tensor(0.2335), &#39;In the Line of Fire (1993)&#39;, 3.7928994082840237),
- (tensor(0.0439), &#39;Mother (1996)&#39;, 3.1301775147928996),
- (tensor(0.0663), &#39;Everyone Says I Love You (1996)&#39;, 3.2738095238095237),
- (tensor(0.1300), &#39;Piano, The (1993)&#39;, 3.6011904761904763),
- (tensor(0.0887), &#39;Die Hard 2 (1990)&#39;, 3.355421686746988),
- (tensor(0.3237), &#39;Bridge on the River Kwai, The (1957)&#39;, 4.175757575757576),
- (tensor(0.2987), &#39;Cool Hand Luke (1967)&#39;, 3.9939024390243905),
- (tensor(0.1716), &#39;American President, The (1995)&#39;, 3.6280487804878048),
- (tensor(0.0726), &#39;Pretty Woman (1990)&#39;, 3.323170731707317),
- (tensor(-0.0561), &#39;Nutty Professor, The (1996)&#39;, 2.914110429447853),
- (tensor(0.3410), &#39;Secrets &amp; Lies (1996)&#39;, 4.265432098765432),
- (tensor(0.1108), &#39;While You Were Sleeping (1995)&#39;, 3.549382716049383),
- (tensor(0.1977), &#39;Birds, The (1963)&#39;, 3.808641975308642),
- (tensor(0.0112), &#39;Kingpin (1996)&#39;, 3.1296296296296298),
- (tensor(-0.0120), &#39;George of the Jungle (1997)&#39;, 2.685185185185185),
- (tensor(0.0477),
-  &#39;Star Trek VI: The Undiscovered Country (1991)&#39;,
-  3.279503105590062),
- (tensor(0.0381), &#39;First Wives Club, The (1996)&#39;, 3.01875),
- (tensor(0.1805), &#39;Grosse Pointe Blank (1997)&#39;, 3.675),
- (tensor(0.4525), &#39;Apt Pupil (1998)&#39;, 4.1),
- (tensor(-0.0077), &#39;Dragonheart (1996)&#39;, 3.0822784810126582),
- (tensor(0.0363), &#39;Lost World: Jurassic Park, The (1997)&#39;, 2.9430379746835444),
- (tensor(0.1406), &#39;Executive Decision (1996)&#39;, 3.356687898089172),
- (tensor(0.2953), &#39;Right Stuff, The (1983)&#39;, 3.917197452229299),
- (tensor(0.1410), &#39;Swingers (1996)&#39;, 3.828025477707006),
- (tensor(-0.0865),
-  &#39;Beavis and Butt-head Do America (1996)&#39;,
-  2.7884615384615383),
- (tensor(0.1811), &#39;Seven Years in Tibet (1997)&#39;, 3.458064516129032),
- (tensor(0.1293), &#39;Crimson Tide (1995)&#39;, 3.6298701298701297),
- (tensor(0.1202), &#39;Highlander (1986)&#39;, 3.5359477124183005),
- (tensor(0.2171), &#39;Fried Green Tomatoes (1991)&#39;, 3.764705882352941),
- (tensor(0.3361), &#39;African Queen, The (1951)&#39;, 4.184210526315789),
- (tensor(0.1529), &#39;Abyss, The (1989)&#39;, 3.589403973509934),
- (tensor(0.0549), &#39;Die Hard: With a Vengeance (1995)&#39;, 3.2847682119205297),
- (tensor(0.0415), &#39;Firm, The (1993)&#39;, 3.2781456953642385),
- (tensor(0.1984), &#39;Remains of the Day, The (1993)&#39;, 3.94),
- (tensor(0.1416), &#39;Sneakers (1992)&#39;, 3.513333333333333),
- (tensor(0.1250), &#39;Professional, The (1994)&#39;, 3.704697986577181),
- (tensor(0.0914), &#39;Happy Gilmore (1996)&#39;, 3.389261744966443),
- (tensor(0.1714), &#39;Clerks (1994)&#39;, 3.804054054054054),
- (tensor(0.0427), &#39;Grumpier Old Men (1995)&#39;, 3.0405405405405403),
- (tensor(0.2110),
-  &#39;Like Water For Chocolate (Como agua para chocolate) (1992)&#39;,
-  3.804054054054054),
- (tensor(0.2631), &#39;Reservoir Dogs (1992)&#39;, 3.9864864864864864),
- (tensor(0.2299), &#39;Donnie Brasco (1997)&#39;, 3.802721088435374),
- (tensor(0.1580), &#39;Chinatown (1974)&#39;, 4.136054421768708),
- (tensor(-0.0244), &#39;River Wild, The (1994)&#39;, 3.143835616438356),
- (tensor(0.2819), &#39;Rainmaker, The (1997)&#39;, 3.6),
- (tensor(0.1361), &#34;Jackie Chan&#39;s First Strike (1996)&#34;, 3.2551724137931033),
- (tensor(0.1735), &#39;Kiss the Girls (1997)&#39;, 3.4615384615384617),
- (tensor(-0.0542), &#39;Spawn (1997)&#39;, 2.6153846153846154),
- (tensor(0.1701),
-  &#39;Nightmare Before Christmas, The (1993)&#39;,
-  3.5874125874125875),
- (tensor(-0.0693), &#39;Batman Returns (1992)&#39;, 2.683098591549296),
- (tensor(0.2977), &#39;Searching for Bobby Fischer (1993)&#39;, 3.9057971014492754),
- (tensor(0.3876), &#39;Maltese Falcon, The (1941)&#39;, 4.2101449275362315),
- (tensor(0.1981), &#39;Philadelphia (1993)&#39;, 3.854014598540146),
- (tensor(0.1915), &#34;Singin&#39; in the Rain (1952)&#34;, 3.9927007299270074),
- (tensor(0.2978),
-  &#39;Good, The Bad and The Ugly, The (1966)&#39;,
-  3.8613138686131387),
- (tensor(0.2217), &#39;Wag the Dog (1997)&#39;, 3.510948905109489),
- (tensor(0.0401), &#39;Interview with the Vampire (1994)&#39;, 3.1824817518248176),
- (tensor(0.0842), &#39;Home Alone (1990)&#39;, 3.0875912408759123),
- (tensor(0.1715), &#39;Con Air (1997)&#39;, 3.45985401459854),
- (tensor(0.3379), &#39;Sling Blade (1996)&#39;, 4.198529411764706),
- (tensor(0.3077), &#39;Patton (1970)&#39;, 3.9926470588235294),
- (tensor(0.3119), &#39;Gattaca (1997)&#39;, 3.5955882352941178),
- (tensor(0.0587), &#39;Peacemaker, The (1997)&#39;, 3.2720588235294117),
- (tensor(-0.0681), &#39;Multiplicity (1996)&#39;, 2.8358208955223883),
- (tensor(0.0735), &#39;Crow, The (1994)&#39;, 3.417910447761194),
- (tensor(0.2369), &#39;Room with a View, A (1986)&#39;, 3.985074626865672),
- (tensor(0.1426), &#39;Ed Wood (1994)&#39;, 3.601503759398496),
- (tensor(-0.1892), &#39;Jungle2Jungle (1997)&#39;, 2.4393939393939394),
- (tensor(0.0576), &#39;GoldenEye (1995)&#39;, 3.2061068702290076),
- (tensor(0.3887), &#39;Manchurian Candidate, The (1962)&#39;, 4.259541984732825),
- (tensor(-0.0141),
-  &#39;Austin Powers: International Man of Mystery (1997)&#39;,
-  3.246153846153846),
- (tensor(0.1047),
-  &#39;Mystery Science Theater 3000: The Movie (1996)&#39;,
-  3.4307692307692306),
- (tensor(0.2296), &#39;Shine (1996)&#39;, 3.9224806201550386),
- (tensor(0.2346), &#39;Bound (1996)&#39;, 3.8217054263565893),
- (tensor(0.1019), &#39;Cinderella (1950)&#39;, 3.5813953488372094),
- (tensor(0.0602), &#39;Mask, The (1994)&#39;, 3.193798449612403),
- (tensor(0.1392), &#39;Ghost and the Darkness, The (1996)&#39;, 3.203125),
- (tensor(-0.0040), &#39;Father of the Bride Part II (1995)&#39;, 2.8984375),
- (tensor(0.2186), &#39;Maverick (1994)&#39;, 3.46875),
- (tensor(0.1798), &#39;Last of the Mohicans, The (1992)&#39;, 3.546875),
- (tensor(-0.0529), &#39;Natural Born Killers (1994)&#39;, 2.953125),
- (tensor(-0.1095), &#39;Crash (1996)&#39;, 2.546875),
- (tensor(0.2439), &#39;Some Like It Hot (1959)&#39;, 3.984375),
- (tensor(0.1661), &#39;Absolute Power (1997)&#39;, 3.37007874015748),
- (tensor(0.2805), &#39;Nikita (La Femme Nikita) (1990)&#39;, 4.0078740157480315),
- (tensor(0.1279), &#39;Hunchback of Notre Dame, The (1996)&#39;, 3.377952755905512),
- (tensor(0.1001), &#39;Platoon (1986)&#39;, 3.6929133858267718),
- (tensor(-0.1193), &#39;Event Horizon (1997)&#39;, 2.574803149606299),
- (tensor(0.0901), &#39;Stargate (1994)&#39;, 3.141732283464567),
- (tensor(-0.0161), &#39;James and the Giant Peach (1996)&#39;, 3.126984126984127),
- (tensor(0.2029), &#39;Jackie Brown (1997)&#39;, 3.642857142857143),
- (tensor(0.1992), &#39;My Fair Lady (1964)&#39;, 3.816),
- (tensor(-0.0535), &#39;Lost Highway (1997)&#39;, 3.136),
- (tensor(0.3496), &#39;12 Angry Men (1957)&#39;, 4.344),
- (tensor(0.1808), &#39;Cold Comfort Farm (1995)&#39;, 3.824),
- (tensor(0.3852), &#39;Henry V (1989)&#39;, 4.137096774193548),
- (tensor(0.3180), &#39;Great Escape, The (1963)&#39;, 4.104838709677419),
- (tensor(0.1548), &#39;Amistad (1997)&#39;, 3.8548387096774195),
- (tensor(0.0377), &#39;Alien: Resurrection (1997)&#39;, 3.096774193548387),
- (tensor(0.0577), &#39;Under Siege (1992)&#39;, 3.2903225806451615),
- (tensor(0.2124), &#39;Ben-Hur (1959)&#39;, 3.8306451612903225),
- (tensor(0.1106), &#39;Dumbo (1941)&#39;, 3.4959349593495936),
- (tensor(0.1943), &#39;Bonnie and Clyde (1967)&#39;, 3.819672131147541),
- (tensor(0.1623), &#39;My Left Foot (1989)&#39;, 3.8512396694214877),
- (tensor(0.2339), &#39;Harold and Maude (1971)&#39;, 3.8181818181818183),
- (tensor(0.2998), &#39;Killing Fields, The (1984)&#39;, 4.132231404958677),
- (tensor(0.1800), &#39;Magnificent Seven, The (1954)&#39;, 3.9421487603305785),
- (tensor(0.1304), &#39;Carrie (1976)&#39;, 3.5041322314049586),
- (tensor(0.2248), &#39;Cinema Paradiso (1988)&#39;, 4.1735537190082646),
- (tensor(0.1454), &#39;Deer Hunter, The (1978)&#39;, 3.8333333333333335),
- (tensor(0.0535), &#39;Net, The (1995)&#39;, 3.0083333333333333),
- (tensor(0.1003), &#34;Bram Stoker&#39;s Dracula (1992)&#34;, 3.158333333333333),
- (tensor(0.1049), &#39;Crying Game, The (1992)&#39;, 3.6218487394957983),
- (tensor(0.0064), &#39;Michael (1996)&#39;, 3.319327731092437),
- (tensor(0.2163), &#39;Real Genius (1985)&#39;, 3.6638655462184873),
- (tensor(0.3878), &#39;Wrong Trousers, The (1993)&#39;, 4.466101694915254),
- (tensor(0.2887), &#39;Hoop Dreams (1994)&#39;, 4.094017094017094),
- (tensor(0.3319), &#39;Kolya (1996)&#39;, 3.9914529914529915),
- (tensor(0.0698), &#39;Star Trek: The Motion Picture (1979)&#39;, 3.034188034188034),
- (tensor(0.2623), &#39;Raging Bull (1980)&#39;, 4.120689655172414),
- (tensor(0.1958), &#39;Being There (1979)&#39;, 3.9051724137931036),
- (tensor(0.0246), &#39;Army of Darkness (1993)&#39;, 3.4310344827586206),
- (tensor(0.0646), &#39;Star Trek: Generations (1994)&#39;, 3.336206896551724),
- (tensor(0.0059), &#39;Frighteners, The (1996)&#39;, 3.234782608695652),
- (tensor(0.2948), &#39;Arsenic and Old Lace (1944)&#39;, 4.078260869565217),
- (tensor(0.0736), &#39;Beautiful Girls (1996)&#39;, 3.391304347826087),
- (tensor(0.1004), &#34;What&#39;s Eating Gilbert Grape (1993)&#34;, 3.5391304347826087),
- (tensor(0.2833), &#39;Rosewood (1997)&#39;, 3.6666666666666665),
- (tensor(-0.0152), &#39;Pink Floyd - The Wall (1982)&#39;, 3.3508771929824563),
- (tensor(0.0507), &#39;Batman Forever (1995)&#39;, 2.6666666666666665),
- (tensor(0.2200), &#39;Edge, The (1997)&#39;, 3.5398230088495577),
- (tensor(0.5091), &#39;As Good As It Gets (1997)&#39;, 4.196428571428571),
- (tensor(0.0826), &#39;One Fine Day (1996)&#39;, 3.232142857142857),
- (tensor(0.1406), &#39;Welcome to the Dollhouse (1995)&#39;, 3.7232142857142856),
- (tensor(0.4589), &#39;Close Shave, A (1995)&#39;, 4.491071428571429),
- (tensor(0.1282),
-  &#39;Adventures of Priscilla, Queen of the Desert, The (1994)&#39;,
-  3.5945945945945947),
- (tensor(0.0056), &#39;Nightmare on Elm Street, A (1984)&#39;, 3.171171171171171),
- (tensor(0.0227), &#39;Hudsucker Proxy, The (1994)&#39;, 3.5545454545454547),
- (tensor(-0.0158), &#39;101 Dalmatians (1996)&#39;, 2.908256880733945),
- (tensor(0.1527), &#39;Tombstone (1993)&#39;, 3.6666666666666665),
- (tensor(0.1490), &#39;Ice Storm, The (1997)&#39;, 3.611111111111111),
- (tensor(0.0531), &#39;Conan the Barbarian (1981)&#39;, 3.046728971962617),
- (tensor(0.0803), &#39;On Golden Pond (1981)&#39;, 3.556603773584906),
- (tensor(0.1355), &#39;Scream 2 (1997)&#39;, 3.2169811320754715),
- (tensor(-0.2589), &#39;Cable Guy, The (1996)&#39;, 2.339622641509434),
- (tensor(0.0570),
-  &#34;William Shakespeare&#39;s Romeo and Juliet (1996)&#34;,
-  3.5943396226415096),
- (tensor(0.2797), &#39;Mr. Smith Goes to Washington (1939)&#39;, 4.123809523809523),
- (tensor(0.0673), &#39;True Romance (1993)&#39;, 3.6153846153846154),
- (tensor(0.2919), &#39;Strictly Ballroom (1992)&#39;, 4.028846153846154),
- (tensor(0.0009), &#39;Craft, The (1996)&#39;, 3.1153846153846154),
- (tensor(0.0626), &#39;Outbreak (1995)&#39;, 3.2403846153846154),
- (tensor(0.2873), &#39;Philadelphia Story, The (1940)&#39;, 4.115384615384615),
- (tensor(-0.0006), &#39;Ace Ventura: Pet Detective (1994)&#39;, 3.0485436893203883),
- (tensor(0.0989), &#39;Benny &amp; Joon (1993)&#39;, 3.4607843137254903),
- (tensor(0.2779), &#39;In the Name of the Father (1993)&#39;, 3.911764705882353),
- (tensor(0.1995), &#39;Little Women (1994)&#39;, 3.676470588235294),
- (tensor(-0.1028), &#39;Waterworld (1995)&#39;, 2.803921568627451),
- (tensor(0.0574), &#39;Young Guns (1988)&#39;, 3.207920792079208),
- (tensor(0.1467), &#39;Basic Instinct (1992)&#39;, 3.227722772277228),
- (tensor(-0.1178), &#39;Mimic (1997)&#39;, 2.742574257425743),
- (tensor(0.1110), &#39;Pinocchio (1940)&#39;, 3.6732673267326734),
- (tensor(0.1672), &#39;Miracle on 34th Street (1994)&#39;, 3.722772277227723),
- (tensor(0.0506), &#39;Sex, Lies, and Videotape (1989)&#39;, 3.4752475247524752),
- (tensor(-0.0825), &#39;Down Periscope (1996)&#39;, 2.702970297029703),
- (tensor(-0.0403), &#39;Alien 3 (1992)&#39;, 2.83),
- (tensor(0.0743), &#34;Muriel&#39;s Wedding (1994)&#34;, 3.55),
- (tensor(0.1586), &#39;Private Parts (1997)&#39;, 3.53),
- (tensor(0.0029), &#39;I Know What You Did Last Summer (1997)&#39;, 3.06),
- (tensor(0.1663),
-  &#39;American Werewolf in London, An (1981)&#39;,
-  3.5353535353535355),
- (tensor(0.1902), &#39;Streetcar Named Desire, A (1951)&#39;, 3.816326530612245),
- (tensor(0.0796), &#39;Dirty Dancing (1987)&#39;, 3.1020408163265305),
- (tensor(0.0144),
-  &#34;Romy and Michele&#39;s High School Reunion (1997)&#34;,
-  3.061224489795918),
- (tensor(0.3526), &#39;Day the Earth Stood Still, The (1951)&#39;, 3.9381443298969074),
- (tensor(0.2101), &#39;Spitfire Grill, The (1996)&#39;, 3.804123711340206),
- (tensor(0.1565), &#39;Desperado (1995)&#39;, 3.4536082474226806),
- (tensor(0.0442), &#39;Client, The (1994)&#39;, 3.381443298969072),
- (tensor(0.0888), &#39;City of Lost Children, The (1995)&#39;, 3.7916666666666665),
- (tensor(0.0335), &#39;Fierce Creatures (1997)&#39;, 3.1145833333333335),
- (tensor(0.0706), &#39;Jumanji (1995)&#39;, 3.3125),
- (tensor(0.2617),
-  &#39;Mrs. Brown (Her Majesty, Mrs. Brown) (1997)&#39;,
-  3.9479166666666665),
- (tensor(0.1219), &#34;Breakfast at Tiffany&#39;s (1961)&#34;, 3.7263157894736842),
- (tensor(-0.0592), &#39;So I Married an Axe Murderer (1993)&#39;, 3.0526315789473686),
- (tensor(0.0261), &#39;Matilda (1996)&#39;, 3.210526315789474),
- (tensor(0.0564), &#39;2 Days in the Valley (1996)&#39;, 3.225806451612903),
- (tensor(0.2874),
-  &#39;My Life as a Dog (Mitt liv som hund) (1985)&#39;,
-  3.978494623655914),
- (tensor(0.2717), &#39;Duck Soup (1933)&#39;, 4.0),
- (tensor(-0.0582), &#39;Very Brady Sequel, A (1996)&#39;, 2.3978494623655915),
- (tensor(-0.0920), &#39;Space Jam (1996)&#39;, 2.774193548387097),
- (tensor(-0.0053), &#39;Cliffhanger (1993)&#39;, 3.021505376344086),
- (tensor(0.0279), &#39;Money Talks (1997)&#39;, 2.8152173913043477),
- (tensor(0.1265),
-  &#39;Return of the Pink Panther, The (1974)&#39;,
-  3.5543478260869565),
- (tensor(0.1012), &#39;Michael Collins (1996)&#39;, 3.4565217391304346),
- (tensor(0.0284), &#39;From Dusk Till Dawn (1996)&#39;, 3.119565217391304),
- (tensor(0.1900), &#39;Rob Roy (1995)&#39;, 3.5652173913043477),
- (tensor(0.0246), &#39;Demolition Man (1993)&#39;, 3.152173913043478),
- (tensor(0.0166),
-  &#39;Unbearable Lightness of Being, The (1988)&#39;,
-  3.4565217391304346),
- (tensor(-0.0908), &#39;Bean (1997)&#39;, 2.659340659340659),
- (tensor(0.0767), &#39;Casino (1995)&#39;, 3.6483516483516483),
- (tensor(0.0783), &#39;Escape from New York (1981)&#39;, 3.241758241758242),
- (tensor(0.1428), &#39;Manhattan (1979)&#39;, 3.769230769230769),
- (tensor(0.1397), &#39;Madness of King George, The (1994)&#39;, 3.769230769230769),
- (tensor(-0.1703), &#39;Escape from L.A. (1996)&#39;, 2.4615384615384617),
- (tensor(0.0548), &#39;Four Rooms (1995)&#39;, 3.033333333333333),
- (tensor(0.1960), &#39;Rebel Without a Cause (1955)&#39;, 3.8555555555555556),
- (tensor(0.2477),
-  &#39;Rosencrantz and Guildenstern Are Dead (1990)&#39;,
-  3.888888888888889),
- (tensor(0.0895), &#39;Nixon (1995)&#39;, 3.1222222222222222),
- (tensor(0.2955), &#39;Hamlet (1996)&#39;, 4.011111111111111),
- (tensor(0.0964), &#39;Grifters, The (1990)&#39;, 3.4831460674157304),
- (tensor(0.2634), &#39;Richard III (1995)&#39;, 3.831460674157303),
- (tensor(0.0797), &#34;Miller&#39;s Crossing (1990)&#34;, 3.651685393258427),
- (tensor(0.1244), &#39;Evil Dead II (1987)&#39;, 3.5168539325842696),
- (tensor(0.1325), &#39;Three Musketeers, The (1993)&#39;, 3.303370786516854),
- (tensor(0.3251), &#39;High Noon (1952)&#39;, 4.1022727272727275),
- (tensor(-0.0355), &#39;Addams Family Values (1993)&#39;, 2.8160919540229883),
- (tensor(0.0183), &#39;Strange Days (1995)&#39;, 3.264367816091954),
- (tensor(-0.0348), &#39;To Die For (1995)&#39;, 3.2758620689655173),
- (tensor(-0.0091), &#39;Jackal, The (1997)&#39;, 3.1494252873563218),
- (tensor(0.0062), &#39;First Knight (1995)&#39;, 3.0232558139534884),
- (tensor(-0.2114), &#39;Beautician and the Beast, The (1997)&#39;, 2.313953488372093),
- (tensor(0.2158), &#39;Cape Fear (1962)&#39;, 3.5232558139534884),
- (tensor(0.1156), &#39;Bullets Over Broadway (1994)&#39;, 3.7209302325581395),
- (tensor(0.0778), &#39;My Fellow Americans (1996)&#39;, 3.1627906976744184),
- (tensor(0.0830), &#39;Copycat (1995)&#39;, 3.302325581395349),
- (tensor(0.1429), &#39;Jungle Book, The (1994)&#39;, 3.5647058823529414),
- (tensor(0.0706), &#39;White Squall (1996)&#39;, 3.4),
- (tensor(0.1877), &#39;Omen, The (1976)&#39;, 3.388235294117647),
- (tensor(-0.0110), &#39;Up Close and Personal (1996)&#39;, 3.1882352941176473),
- (tensor(0.1212), &#39;Bob Roberts (1992)&#39;, 3.7411764705882353),
- (tensor(0.0283), &#39;French Kiss (1995)&#39;, 3.3333333333333335),
- (tensor(-0.0212), &#39;Muppet Treasure Island (1996)&#39;, 2.761904761904762),
- (tensor(0.2657), &#39;Three Colors: Red (1994)&#39;, 4.0602409638554215),
- (tensor(-0.0254), &#39;Arrival, The (1996)&#39;, 3.036144578313253),
- (tensor(0.1127), &#39;Sword in the Stone, The (1963)&#39;, 3.3292682926829267),
- (tensor(-0.0164), &#39;Mulholland Falls (1996)&#39;, 2.8780487804878048),
- (tensor(-0.0892), &#39;Juror, The (1996)&#39;, 2.817073170731707),
- (tensor(0.1268), &#39;Sleeper (1973)&#39;, 3.6341463414634148),
- (tensor(-0.0379),
-  &#39;Cook the Thief His Wife &amp; Her Lover, The (1989)&#39;,
-  3.024390243902439),
- (tensor(0.0194), &#39;Santa Clause, The (1994)&#39;, 3.097560975609756),
- (tensor(0.0534), &#39;Somewhere in Time (1980)&#39;, 3.426829268292683),
- (tensor(0.0996), &#39;Legends of the Fall (1994)&#39;, 3.45679012345679),
- (tensor(0.1060), &#39;Nell (1994)&#39;, 3.4814814814814814),
- (tensor(0.1880), &#39;Alice in Wonderland (1951)&#39;, 3.6666666666666665),
- (tensor(0.2506), &#39;It Happened One Night (1934)&#39;, 4.012345679012346),
- (tensor(0.0187), &#39;I.Q. (1994)&#39;, 3.3209876543209877),
- (tensor(0.0557), &#39;Crumb (1994)&#39;, 3.7901234567901234),
- (tensor(0.0087), &#39;Picture Perfect (1997)&#39;, 2.962962962962963),
- (tensor(0.1561), &#39;Man Who Would Be King, The (1975)&#39;, 4.025),
- (tensor(0.3356), &#39;Treasure of the Sierra Madre, The (1948)&#39;, 4.1),
- (tensor(-0.0949), &#39;Phantom, The (1996)&#39;, 2.575),
- (tensor(-0.0377), &#39;Midnight in the Garden of Good and Evil (1997)&#39;, 3.1625),
- (tensor(-0.0795), &#39;Chain Reaction (1996)&#39;, 2.7),
- (tensor(0.2491), &#39;Eat Drink Man Woman (1994)&#39;, 4.05),
- (tensor(-0.0094), &#39;Dolores Claiborne (1994)&#39;, 3.3417721518987342),
- (tensor(0.0462), &#39;City Hall (1996)&#39;, 3.1392405063291138),
- (tensor(0.0809), &#39;Pump Up the Volume (1990)&#39;, 3.4177215189873418),
- (tensor(0.2038), &#39;Better Off Dead... (1985)&#39;, 3.569620253164557),
- (tensor(0.1254), &#39;Secret Garden, The (1993)&#39;, 3.5443037974683542),
- (tensor(0.1286), &#34;Marvin&#39;s Room (1996)&#34;, 3.58974358974359),
- (tensor(0.2480), &#39;Shadowlands (1993)&#39;, 3.9358974358974357),
- (tensor(0.1189), &#39;Crucible, The (1996)&#39;, 3.3376623376623376),
- (tensor(0.1232), &#39;Breakdown (1997)&#39;, 3.4025974025974026),
- (tensor(0.0046), &#39;Victor/Victoria (1982)&#39;, 3.3376623376623376),
- (tensor(-0.0159), &#39;Reality Bites (1994)&#39;, 2.961038961038961),
- (tensor(-0.0354), &#39;Brady Bunch Movie, The (1995)&#39;, 2.8026315789473686),
- (tensor(0.0753), &#39;Circle of Friends (1995)&#39;, 3.486842105263158),
- (tensor(0.1191), &#39;Don Juan DeMarco (1995)&#39;, 3.5526315789473686),
- (tensor(0.2066), &#39;Wings of the Dove, The (1997)&#39;, 3.68),
- (tensor(-0.1704), &#39;Vegas Vacation (1997)&#39;, 2.4),
- (tensor(0.1845), &#39;Winnie the Pooh and the Blustery Day (1968)&#39;, 3.8),
- (tensor(-0.0278), &#39;Robin Hood: Prince of Thieves (1991)&#39;, 3.2266666666666666),
- (tensor(0.2155), &#39;Six Degrees of Separation (1993)&#39;, 3.77027027027027),
- (tensor(0.1166), &#39;Smoke (1995)&#39;, 3.6216216216216215),
- (tensor(0.1286), &#39;Breaking the Waves (1996)&#39;, 3.72972972972973),
- (tensor(-0.1943), &#39;Sgt. Bilko (1996)&#39;, 2.5675675675675675),
- (tensor(0.0105), &#39;Hoodlum (1997)&#39;, 2.9315068493150687),
- (tensor(0.0539), &#39;Brothers McMullen, The (1995)&#39;, 3.452054794520548),
- (tensor(-0.0957), &#39;Parent Trap, The (1961)&#39;, 3.095890410958904),
- (tensor(0.1177), &#39;Heavy Metal (1981)&#39;, 3.26027397260274),
- (tensor(0.0228), &#34;She&#39;s the One (1996)&#34;, 3.0136986301369864),
- (tensor(0.1524), &#39;Big Sleep, The (1946)&#39;, 4.027397260273973),
- (tensor(0.1239), &#39;Desperate Measures (1998)&#39;, 3.3194444444444446),
- (tensor(0.3051), &#39;Third Man, The (1949)&#39;, 4.333333333333333),
- (tensor(0.0423), &#39;20,000 Leagues Under the Sea (1954)&#39;, 3.5),
- (tensor(0.0303), &#39;Angels and Insects (1995)&#39;, 3.4166666666666665),
- (tensor(0.0486),
-  &#39;Seventh Seal, The (Sjunde inseglet, Det) (1957)&#39;,
-  3.5416666666666665),
- (tensor(0.1146), &#39;Othello (1995)&#39;, 3.611111111111111),
- (tensor(0.1266), &#39;Wedding Singer, The (1998)&#39;, 3.486111111111111),
- (tensor(-0.0296),
-  &#34;Things to Do in Denver when You&#39;re Dead (1995)&#34;,
-  3.1549295774647885),
- (tensor(0.1255), &#39;How to Make an American Quilt (1995)&#39;, 3.3380281690140845),
- (tensor(0.1644), &#39;Secret of Roan Inish, The (1994)&#39;, 3.859154929577465),
- (tensor(0.0802), &#39;Restoration (1995)&#39;, 3.464788732394366),
- (tensor(-0.0185), &#39;Diabolique (1996)&#39;, 2.887323943661972),
- (tensor(0.0752), &#39;Jack (1996)&#39;, 3.142857142857143),
- (tensor(0.2039), &#39;Ran (1985)&#39;, 4.1),
- (tensor(0.0892), &#39;Heavenly Creatures (1994)&#39;, 3.6714285714285713),
- (tensor(0.1439), &#39;Enchanted April (1991)&#39;, 3.9285714285714284),
- (tensor(-0.1824), &#34;McHale&#39;s Navy (1997)&#34;, 2.1884057971014492),
- (tensor(0.2455), &#34;Antonia&#39;s Line (1995)&#34;, 3.9565217391304346),
- (tensor(-0.0234),
-  &#39;Naked Gun 33 1/3: The Final Insult (1994)&#39;,
-  2.782608695652174),
- (tensor(-0.0501), &#39;Kull the Conqueror (1997)&#39;, 2.63768115942029),
- (tensor(0.0890), &#39;Dumb &amp; Dumber (1994)&#39;, 3.0),
- (tensor(0.2692), &#39;Christmas Carol, A (1938)&#39;, 4.057971014492754),
- (tensor(0.1118), &#39;Glengarry Glen Ross (1992)&#39;, 3.463768115942029),
- (tensor(-0.0393), &#39;Body Snatchers (1993)&#39;, 2.971014492753623),
- (tensor(-0.0411), &#34;Preacher&#39;s Wife, The (1996)&#34;, 2.926470588235294),
- (tensor(0.1808), &#39;Dial M for Murder (1954)&#39;, 4.0),
- (tensor(0.2737), &#39;Roman Holiday (1953)&#39;, 4.102941176470588),
- (tensor(0.1733), &#39;Man Without a Face, The (1993)&#39;, 3.5441176470588234),
- (tensor(0.1735), &#39;Bringing Up Baby (1938)&#39;, 3.838235294117647),
- (tensor(0.0072), &#39;Cool Runnings (1993)&#39;, 3.161764705882353),
- (tensor(-0.0542), &#39;Hot Shots! Part Deux (1993)&#39;, 2.764705882352941),
- (tensor(0.2238), &#39;Adventures of Robin Hood, The (1938)&#39;, 3.791044776119403),
- (tensor(0.1797), &#39;Short Cuts (1993)&#39;, 3.7761194029850746),
- (tensor(0.3280), &#39;Forbidden Planet (1956)&#39;, 3.8358208955223883),
- (tensor(-0.0180), &#39;Private Benjamin (1980)&#39;, 2.955223880597015),
- (tensor(-0.0316),
-  &#39;Bridges of Madison County, The (1995)&#39;,
-  3.1641791044776117),
- (tensor(0.2613), &#39;Quiet Man, The (1952)&#39;, 4.029850746268656),
- (tensor(0.3865),
-  &#39;Wallace &amp; Gromit: The Best of Aardman Animation (1996)&#39;,
-  4.447761194029851),
- (tensor(-0.1380), &#39;Wolf (1994)&#39;, 2.701492537313433),
- (tensor(-0.2698), &#39;Striptease (1996)&#39;, 2.2388059701492535),
- (tensor(0.0819), &#39;Hercules (1997)&#39;, 3.515151515151515),
- (tensor(-0.0499), &#39;Tommy Boy (1995)&#39;, 2.909090909090909),
- (tensor(-0.1359), &#39;Jaws 2 (1978)&#39;, 2.6666666666666665),
- (tensor(0.2049), &#39;Anastasia (1997)&#39;, 3.4242424242424243),
- (tensor(0.0779), &#39;Mirror Has Two Faces, The (1996)&#39;, 3.3636363636363638),
- (tensor(0.1204), &#39;Cyrano de Bergerac (1990)&#39;, 3.8181818181818183),
- (tensor(0.2353), &#39;Rebecca (1940)&#39;, 3.9696969696969697),
- (tensor(0.2414), &#39;All About Eve (1950)&#39;, 4.045454545454546),
- (tensor(0.3286), &#39;Grand Day Out, A (1992)&#39;, 4.106060606060606),
- (tensor(0.0758), &#39;Shallow Grave (1994)&#39;, 3.8181818181818183),
- (tensor(0.0987), &#39;Diva (1981)&#39;, 3.727272727272727),
- (tensor(0.1564), &#39;In the Company of Men (1997)&#39;, 3.712121212121212),
- (tensor(0.0435), &#39;Delicatessen (1991)&#39;, 3.876923076923077),
- (tensor(-0.1272), &#39;Candyman (1992)&#39;, 2.723076923076923),
- (tensor(0.0894), &#39;Supercop (1992)&#39;, 3.5384615384615383),
- (tensor(0.0803), &#39;Age of Innocence, The (1993)&#39;, 3.3846153846153846),
- (tensor(0.0272), &#39;Kids in the Hall: Brain Candy (1996)&#39;, 3.076923076923077),
- (tensor(0.0732), &#39;Deconstructing Harry (1997)&#39;, 3.4),
- (tensor(0.2613), &#39;Sunset Blvd. (1950)&#39;, 4.2),
- (tensor(-0.1983), &#39;Lawnmower Man, The (1992)&#39;, 2.4461538461538463),
- (tensor(0.2531), &#39;Jean de Florette (1986)&#39;, 4.109375),
- (tensor(0.0648), &#39;Stealing Beauty (1996)&#39;, 3.375),
- (tensor(0.1621), &#34;Eve&#39;s Bayou (1997)&#34;, 3.609375),
- (tensor(0.1050), &#39;Old Yeller (1957)&#39;, 3.484375),
- (tensor(0.0252), &#39;U Turn (1997)&#39;, 3.359375),
- (tensor(0.2205), &#39;Three Colors: Blue (1993)&#39;, 4.015625),
- (tensor(0.0987), &#39;Night of the Living Dead (1968)&#39;, 3.421875),
- (tensor(0.0776), &#39;Extreme Measures (1996)&#39;, 3.171875),
- (tensor(0.1334), &#39;Rudy (1993)&#39;, 3.3125),
- (tensor(0.2386), &#39;Sabrina (1954)&#39;, 3.796875),
- (tensor(0.0873), &#39;Dazed and Confused (1993)&#39;, 3.46875),
- (tensor(0.0372), &#39;Fan, The (1996)&#39;, 3.09375),
- (tensor(-0.1445),
-  &#39;Star Trek V: The Final Frontier (1989)&#39;,
-  2.3968253968253967),
- (tensor(0.2322), &#39;Local Hero (1983)&#39;, 3.9682539682539684),
- (tensor(0.0926), &#39;Immortal Beloved (1994)&#39;, 3.4603174603174605),
- (tensor(0.0998), &#39;Jane Eyre (1996)&#39;, 3.4761904761904763),
- (tensor(0.1916), &#39;Apartment, The (1960)&#39;, 3.9365079365079363),
- (tensor(0.0856), &#39;Walk in the Clouds, A (1995)&#39;, 3.2857142857142856),
- (tensor(-0.1266), &#39;Batman &amp; Robin (1997)&#39;, 2.4516129032258065),
- (tensor(-0.0116), &#39;Forget Paris (1995)&#39;, 3.193548387096774),
- (tensor(0.1059), &#39;My Favorite Year (1982)&#39;, 3.532258064516129),
- (tensor(0.2262), &#39;Cat on a Hot Tin Roof (1958)&#39;, 3.9516129032258065),
- (tensor(0.0446),
-  &#39;Homeward Bound: The Incredible Journey (1993)&#39;,
-  3.2131147540983607),
- (tensor(-0.0203), &#39;Fox and the Hound, The (1981)&#39;, 3.1475409836065573),
- (tensor(0.1448), &#39;Father of the Bride (1950)&#39;, 3.5833333333333335),
- (tensor(0.2606), &#39;Thin Man, The (1934)&#39;, 4.15),
- (tensor(0.0284), &#39;Bed of Roses (1996)&#39;, 3.2333333333333334),
- (tensor(-0.1393), &#34;Weekend at Bernie&#39;s (1989)&#34;, 2.6166666666666667),
- (tensor(0.2526), &#39;Murder in the First (1995)&#39;, 3.6),
- (tensor(-0.0487), &#39;Kalifornia (1993)&#39;, 3.2203389830508473),
- (tensor(-0.0388), &#39;Sirens (1994)&#39;, 2.983050847457627),
- (tensor(0.0757), &#39;Around the World in 80 Days (1956)&#39;, 3.6610169491525424),
- (tensor(0.2637), &#39;East of Eden (1955)&#39;, 3.864406779661017),
- (tensor(0.0359), &#34;Mary Shelley&#39;s Frankenstein (1994)&#34;, 3.0677966101694913),
- (tensor(-0.0695), &#39;Last Action Hero (1993)&#39;, 2.7457627118644066),
- (tensor(0.0308), &#39;Soul Food (1997)&#39;, 3.169491525423729),
- (tensor(0.2202), &#39;39 Steps, The (1935)&#39;, 4.0508474576271185),
- (tensor(0.1754), &#39;Some Kind of Wonderful (1987)&#39;, 3.6610169491525424),
- (tensor(0.1614), &#39;Three Colors: White (1994)&#39;, 3.864406779661017),
- (tensor(0.1894), &#34;Sophie&#39;s Choice (1982)&#34;, 3.896551724137931),
- (tensor(0.2855),
-  &#39;Manon of the Spring (Manon des sources) (1986)&#39;,
-  4.120689655172414),
- (tensor(0.0805), &#39;Postman, The (1997)&#39;, 3.2241379310344827),
- (tensor(0.1249), &#39;Last Supper, The (1995)&#39;, 3.4482758620689653),
- (tensor(-0.0056), &#39;Ref, The (1994)&#39;, 3.0344827586206895),
- (tensor(0.0349), &#39;Home for the Holidays (1995)&#39;, 3.1551724137931036),
- (tensor(0.2449), &#39;Raise the Red Lantern (1991)&#39;, 4.155172413793103),
- (tensor(-0.0758), &#39;Nine Months (1995)&#39;, 2.9310344827586206),
- (tensor(-0.1034), &#39;Daylight (1996)&#39;, 2.7719298245614037),
- (tensor(0.1234), &#39;Red Corner (1997)&#39;, 3.3859649122807016),
- (tensor(-0.0132), &#39;Bedknobs and Broomsticks (1971)&#39;, 3.0701754385964914),
- (tensor(0.0678), &#39;Devil in a Blue Dress (1995)&#39;, 3.3859649122807016),
- (tensor(-0.2239), &#39;Island of Dr. Moreau, The (1996)&#39;, 2.1578947368421053),
- (tensor(0.0245),
-  &#39;To Wong Foo, Thanks for Everything! Julie Newmar (1995)&#39;,
-  2.8947368421052633),
- (tensor(0.2134), &#39;Wings of Desire (1987)&#39;, 4.0),
- (tensor(0.0435), &#39;Bad Boys (1995)&#39;, 3.1052631578947367),
- (tensor(0.1743), &#39;Bananas (1971)&#39;, 3.7017543859649122),
- (tensor(-0.0550), &#39;Robin Hood: Men in Tights (1993)&#39;, 2.5892857142857144),
- (tensor(0.2333), &#39;Celluloid Closet, The (1995)&#39;, 3.892857142857143),
- (tensor(0.2618), &#39;His Girl Friday (1940)&#39;, 4.0),
- (tensor(-0.0772), &#39;Black Sheep (1996)&#39;, 2.6363636363636362),
- (tensor(0.1667), &#39;Looking for Richard (1996)&#39;, 3.727272727272727),
- (tensor(0.2206), &#39;Apostle, The (1997)&#39;, 3.6545454545454548),
- (tensor(-0.1911),
-  &#39;Tales from the Crypt Presents: Bordello of Blood (1996)&#39;,
-  2.6363636363636362),
- (tensor(0.0276), &#39;Addicted to Love (1997)&#39;, 3.1666666666666665),
- (tensor(-0.0990), &#39;Serial Mom (1994)&#39;, 2.814814814814815),
- (tensor(0.1576), &#39;Mallrats (1995)&#39;, 3.4444444444444446),
- (tensor(0.1561),
-  &#39;Nosferatu (Nosferatu, eine Symphonie des Grauens) (1922)&#39;,
-  3.5555555555555554),
- (tensor(0.0723), &#34;Carlito&#39;s Way (1993)&#34;, 3.4074074074074074),
- (tensor(0.0291), &#39;Aristocats, The (1970)&#39;, 3.1296296296296298),
- (tensor(-0.0721), &#34;She&#39;s So Lovely (1997)&#34;, 2.7358490566037736),
- (tensor(-0.0558), &#39;Life Less Ordinary, A (1997)&#39;, 3.0754716981132075),
- (tensor(-0.0790), &#39;Barcelona (1994)&#39;, 3.018867924528302),
- (tensor(-0.1373), &#39;Last Man Standing (1996)&#39;, 2.660377358490566),
- (tensor(0.0162), &#39;Koyaanisqatsi (1983)&#39;, 3.490566037735849),
- (tensor(-0.0521), &#39;Amityville Horror, The (1979)&#39;, 2.5660377358490565),
- (tensor(-0.0627), &#39;Days of Thunder (1990)&#39;, 2.7169811320754715),
- (tensor(-0.0635), &#39;Flubber (1997)&#39;, 2.7547169811320753),
- (tensor(0.2323), &#39;Notorious (1946)&#39;, 4.115384615384615),
- (tensor(0.1378), &#39;Red Rock West (1992)&#39;, 3.5961538461538463),
- (tensor(-0.0785), &#39;Excess Baggage (1997)&#39;, 2.5384615384615383),
- (tensor(0.0481), &#39;Man Who Knew Too Little, The (1997)&#39;, 2.923076923076923),
- (tensor(0.0794), &#39;Casper (1995)&#39;, 3.076923076923077),
- (tensor(-0.0596), &#39;Pocahontas (1995)&#39;, 2.5294117647058822),
- (tensor(0.1300), &#39;MatchMaker, The (1997)&#39;, 3.176470588235294),
- (tensor(0.1195), &#39;Tin Men (1987)&#39;, 3.0784313725490198),
- (tensor(0.1546), &#39;Giant (1956)&#39;, 3.7450980392156863),
- (tensor(0.0895), &#39;American in Paris, An (1951)&#39;, 3.7),
- (tensor(0.0592), &#39;Trees Lounge (1996)&#39;, 3.24),
- (tensor(0.0290), &#39;Once Upon a Time in America (1984)&#39;, 3.4),
- (tensor(0.0998), &#39;Menace II Society (1993)&#39;, 3.46),
- (tensor(0.2233), &#39;To Catch a Thief (1955)&#39;, 4.02),
- (tensor(0.0793), &#39;Akira (1988)&#39;, 3.38),
- (tensor(0.1550), &#39;Perfect World, A (1993)&#39;, 3.68),
- (tensor(-0.1073), &#39;Love Bug, The (1969)&#39;, 2.78),
- (tensor(0.0491), &#39;Wyatt Earp (1994)&#39;, 3.1),
- (tensor(-0.0357), &#39;Kids (1995)&#39;, 3.061224489795918),
- (tensor(-0.2207), &#39;Thinner (1996)&#39;, 2.4489795918367347),
- (tensor(-0.0414), &#39;Rocket Man (1997)&#39;, 2.4081632653061225),
- (tensor(-0.0245), &#39;Mortal Kombat (1995)&#39;, 2.877551020408163),
- (tensor(-0.1033), &#39;Substitute, The (1996)&#39;, 2.693877551020408),
- (tensor(0.1607), &#39;Bulletproof (1996)&#39;, 3.204081632653061),
- (tensor(-0.0466), &#39;Great White Hype, The (1996)&#39;, 2.7551020408163267),
- (tensor(0.0515), &#39;Before Sunrise (1995)&#39;, 3.4081632653061225),
- (tensor(-0.2046), &#39;Beverly Hills Ninja (1997)&#39;, 2.3125),
- (tensor(-0.0331), &#39;Quick and the Dead, The (1995)&#39;, 3.2083333333333335),
- (tensor(0.1849), &#39;Bronx Tale, A (1993)&#39;, 3.7916666666666665),
- (tensor(-0.0917), &#39;Glimmer Man, The (1996)&#39;, 2.75),
- (tensor(-0.1078), &#39;Under Siege 2: Dark Territory (1995)&#39;, 2.4583333333333335),
- (tensor(0.0494), &#34;Smilla&#39;s Sense of Snow (1997)&#34;, 3.1666666666666665),
- (tensor(-0.1907), &#39;Booty Call (1997)&#39;, 2.1666666666666665),
- (tensor(0.0109), &#39;Cat People (1982)&#39;, 2.8958333333333335),
- (tensor(0.0589), &#39;Powder (1995)&#39;, 3.2083333333333335),
- (tensor(0.0412), &#39;Mad City (1997)&#39;, 3.25531914893617),
- (tensor(0.0492), &#39;Swimming with Sharks (1995)&#39;, 3.574468085106383),
- (tensor(0.0131), &#39;Up in Smoke (1978)&#39;, 3.25531914893617),
- (tensor(-0.0619), &#39;Sudden Death (1995)&#39;, 2.723404255319149),
- (tensor(0.0839), &#39;Dangerous Minds (1995)&#39;, 3.3404255319148937),
- (tensor(0.3038), &#39;Waiting for Guffman (1996)&#39;, 4.127659574468085),
- (tensor(0.1715), &#39;Great Dictator, The (1940)&#39;, 4.021739130434782),
- (tensor(0.0429), &#39;Doors, The (1991)&#39;, 2.9782608695652173),
- (tensor(-0.1306), &#39;Blob, The (1958)&#39;, 2.717391304347826),
- (tensor(-0.1270), &#39;Screamers (1995)&#39;, 2.652173913043478),
- (tensor(0.0429), &#39;With Honors (1994)&#39;, 3.0652173913043477),
- (tensor(0.2681), &#39;Shall We Dance? (1996)&#39;, 4.260869565217392),
- (tensor(0.0526), &#39;Malice (1993)&#39;, 3.1739130434782608),
- (tensor(0.1129), &#34;Nobody&#39;s Fool (1994)&#34;, 3.608695652173913),
- (tensor(0.0894), &#39;Bride of Frankenstein (1935)&#39;, 3.608695652173913),
- (tensor(0.2239), &#39;Farewell My Concubine (1993)&#39;, 3.9782608695652173),
- (tensor(0.0537), &#39;Paris, Texas (1984)&#39;, 3.5434782608695654),
- (tensor(0.0903), &#39;It Could Happen to You (1994)&#39;, 3.652173913043478),
- (tensor(-0.0415), &#39;Shadow, The (1994)&#39;, 2.888888888888889),
- (tensor(0.1157), &#39;Family Thing, A (1996)&#39;, 3.5555555555555554),
- (tensor(-0.1127), &#39;Species (1995)&#39;, 2.8666666666666667),
- (tensor(0.0144), &#39;Blue in the Face (1995)&#39;, 3.1777777777777776),
- (tensor(0.1395), &#39;Citizen Ruth (1996)&#39;, 3.6222222222222222),
- (tensor(-0.1937), &#34;Joe&#39;s Apartment (1996)&#34;, 2.2444444444444445),
- (tensor(0.0533), &#39;Junior (1994)&#39;, 3.022222222222222),
- (tensor(0.0577), &#34;What&#39;s Love Got to Do with It (1993)&#34;, 3.488888888888889),
- (tensor(0.2582), &#39;Sweet Hereafter, The (1997)&#39;, 3.772727272727273),
- (tensor(0.1665), &#39;When We Were Kings (1996)&#39;, 4.045454545454546),
- (tensor(0.0755),
-  &#39;To Gillian on Her 37th Birthday (1996)&#39;,
-  3.0681818181818183),
- (tensor(0.0241), &#39;Nick of Time (1995)&#39;, 3.0454545454545454),
- (tensor(-0.0754),
-  &#34;City Slickers II: The Legend of Curly&#39;s Gold (1994)&#34;,
-  2.5454545454545454),
- (tensor(0.0840), &#39;Basquiat (1996)&#39;, 3.25),
- (tensor(0.0784), &#39;Bottle Rocket (1996)&#39;, 3.4545454545454546),
- (tensor(-0.0193), &#39;Young Guns II (1990)&#39;, 2.772727272727273),
- (tensor(-0.0730), &#39;Shadow Conspiracy (1997)&#39;, 2.8636363636363638),
- (tensor(0.0385), &#39;Fire Down Below (1997)&#39;, 2.9318181818181817),
- (tensor(0.2116), &#39;Persuasion (1995)&#39;, 4.045454545454546),
- (tensor(-0.1572), &#39;Leave It to Beaver (1997)&#39;, 1.8409090909090908),
- (tensor(0.1209), &#39;M (1931)&#39;, 4.0),
- (tensor(0.0447), &#39;Fear (1996)&#39;, 3.159090909090909),
- (tensor(0.1917),
-  &#39;Return of Martin Guerre, The (Retour de Martin Guerre, Le) (1982)&#39;,
-  3.772727272727273),
- (tensor(0.1649), &#39;Ridicule (1996)&#39;, 3.7045454545454546),
- (tensor(-0.0929), &#39;Mouse Hunt (1997)&#39;, 2.477272727272727),
- (tensor(0.0407), &#39;Chamber, The (1996)&#39;, 3.0930232558139537),
- (tensor(0.0632), &#39;Renaissance Man (1994)&#39;, 3.0),
- (tensor(-0.1372), &#34;Pete&#39;s Dragon (1977)&#34;, 2.7209302325581395),
- (tensor(0.0309), &#39;Rising Sun (1993)&#39;, 2.9069767441860463),
- (tensor(-0.0867), &#39;Air Bud (1997)&#39;, 2.558139534883721),
- (tensor(0.1563), &#39;Wild Bunch, The (1969)&#39;, 4.023255813953488),
- (tensor(-0.1115), &#39;Money Train (1995)&#39;, 2.511627906976744),
- (tensor(-0.0763), &#39;Playing God (1997)&#39;, 2.627906976744186),
- (tensor(0.0016),
-  &#39;Tales From the Crypt Presents: Demon Knight (1995)&#39;,
-  2.9767441860465116),
- (tensor(0.1237), &#39;Ghost and Mrs. Muir, The (1947)&#39;, 3.6511627906976742),
- (tensor(-0.0668), &#39;Spy Hard (1996)&#39;, 2.511627906976744),
- (tensor(-0.2769), &#39;Mortal Kombat: Annihilation (1997)&#39;, 1.9534883720930232),
- (tensor(0.2909), &#39;Big Lebowski, The (1998)&#39;, 3.8333333333333335),
- (tensor(0.0319), &#39;Love Jones (1997)&#39;, 3.0952380952380953),
- (tensor(0.1642), &#39;Flirting With Disaster (1996)&#39;, 3.6904761904761907),
- (tensor(-0.0169), &#39;Congo (1995)&#39;, 2.4523809523809526),
- (tensor(0.2076), &#39;Kundun (1997)&#39;, 3.6904761904761907),
- (tensor(0.0150), &#39;Freeway (1996)&#39;, 3.357142857142857),
- (tensor(0.0707), &#39;Moll Flanders (1996)&#39;, 3.5),
- (tensor(0.1009), &#39;Gigi (1958)&#39;, 3.658536585365854),
- (tensor(0.1404), &#39;Little Princess, A (1995)&#39;, 3.658536585365854),
- (tensor(-0.1132), &#39;Johnny Mnemonic (1995)&#39;, 2.6341463414634148),
- (tensor(-0.1256), &#39;Coneheads (1993)&#39;, 2.2195121951219514),
- (tensor(-0.0678), &#39;Tank Girl (1995)&#39;, 2.8536585365853657),
- (tensor(-0.0666), &#39;That Darn Cat! (1997)&#39;, 2.4634146341463414),
- (tensor(0.0225), &#39;Associate, The (1996)&#39;, 3.2439024390243905),
- (tensor(-0.0844), &#39;Sphere (1998)&#39;, 2.926829268292683),
- (tensor(0.0417), &#39;187 (1997)&#39;, 3.024390243902439),
- (tensor(0.0613), &#39;Fallen (1998)&#39;, 3.1463414634146343),
- (tensor(0.0971), &#34;Young Poisoner&#39;s Handbook, The (1995)&#34;, 3.341463414634146),
- (tensor(0.2384),
-  &#39;Some Folks Call It a Sling Blade (1993)&#39;,
-  4.2926829268292686),
- (tensor(-0.0808), &#39;Hard Target (1993)&#39;, 2.7),
- (tensor(0.2257), &#39;Charade (1963)&#39;, 3.925),
- (tensor(0.0959), &#39;Paper, The (1994)&#39;, 3.225),
- (tensor(0.1134), &#39;Killing Zoe (1994)&#39;, 3.475),
- (tensor(0.2105), &#39;Laura (1944)&#39;, 4.1),
- (tensor(0.2596), &#39;Priest (1994)&#39;, 4.0),
- (tensor(0.0462), &#39;Disclosure (1994)&#39;, 3.0),
- (tensor(-0.0529), &#39;Harriet the Spy (1996)&#39;, 2.7),
- (tensor(-0.1229), &#39;Eddie (1996)&#39;, 2.7),
- (tensor(0.1181), &#39;Tin Drum, The (Blechtrommel, Die) (1979)&#39;, 3.7),
- (tensor(0.0515), &#39;Basketball Diaries, The (1995)&#39;, 3.425),
- (tensor(-0.1101), &#39;First Kid (1996)&#39;, 2.925),
- (tensor(0.1480), &#39;Candidate, The (1972)&#39;, 3.641025641025641),
- (tensor(-0.0548), &#39;Mary Reilly (1996)&#39;, 2.8205128205128207),
- (tensor(0.0289), &#39;Only You (1994)&#39;, 3.1538461538461537),
- (tensor(0.0527), &#39;Corrina, Corrina (1994)&#39;, 3.1538461538461537),
- (tensor(0.0476), &#39;Judge Dredd (1995)&#39;, 2.8974358974358974),
- (tensor(-0.1322), &#39;Son in Law (1993)&#39;, 2.4871794871794872),
- (tensor(0.0217), &#39;Replacement Killers, The (1998)&#39;, 3.3076923076923075),
- (tensor(0.1163), &#39;Swiss Family Robinson (1960)&#39;, 3.358974358974359),
- (tensor(-0.2369), &#39;Crow: City of Angels, The (1996)&#39;, 1.9487179487179487),
- (tensor(-0.0359), &#39;Indian in the Cupboard, The (1995)&#39;, 2.8205128205128207),
- (tensor(-0.0073), &#39;Adventures of Pinocchio, The (1996)&#39;, 3.051282051282051),
- (tensor(-0.0807), &#39;Angels in the Outfield (1994)&#39;, 2.923076923076923),
- (tensor(0.0366), &#39;Assassins (1995)&#39;, 2.871794871794872),
- (tensor(0.0305), &#39;When a Man Loves a Woman (1994)&#39;, 3.4871794871794872),
- (tensor(0.1017), &#39;Career Girls (1997)&#39;, 3.2564102564102564),
- (tensor(-0.0135), &#39;French Twist (Gazon maudit) (1995)&#39;, 3.2051282051282053),
- (tensor(-0.1961), &#39;Speed 2: Cruise Control (1997)&#39;, 2.1315789473684212),
- (tensor(0.3509), &#39;Once Upon a Time in the West (1969)&#39;, 3.8684210526315788),
- (tensor(0.0246), &#39;Howling, The (1981)&#39;, 3.026315789473684),
- (tensor(0.2054), &#39;8 1/2 (1963)&#39;, 3.8157894736842106),
- (tensor(0.0507), &#39;Get on the Bus (1996)&#39;, 3.3157894736842106),
- (tensor(-0.0790), &#39;Virtuosity (1995)&#39;, 2.736842105263158),
- (tensor(-0.1633), &#39;Anaconda (1997)&#39;, 2.289473684210526),
- (tensor(0.1677), &#39;Thousand Acres, A (1997)&#39;, 3.4054054054054053),
- (tensor(0.0049), &#39;Ace Ventura: When Nature Calls (1995)&#39;, 2.675675675675676),
- (tensor(0.0346), &#39;I Shot Andy Warhol (1996)&#39;, 3.3783783783783785),
- (tensor(-0.0154), &#39;Billy Madison (1995)&#39;, 3.081081081081081),
- (tensor(0.2053), &#39;Belle de jour (1967)&#39;, 3.945945945945946),
- (tensor(-0.0960), &#39;Sliver (1993)&#39;, 2.4054054054054053),
- (tensor(-0.0743), &#39;Milk Money (1994)&#39;, 2.72972972972973),
- (tensor(-0.0005), &#39;Romeo Is Bleeding (1993)&#39;, 3.0),
- (tensor(0.1636), &#39;Night on Earth (1991)&#39;, 3.8333333333333335),
- (tensor(-0.0159), &#39;Speechless (1994)&#39;, 3.0833333333333335),
- (tensor(-0.0898), &#39;Metro (1997)&#39;, 2.9166666666666665),
- (tensor(0.1704), &#39;Thin Blue Line, The (1988)&#39;, 3.7714285714285714),
- (tensor(0.1385), &#39;Gaslight (1944)&#39;, 3.8857142857142857),
- (tensor(-0.0309),
-  &#34;Don&#39;t Be a Menace to South Central While Drinking Your Juice in the Hood (1996)&#34;,
-  2.7714285714285714),
- (tensor(0.1080), &#39;Trigger Effect, The (1996)&#39;, 3.2),
- (tensor(0.1187), &#39;Down by Law (1986)&#39;, 3.7714285714285714),
- (tensor(-0.0763), &#34;Wes Craven&#39;s New Nightmare (1994)&#34;, 2.8),
- (tensor(-0.1203), &#39;Fled (1996)&#39;, 2.6470588235294117),
- (tensor(0.1203), &#39;Mediterraneo (1991)&#39;, 3.676470588235294),
- (tensor(0.2126), &#39;Touch of Evil (1958)&#39;, 3.911764705882353),
- (tensor(-0.0216), &#39;Boys on the Side (1995)&#39;, 3.1470588235294117),
- (tensor(-0.0082), &#39;Terminal Velocity (1994)&#39;, 2.676470588235294),
- (tensor(0.0747), &#39;Unforgettable (1996)&#39;, 3.323529411764706),
- (tensor(0.1872), &#39;Dead Man (1995)&#39;, 3.823529411764706),
- (tensor(0.0033), &#39;Orlando (1993)&#39;, 3.6176470588235294),
- (tensor(0.1145), &#39;Jeffrey (1995)&#39;, 3.5294117647058822),
- (tensor(0.2297), &#39;Lost Horizon (1937)&#39;, 3.9411764705882355),
- (tensor(0.1717), &#39;Washington Square (1997)&#39;, 3.2941176470588234),
- (tensor(-0.0662), &#39;Hackers (1995)&#39;, 2.606060606060606),
- (tensor(0.0975), &#39;Anna Karenina (1997)&#39;, 3.090909090909091),
- (tensor(0.2728), &#39;Paths of Glory (1957)&#39;, 4.212121212121212),
- (tensor(0.0246), &#39;Clockers (1995)&#39;, 3.0),
- (tensor(-0.0879), &#39;Free Willy (1993)&#39;, 2.4545454545454546),
- (tensor(0.0743),
-  &#39;Englishman Who Went Up a Hill, But Came Down a Mountain, The (1995)&#39;,
-  3.375),
- (tensor(0.0192), &#39;Prophecy, The (1995)&#39;, 2.9375),
- (tensor(0.0918), &#39;Eye for an Eye (1996)&#39;, 3.03125),
- (tensor(0.1766), &#39;Brassed Off (1996)&#39;, 3.9375),
- (tensor(0.0454), &#39;Tie Me Up! Tie Me Down! (1990)&#39;, 3.1875),
- (tensor(-0.1725), &#39;Airheads (1994)&#39;, 2.34375),
- (tensor(-0.0252), &#39;Transformers: The Movie, The (1986)&#39;, 2.84375),
- (tensor(-0.0333), &#39;Boomerang (1992)&#39;, 2.8125),
- (tensor(-0.0653), &#34;Cats Don&#39;t Dance (1997)&#34;, 2.84375),
- (tensor(-0.0759), &#39;Feeling Minnesota (1996)&#39;, 2.625),
- (tensor(0.0454), &#39;Homeward Bound II: Lost in San Francisco (1996)&#39;, 2.78125),
- (tensor(0.0088), &#39;Night Falls on Manhattan (1997)&#39;, 3.375),
- (tensor(0.1100), &#39;Fast, Cheap &amp; Out of Control (1997)&#39;, 3.4375),
- (tensor(0.0006), &#39;Old Man and the Sea, The (1958)&#39;, 3.34375),
- (tensor(-0.2266), &#39;Bio-Dome (1996)&#39;, 1.903225806451613),
- (tensor(0.0554), &#39;Hard Rain (1998)&#39;, 2.903225806451613),
- (tensor(-0.0736), &#34;Fathers&#39; Day (1997)&#34;, 2.5806451612903225),
- (tensor(0.3404),
-  &#39;Die xue shuang xiong (Killer, The) (1989)&#39;,
-  3.967741935483871),
- (tensor(0.1003), &#39;Timecop (1994)&#39;, 3.096774193548387),
- (tensor(0.0072), &#39;Kiss Me, Guido (1997)&#39;, 3.161290322580645),
- (tensor(-0.0467), &#39;Program, The (1993)&#39;, 2.838709677419355),
- (tensor(0.0952), &#39;Great Race, The (1965)&#39;, 3.2903225806451615),
- (tensor(-0.1405), &#39;Flintstones, The (1994)&#39;, 2.064516129032258),
- (tensor(-0.0882), &#39;Drop Zone (1994)&#39;, 2.5483870967741935),
- (tensor(0.0382), &#39;Threesome (1994)&#39;, 2.838709677419355),
- (tensor(0.0271), &#39;Meet Me in St. Louis (1944)&#39;, 3.3548387096774195),
- (tensor(-0.1254), &#39;Operation Dumbo Drop (1995)&#39;, 2.5161290322580645),
- (tensor(0.3127), &#39;Once Were Warriors (1994)&#39;, 4.064516129032258),
- (tensor(-0.0218), &#39;Escape to Witch Mountain (1975)&#39;, 2.966666666666667),
- (tensor(0.1233), &#39;Higher Learning (1995)&#39;, 3.3333333333333335),
- (tensor(0.1657), &#39;My Own Private Idaho (1991)&#39;, 3.6333333333333333),
- (tensor(0.0916), &#39;FairyTale: A True Story (1997)&#39;, 2.966666666666667),
- (tensor(-0.2547), &#39;Barb Wire (1996)&#39;, 1.9333333333333333),
- (tensor(0.0241), &#39;Georgia (1995)&#39;, 2.9),
- (tensor(0.0013), &#39;Shaggy Dog, The (1959)&#39;, 3.0),
- (tensor(0.2114), &#39;Spellbound (1945)&#39;, 3.933333333333333),
- (tensor(-0.0397), &#39;If Lucy Fell (1996)&#39;, 2.7586206896551726),
- (tensor(0.0011), &#39;Evening Star, The (1996)&#39;, 2.9310344827586206),
- (tensor(-0.0916), &#39;Canadian Bacon (1994)&#39;, 2.413793103448276),
- (tensor(0.0759), &#39;Twelfth Night (1996)&#39;, 3.413793103448276),
- (tensor(-0.1310), &#39;High School High (1996)&#39;, 2.6206896551724137),
- (tensor(-0.0081), &#39;Deceiver (1997)&#39;, 2.8275862068965516),
- (tensor(0.0058), &#39;Blown Away (1994)&#39;, 2.7586206896551726),
- (tensor(0.2627), &#39;Beautiful Thing (1996)&#39;, 3.9655172413793105),
- (tensor(-0.2117), &#34;Stephen King&#39;s The Langoliers (1995)&#34;, 2.413793103448276),
- (tensor(0.1404), &#39;Ghosts of Mississippi (1996)&#39;, 3.4827586206896552),
- (tensor(0.0343), &#39;Crossing Guard, The (1995)&#39;, 3.0),
- (tensor(0.0699),
-  &#39;Once Upon a Time... When We Were Colored (1995)&#39;,
-  3.2857142857142856),
- (tensor(0.0413), &#39;Death and the Maiden (1994)&#39;, 3.4285714285714284),
- (tensor(-0.0044), &#39;Passion Fish (1992)&#39;, 3.1785714285714284),
- (tensor(0.1109), &#39;In Love and War (1996)&#39;, 3.4285714285714284),
- (tensor(0.0332), &#39;Just Cause (1995)&#39;, 3.142857142857143),
- (tensor(0.0062), &#39;Blues Brothers 2000 (1998)&#39;, 2.8214285714285716),
- (tensor(-0.0656), &#39;Barbarella (1968)&#39;, 2.5714285714285716),
- (tensor(-0.0970), &#39;Beverly Hills Cop III (1994)&#39;, 2.392857142857143),
- (tensor(0.1491), &#39;Chungking Express (1994)&#39;, 3.5714285714285716),
- (tensor(-0.0547), &#39;Another Stakeout (1993)&#39;, 2.5),
- (tensor(-0.1441), &#34;Heaven&#39;s Prisoners (1996)&#34;, 2.5185185185185186),
- (tensor(0.0465), &#39;Black Beauty (1994)&#39;, 3.4444444444444446),
- (tensor(0.2677), &#39;My Man Godfrey (1936)&#39;, 4.037037037037037),
- (tensor(0.0310), &#39;Pollyanna (1960)&#39;, 3.1481481481481484),
- (tensor(0.0481), &#39;Spanking the Monkey (1994)&#39;, 3.074074074074074),
- (tensor(0.1162), &#39;Living in Oblivion (1995)&#39;, 3.740740740740741),
- (tensor(-0.0931), &#39;Wishmaster (1997)&#39;, 2.4444444444444446),
- (tensor(-0.1417), &#39;Quest, The (1996)&#39;, 2.5185185185185186),
- (tensor(-0.1691), &#39;Tales from the Hood (1995)&#39;, 2.037037037037037),
- (tensor(-0.1975), &#39;Free Willy 3: The Rescue (1997)&#39;, 1.7407407407407407),
- (tensor(0.1965), &#39;Paris Is Burning (1990)&#39;, 3.814814814814815),
- (tensor(0.1619), &#39;Vanya on 42nd Street (1994)&#39;, 3.5925925925925926),
- (tensor(-0.0749), &#39;Made in America (1993)&#39;, 2.5185185185185186),
- (tensor(0.1036), &#39;Manhattan Murder Mystery (1993)&#39;, 3.6296296296296298),
- (tensor(0.0708), &#39;Great Expectations (1998)&#39;, 3.2222222222222223),
- (tensor(0.1452), &#39;Exotica (1994)&#39;, 3.5555555555555554),
- (tensor(0.1295), &#39;Love! Valour! Compassion! (1997)&#39;, 3.6153846153846154),
- (tensor(-0.0128),
-  &#39;Aladdin and the King of Thieves (1996)&#39;,
-  2.8461538461538463),
- (tensor(0.0751),
-  &#39;Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)&#39;,
-  3.576923076923077),
- (tensor(0.1074), &#39;Ninotchka (1939)&#39;, 3.769230769230769),
- (tensor(0.2031), &#39;Affair to Remember, An (1957)&#39;, 4.1923076923076925),
- (tensor(0.1388),
-  &#39;Ghost in the Shell (Kokaku kidotai) (1995)&#39;,
-  3.6538461538461537),
- (tensor(-0.1028), &#39;Something to Talk About (1995)&#39;, 2.769230769230769),
- (tensor(0.2288), &#39;Walkabout (1971)&#39;, 3.8461538461538463),
- (tensor(-0.0922), &#39;Spice World (1997)&#39;, 2.1153846153846154),
- (tensor(0.0944), &#39;Pillow Book, The (1995)&#39;, 3.6923076923076925),
- (tensor(-0.0974), &#39;Before and After (1996)&#39;, 2.8461538461538463),
- (tensor(-0.1307), &#39;Super Mario Bros. (1993)&#39;, 2.076923076923077),
- (tensor(-0.0104), &#39;In the Mouth of Madness (1995)&#39;, 2.8846153846153846),
- (tensor(0.1473), &#39;Friday (1995)&#39;, 3.4615384615384617),
- (tensor(-0.1087), &#39;House Arrest (1996)&#39;, 2.52),
- (tensor(-0.1175), &#39;Dracula: Dead and Loving It (1995)&#39;, 2.28),
- (tensor(-0.1329), &#39;Two if by Sea (1996)&#39;, 2.6),
- (tensor(0.0326), &#39;Smile Like Yours, A (1997)&#39;, 2.88),
- (tensor(-0.0650), &#39;Judgment Night (1993)&#39;, 2.68),
- (tensor(0.0933), &#39;Naked (1993)&#39;, 3.24),
- (tensor(0.1314), &#39;Meet John Doe (1941)&#39;, 3.92),
- (tensor(-0.1384), &#39;Keys to Tulsa (1997)&#39;, 2.24),
- (tensor(-0.0272), &#39;Portrait of a Lady, The (1996)&#39;, 2.68),
- (tensor(0.0801), &#39;Fearless (1993)&#39;, 3.24),
- (tensor(0.0259), &#39;Apple Dumpling Gang, The (1975)&#39;, 2.84),
- (tensor(-0.0718), &#39;Girl 6 (1996)&#39;, 2.76),
- (tensor(0.0391), &#39;Relic, The (1997)&#39;, 2.88),
- (tensor(-0.1680), &#39;Halloween: The Curse of Michael Myers (1995)&#39;, 2.2),
- (tensor(-0.0647), &#39;Fools Rush In (1997)&#39;, 3.0),
- (tensor(0.0772), &#39;Queen Margot (Reine Margot, La) (1994)&#39;, 3.5),
- (tensor(-0.0175), &#39;Now and Then (1995)&#39;, 3.4583333333333335),
- (tensor(-0.1580), &#39;Lord of Illusions (1995)&#39;, 2.4166666666666665),
- (tensor(0.1146), &#34;Microcosmos: Le peuple de l&#39;herbe (1996)&#34;, 3.75),
- (tensor(0.0561), &#39;House of the Spirits, The (1993)&#39;, 3.0416666666666665),
- (tensor(0.1830),
-  &#39;Garden of Finzi-Contini, The (Giardino dei Finzi-Contini, Il) (1970)&#39;,
-  3.9166666666666665),
- (tensor(0.1674), &#39;Cry, the Beloved Country (1995)&#39;, 3.75),
- (tensor(-0.2375), &#39;Grease 2 (1982)&#39;, 2.0),
- (tensor(-0.0177), &#39;Houseguest (1994)&#39;, 2.8333333333333335),
- (tensor(0.0665), &#39;Burnt By the Sun (1994)&#39;, 3.7083333333333335),
- (tensor(-0.0170), &#39;Drop Dead Fred (1991)&#39;, 2.75),
- (tensor(-0.0411),
-  &#39;Cemetery Man (Dellamorte Dellamore) (1994)&#39;,
-  2.869565217391304),
- (tensor(-0.1189), &#39;Mr. Wrong (1996)&#39;, 2.3043478260869565),
- (tensor(-0.0888), &#39;Trial and Error (1997)&#39;, 2.5217391304347827),
- (tensor(-0.1232), &#39;Kansas City (1996)&#39;, 2.260869565217391),
- (tensor(-0.0378), &#39;Fog, The (1980)&#39;, 2.739130434782609),
- (tensor(0.0658), &#39;Inventing the Abbotts (1997)&#39;, 3.130434782608696),
- (tensor(-0.1698), &#39;Showgirls (1995)&#39;, 1.9565217391304348),
- (tensor(0.0391), &#39;Live Nude Girls (1995)&#39;, 3.0869565217391304),
- (tensor(-0.0126), &#39;Jude (1996)&#39;, 3.0),
- (tensor(0.0910), &#39;Ruby in Paradise (1993)&#39;, 3.130434782608696),
- (tensor(-0.1217), &#39;Turbulence (1997)&#39;, 2.5652173913043477),
- (tensor(-0.0030),
-  &#39;Until the End of the World (Bis ans Ende der Welt) (1991)&#39;,
-  2.8260869565217392),
- (tensor(-0.0609), &#39;Bogus (1996)&#39;, 2.5454545454545454),
- (tensor(0.0137), &#39;Three Caballeros, The (1945)&#39;, 3.272727272727273),
- (tensor(-0.1044), &#39;Pallbearer, The (1996)&#39;, 2.3181818181818183),
- (tensor(-0.0359), &#39;Oliver &amp; Company (1988)&#39;, 2.772727272727273),
- (tensor(-0.0936), &#39;Marked for Death (1990)&#39;, 2.5),
- (tensor(0.0789), &#39;Unstrung Heroes (1995)&#39;, 3.3181818181818183),
- (tensor(0.1157),
-  &#39;Double vie de Véronique, La (Double Life of Veronique, The) (1991)&#39;,
-  3.6818181818181817),
- (tensor(0.1156), &#39;Welcome To Sarajevo (1997)&#39;, 3.3636363636363638),
- (tensor(-0.0185), &#39;Mother Night (1996)&#39;, 3.1818181818181817),
- (tensor(-0.0879), &#34;Kid in King Arthur&#39;s Court, A (1995)&#34;, 2.727272727272727),
- (tensor(0.0336), &#39;Little Buddha (1993)&#39;, 3.3181818181818183),
- (tensor(0.0617), &#39;Kama Sutra: A Tale of Love (1996)&#39;, 3.3181818181818183),
- (tensor(0.0371), &#39;Blood &amp; Wine (1997)&#39;, 2.8636363636363638),
- (tensor(-0.0120), &#39;Mrs. Winterbourne (1996)&#39;, 3.0454545454545454),
- (tensor(-0.0322),
-  &#39;Mrs. Parker and the Vicious Circle (1994)&#39;,
-  3.272727272727273),
- (tensor(0.1490), &#39;Body Snatcher, The (1945)&#39;, 3.5),
- (tensor(0.0052), &#39;Village of the Damned (1995)&#39;, 2.6818181818181817),
- (tensor(0.0797), &#39;Oscar &amp; Lucinda (1997)&#39;, 3.1904761904761907),
- (tensor(0.2390), &#39;Anne Frank Remembered (1995)&#39;, 3.857142857142857),
- (tensor(0.1048),
-  &#39;Umbrellas of Cherbourg, The (Parapluies de Cherbourg, Les) (1964)&#39;,
-  3.761904761904762),
- (tensor(-0.0552), &#39;How to Be a Player (1997)&#39;, 2.761904761904762),
- (tensor(-0.3148),
-  &#39;Lawnmower Man 2: Beyond Cyberspace (1996)&#39;,
-  1.7142857142857142),
- (tensor(0.1271), &#39;Funny Face (1957)&#39;, 3.6666666666666665),
- (tensor(0.1476), &#39;Top Hat (1935)&#39;, 4.0476190476190474),
- (tensor(-0.1521), &#39;Funeral, The (1996)&#39;, 2.4285714285714284),
- (tensor(0.2053), &#39;My Family (1995)&#39;, 3.6666666666666665),
- (tensor(0.1239), &#39;Misérables, Les (1995)&#39;, 3.619047619047619),
- (tensor(-0.1458),
-  &#39;Candyman: Farewell to the Flesh (1995)&#39;,
-  2.4285714285714284),
- (tensor(0.0874), &#34;It&#39;s My Party (1995)&#34;, 3.2857142857142856),
- (tensor(-0.1145), &#39;Richie Rich (1994)&#39;, 2.4285714285714284),
- (tensor(0.0057), &#39;Prophecy II, The (1998)&#39;, 2.7),
- (tensor(-0.0693), &#39;Maximum Risk (1996)&#39;, 2.8),
- (tensor(0.0003), &#39;Kiss of Death (1995)&#39;, 2.85),
- (tensor(0.1871),
-  &#39;Paradise Lost: The Child Murders at Robin Hood Hills (1996)&#39;,
-  4.05),
- (tensor(0.1459), &#39;For Whom the Bell Tolls (1943)&#39;, 4.0),
- (tensor(-0.0099), &#39;Half Baked (1998)&#39;, 2.5),
- (tensor(0.0842), &#39;Indian Summer (1996)&#39;, 3.25),
- (tensor(0.0741), &#39;Ma vie en rose (My Life in Pink) (1997)&#39;, 3.45),
- (tensor(-0.1403), &#39;Beverly Hillbillies, The (1993)&#39;, 2.25),
- (tensor(-0.0145), &#39;Goofy Movie, A (1995)&#39;, 2.9),
- (tensor(-0.0877), &#39;Specialist, The (1994)&#39;, 2.25),
- (tensor(-0.0935), &#39;Flipper (1996)&#39;, 2.45),
- (tensor(-0.1871), &#39;Home Alone 3 (1997)&#39;, 1.894736842105263),
- (tensor(0.1547), &#34;Widows&#39; Peak (1994)&#34;, 3.5789473684210527),
- (tensor(-0.3682),
-  &#39;Children of the Corn: The Gathering (1996)&#39;,
-  1.3157894736842106),
- (tensor(0.0535), &#34;Gridlock&#39;d (1997)&#34;, 3.210526315789474),
- (tensor(0.1551), &#39;Backbeat (1993)&#39;, 3.473684210526316),
- (tensor(0.0081), &#39;Fatal Instinct (1993)&#39;, 2.6315789473684212),
- (tensor(0.0190), &#39;Amos &amp; Andrew (1993)&#39;, 2.6842105263157894),
- (tensor(0.0725), &#39;Set It Off (1996)&#39;, 3.4210526315789473),
- (tensor(-0.0783), &#39;D3: The Mighty Ducks (1996)&#39;, 2.5789473684210527),
- (tensor(0.0455), &#39;Blink (1994)&#39;, 3.0),
- (tensor(0.0555), &#39;Surviving Picasso (1996)&#39;, 3.1052631578947367),
- (tensor(0.0591), &#39;Star Maps (1997)&#39;, 3.0526315789473686),
- (tensor(-0.1326), &#39;Steel (1997)&#39;, 2.1578947368421053),
- (tensor(-0.0978), &#39;Major Payne (1994)&#39;, 2.473684210526316),
- (tensor(-0.1675), &#39;Cowboy Way, The (1994)&#39;, 2.210526315789474),
- (tensor(0.1433), &#39;Trust (1990)&#39;, 3.789473684210526),
- (tensor(-0.1171), &#39;That Darn Cat! (1965)&#39;, 2.473684210526316),
- (tensor(-0.0157), &#39;Out to Sea (1997)&#39;, 2.6842105263157894),
- (tensor(0.0604), &#39;Beyond Rangoon (1995)&#39;, 3.0555555555555554),
- (tensor(0.0213), &#39;M. Butterfly (1993)&#39;, 3.2222222222222223),
- (tensor(0.0506), &#39;Andre (1994)&#39;, 3.111111111111111),
- (tensor(0.0981), &#39;Amateur (1994)&#39;, 3.1666666666666665),
- (tensor(-0.1854), &#39;Hellraiser: Bloodline (1996)&#39;, 2.0),
- (tensor(0.0966), &#39;Hate (Haine, La) (1995)&#39;, 3.5),
- (tensor(0.0412), &#39;Afterglow (1997)&#39;, 3.111111111111111),
- (tensor(0.0073), &#39;Firestorm (1998)&#39;, 2.8333333333333335),
- (tensor(0.1079), &#39;Picnic (1955)&#39;, 3.611111111111111),
- (tensor(0.0488), &#39;Inspector General, The (1949)&#39;, 3.7222222222222223),
- (tensor(0.2268),
-  &#39;Thirty-Two Short Films About Glenn Gould (1993)&#39;,
-  3.9444444444444446),
- (tensor(-0.0062), &#39;Dead Presidents (1995)&#39;, 2.7222222222222223),
- (tensor(0.1562),
-  &#39;Blue Angel, The (Blaue Engel, Der) (1930)&#39;,
-  3.7777777777777777),
- (tensor(-0.1832), &#39;Ready to Wear (Pret-A-Porter) (1994)&#39;, 1.8333333333333333),
- (tensor(-0.0522), &#39;Getaway, The (1994)&#39;, 2.3333333333333335),
- (tensor(0.0439), &#39;Lost in Space (1998)&#39;, 3.1666666666666665),
- (tensor(0.0091), &#34;Robert A. Heinlein&#39;s The Puppet Masters (1994)&#34;, 3.0),
- (tensor(-0.0887), &#39;Little Rascals, The (1994)&#39;, 2.7222222222222223),
- (tensor(0.0796), &#39;To Be or Not to Be (1942)&#39;, 3.611111111111111),
- (tensor(-0.1076), &#39;In the Army Now (1994)&#39;, 2.2777777777777777),
- (tensor(-0.0889), &#39;Jingle All the Way (1996)&#39;, 2.111111111111111),
- (tensor(0.1082), &#39;Assignment, The (1997)&#39;, 3.5),
- (tensor(0.0586), &#39;House of Yes, The (1997)&#39;, 3.0),
- (tensor(-0.1229), &#39;Cutthroat Island (1995)&#39;, 2.4444444444444446),
- (tensor(-0.0952), &#39;Road to Wellville, The (1994)&#39;, 2.2941176470588234),
- (tensor(0.1199), &#39;Shall We Dance? (1937)&#39;, 3.7058823529411766),
- (tensor(-0.1384), &#39;Stupids, The (1996)&#39;, 2.0),
- (tensor(0.0687), &#34;I&#39;m Not Rappaport (1996)&#34;, 3.0),
- (tensor(-0.0968), &#39;Madonna: Truth or Dare (1991)&#39;, 2.4705882352941178),
- (tensor(-0.0014), &#39;Mute Witness (1994)&#39;, 2.9411764705882355),
- (tensor(-0.0639), &#39;Switchback (1997)&#39;, 2.823529411764706),
- (tensor(0.0863), &#39;Big Blue, The (Grand bleu, Le) (1988)&#39;, 3.235294117647059),
- (tensor(0.0178), &#39;Farinelli: il castrato (1994)&#39;, 3.1176470588235294),
- (tensor(-0.1381), &#39;Jade (1995)&#39;, 2.2941176470588234),
- (tensor(-0.1269), &#39;Believers, The (1987)&#39;, 2.25),
- (tensor(-0.0088), &#39;Air Up There, The (1994)&#39;, 2.8125),
- (tensor(0.0914),
-  &#39;When the Cats Away (Chacun cherche son chat) (1996)&#39;,
-  3.5625),
- (tensor(-0.0276), &#39;Little Big League (1994)&#39;, 2.875),
- (tensor(0.0731), &#39;Dark City (1998)&#39;, 3.5),
- (tensor(-0.1655), &#39;Stuart Saves His Family (1995)&#39;, 2.125),
- (tensor(-0.0689), &#39;Cabin Boy (1994)&#39;, 2.5625),
- (tensor(-0.0679), &#39;Waiting to Exhale (1995)&#39;, 2.5),
- (tensor(0.1850), &#39;Ruling Class, The (1972)&#39;, 3.875),
- (tensor(0.0029), &#39;Gang Related (1997)&#39;, 2.6875),
- (tensor(-0.0093), &#39;Exit to Eden (1994)&#39;, 2.75),
- (tensor(0.0422), &#39;Bad Taste (1987)&#39;, 3.375),
- (tensor(0.0695), &#39;Selena (1997)&#39;, 3.625),
- (tensor(0.1215), &#39;In the Bleak Midwinter (1995)&#39;, 3.6875),
- (tensor(-0.0020), &#39;Party Girl (1995)&#39;, 2.875),
- (tensor(-0.1419), &#39;Highlander III: The Sorcerer (1994)&#39;, 2.125),
- (tensor(0.0471), &#39;Bastard Out of Carolina (1996)&#39;, 2.875)]</pre>
+<pre>[(tensor(0.5078), &#39;Star Wars (1977)&#39;, 4.3584905660377355),
+ (tensor(0.4129), &#39;Contact (1997)&#39;, 3.8035363457760316),
+ (tensor(0.3721), &#39;Fargo (1996)&#39;, 4.155511811023622),
+ (tensor(0.4021), &#39;Return of the Jedi (1983)&#39;, 4.007889546351085),
+ (tensor(0.0974), &#39;Liar Liar (1997)&#39;, 3.156701030927835),
+ (tensor(0.1465), &#39;English Patient, The (1996)&#39;, 3.656964656964657),
+ (tensor(0.1944), &#39;Scream (1996)&#39;, 3.4414225941422596),
+ (tensor(0.3225), &#39;Toy Story (1995)&#39;, 3.8783185840707963),
+ (tensor(0.2715), &#39;Air Force One (1997)&#39;, 3.6310904872389793),
+ (tensor(0.1710), &#39;Independence Day (ID4) (1996)&#39;, 3.438228438228438)]</pre>
 </div>
 
 </div>
@@ -15926,7 +14790,7 @@ Name: rating, Length: 1664, dtype: float64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[68]:</div>
+<div class='prompt input_prompt'>In&nbsp;[29]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='n'>item0</span> <span class='o'>=</span> <span class='k'>lambda</span> <span class='n'>o</span><span class='p'>:</span><span class='n'>o</span><span class='p'>[</span><span class='mi'>0</span><span class='p'>]</span>
@@ -15940,7 +14804,7 @@ Name: rating, Length: 1664, dtype: float64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[69]:</div>
+<div class='prompt input_prompt'>In&nbsp;[30]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>sorted</span><span class='p'>(</span><span class='n'>movie_ratings</span><span class='p'>,</span> <span class='n'>key</span><span class='o'>=</span><span class='n'>item0</span><span class='p'>)[:</span><span class='mi'>15</span><span class='p'>]</span>
@@ -15956,31 +14820,31 @@ Name: rating, Length: 1664, dtype: float64</pre>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[69]:</div>
+    <div class='prompt output_prompt'>Out[30]:</div>
 
 
 
 
 <div class='output_text output_subarea output_execute_result'>
-<pre>[(tensor(-0.3682),
+<pre>[(tensor(-0.3547),
   &#39;Children of the Corn: The Gathering (1996)&#39;,
   1.3157894736842106),
- (tensor(-0.3148),
+ (tensor(-0.3094),
   &#39;Lawnmower Man 2: Beyond Cyberspace (1996)&#39;,
   1.7142857142857142),
- (tensor(-0.2769), &#39;Mortal Kombat: Annihilation (1997)&#39;, 1.9534883720930232),
- (tensor(-0.2698), &#39;Striptease (1996)&#39;, 2.2388059701492535),
- (tensor(-0.2589), &#39;Cable Guy, The (1996)&#39;, 2.339622641509434),
- (tensor(-0.2547), &#39;Barb Wire (1996)&#39;, 1.9333333333333333),
- (tensor(-0.2375), &#39;Grease 2 (1982)&#39;, 2.0),
- (tensor(-0.2369), &#39;Crow: City of Angels, The (1996)&#39;, 1.9487179487179487),
- (tensor(-0.2266), &#39;Bio-Dome (1996)&#39;, 1.903225806451613),
- (tensor(-0.2239), &#39;Island of Dr. Moreau, The (1996)&#39;, 2.1578947368421053),
- (tensor(-0.2207), &#39;Thinner (1996)&#39;, 2.4489795918367347),
- (tensor(-0.2117), &#34;Stephen King&#39;s The Langoliers (1995)&#34;, 2.413793103448276),
- (tensor(-0.2114), &#39;Beautician and the Beast, The (1997)&#39;, 2.313953488372093),
- (tensor(-0.2046), &#39;Beverly Hills Ninja (1997)&#39;, 2.3125),
- (tensor(-0.1983), &#39;Lawnmower Man, The (1992)&#39;, 2.4461538461538463)]</pre>
+ (tensor(-0.2842), &#39;Cable Guy, The (1996)&#39;, 2.339622641509434),
+ (tensor(-0.2721), &#39;Mortal Kombat: Annihilation (1997)&#39;, 1.9534883720930232),
+ (tensor(-0.2651), &#39;Bio-Dome (1996)&#39;, 1.903225806451613),
+ (tensor(-0.2412), &#39;Island of Dr. Moreau, The (1996)&#39;, 2.1578947368421053),
+ (tensor(-0.2329), &#39;Free Willy 3: The Rescue (1997)&#39;, 1.7407407407407407),
+ (tensor(-0.2313), &#39;Crow: City of Angels, The (1996)&#39;, 1.9487179487179487),
+ (tensor(-0.2301), &#34;Joe&#39;s Apartment (1996)&#34;, 2.2444444444444445),
+ (tensor(-0.2281), &#39;Striptease (1996)&#39;, 2.2388059701492535),
+ (tensor(-0.2227), &#39;Grease 2 (1982)&#39;, 2.0),
+ (tensor(-0.2133), &#39;Leave It to Beaver (1997)&#39;, 1.8409090909090908),
+ (tensor(-0.2067), &#39;Barb Wire (1996)&#39;, 1.9333333333333333),
+ (tensor(-0.2028), &#34;Stephen King&#39;s The Langoliers (1995)&#34;, 2.413793103448276),
+ (tensor(-0.2026), &#39;Beautician and the Beast, The (1997)&#39;, 2.313953488372093)]</pre>
 </div>
 
 </div>
@@ -15991,7 +14855,7 @@ Name: rating, Length: 1664, dtype: float64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[72]:</div>
+<div class='prompt input_prompt'>In&nbsp;[31]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>sorted</span><span class='p'>(</span><span class='n'>movie_ratings</span><span class='p'>,</span><span class='n'>key</span><span class='o'>=</span><span class='n'>item0</span><span class='p'>)[:</span><span class='mi'>10</span><span class='p'>]</span>
@@ -16007,26 +14871,26 @@ Name: rating, Length: 1664, dtype: float64</pre>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[72]:</div>
+    <div class='prompt output_prompt'>Out[31]:</div>
 
 
 
 
 <div class='output_text output_subarea output_execute_result'>
-<pre>[(tensor(-0.3682),
+<pre>[(tensor(-0.3547),
   &#39;Children of the Corn: The Gathering (1996)&#39;,
   1.3157894736842106),
- (tensor(-0.3148),
+ (tensor(-0.3094),
   &#39;Lawnmower Man 2: Beyond Cyberspace (1996)&#39;,
   1.7142857142857142),
- (tensor(-0.2769), &#39;Mortal Kombat: Annihilation (1997)&#39;, 1.9534883720930232),
- (tensor(-0.2698), &#39;Striptease (1996)&#39;, 2.2388059701492535),
- (tensor(-0.2589), &#39;Cable Guy, The (1996)&#39;, 2.339622641509434),
- (tensor(-0.2547), &#39;Barb Wire (1996)&#39;, 1.9333333333333333),
- (tensor(-0.2375), &#39;Grease 2 (1982)&#39;, 2.0),
- (tensor(-0.2369), &#39;Crow: City of Angels, The (1996)&#39;, 1.9487179487179487),
- (tensor(-0.2266), &#39;Bio-Dome (1996)&#39;, 1.903225806451613),
- (tensor(-0.2239), &#39;Island of Dr. Moreau, The (1996)&#39;, 2.1578947368421053)]</pre>
+ (tensor(-0.2842), &#39;Cable Guy, The (1996)&#39;, 2.339622641509434),
+ (tensor(-0.2721), &#39;Mortal Kombat: Annihilation (1997)&#39;, 1.9534883720930232),
+ (tensor(-0.2651), &#39;Bio-Dome (1996)&#39;, 1.903225806451613),
+ (tensor(-0.2412), &#39;Island of Dr. Moreau, The (1996)&#39;, 2.1578947368421053),
+ (tensor(-0.2329), &#39;Free Willy 3: The Rescue (1997)&#39;, 1.7407407407407407),
+ (tensor(-0.2313), &#39;Crow: City of Angels, The (1996)&#39;, 1.9487179487179487),
+ (tensor(-0.2301), &#34;Joe&#39;s Apartment (1996)&#34;, 2.2444444444444445),
+ (tensor(-0.2281), &#39;Striptease (1996)&#39;, 2.2388059701492535)]</pre>
 </div>
 
 </div>
@@ -16037,7 +14901,7 @@ Name: rating, Length: 1664, dtype: float64</pre>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[74]:</div>
+<div class='prompt input_prompt'>In&nbsp;[32]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
 <div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>sorted</span><span class='p'>(</span><span class='n'>movie_ratings</span><span class='p'>,</span><span class='n'>key</span><span class='o'>=</span><span class='n'>item0</span><span class='p'>,</span><span class='n'>reverse</span><span class='o'>=</span><span class='kc'>True</span><span class='p'>)[:</span><span class='mi'>14</span><span class='p'>]</span>
@@ -16053,26 +14917,26 @@ Name: rating, Length: 1664, dtype: float64</pre>
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[74]:</div>
+    <div class='prompt output_prompt'>Out[32]:</div>
 
 
 
 
 <div class='output_text output_subarea output_execute_result'>
-<pre>[(tensor(0.6243), &#34;Schindler&#39;s List (1993)&#34;, 4.466442953020135),
- (tensor(0.5731), &#39;Titanic (1997)&#39;, 4.2457142857142856),
- (tensor(0.5525), &#39;Shawshank Redemption, The (1994)&#39;, 4.445229681978798),
- (tensor(0.5476), &#39;L.A. Confidential (1997)&#39;, 4.161616161616162),
- (tensor(0.5441), &#39;Silence of the Lambs, The (1991)&#39;, 4.28974358974359),
- (tensor(0.5416), &#39;Rear Window (1954)&#39;, 4.3875598086124405),
- (tensor(0.5113), &#39;Boot, Das (1981)&#39;, 4.203980099502488),
- (tensor(0.5091), &#39;As Good As It Gets (1997)&#39;, 4.196428571428571),
- (tensor(0.5031), &#39;Good Will Hunting (1997)&#39;, 4.262626262626263),
- (tensor(0.5020), &#39;Star Wars (1977)&#39;, 4.3584905660377355),
- (tensor(0.4913), &#39;Usual Suspects, The (1995)&#39;, 4.385767790262173),
- (tensor(0.4816), &#39;Vertigo (1958)&#39;, 4.251396648044692),
- (tensor(0.4589), &#39;Close Shave, A (1995)&#39;, 4.491071428571429),
- (tensor(0.4584), &#34;One Flew Over the Cuckoo&#39;s Nest (1975)&#34;, 4.291666666666667)]</pre>
+<pre>[(tensor(0.5980), &#34;Schindler&#39;s List (1993)&#34;, 4.466442953020135),
+ (tensor(0.5791), &#39;Titanic (1997)&#39;, 4.2457142857142856),
+ (tensor(0.5477), &#39;Shawshank Redemption, The (1994)&#39;, 4.445229681978798),
+ (tensor(0.5303), &#39;Rear Window (1954)&#39;, 4.3875598086124405),
+ (tensor(0.5197), &#39;Silence of the Lambs, The (1991)&#39;, 4.28974358974359),
+ (tensor(0.5078), &#39;Star Wars (1977)&#39;, 4.3584905660377355),
+ (tensor(0.5041), &#39;Good Will Hunting (1997)&#39;, 4.262626262626263),
+ (tensor(0.4942), &#39;L.A. Confidential (1997)&#39;, 4.161616161616162),
+ (tensor(0.4845), &#39;Casablanca (1942)&#39;, 4.45679012345679),
+ (tensor(0.4821), &#39;Boot, Das (1981)&#39;, 4.203980099502488),
+ (tensor(0.4707), &#39;Close Shave, A (1995)&#39;, 4.491071428571429),
+ (tensor(0.4705), &#39;Apt Pupil (1998)&#39;, 4.1),
+ (tensor(0.4703), &#39;As Good As It Gets (1997)&#39;, 4.196428571428571),
+ (tensor(0.4673), &#39;Vertigo (1958)&#39;, 4.251396648044692)]</pre>
 </div>
 
 </div>
@@ -16114,7 +14978,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 })
 </script>
     
-
+</p>
 
       
     </div>
@@ -16130,16 +14994,6 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
-          
-            <a href="/tags/Recommendation-System/" rel="tag"># Recommendation System</a>
-          
-            <a href="/tags/Fast-ai/" rel="tag"># Fast ai</a>
-          
-        </div>
-      
 
       
       
@@ -16149,8 +15003,8 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/19/mRTS/microRTS_2/" rel="next" title="MicroRTS-2">
-                <i class="fa fa-chevron-left"></i> MicroRTS-2
+              <a href="/2019/05/18/DL/collafiltering/" rel="next" title="Collaborative filtering">
+                <i class="fa fa-chevron-left"></i> Collaborative filtering
               </a>
             
           </div>
@@ -16159,8 +15013,8 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/20/ML/Lee-3/" rel="prev" title="ML-Lee Task3">
-                ML-Lee Task3 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/19/mRTS/microRTS_2/" rel="prev" title="MicroRTS-2">
+                MicroRTS-2 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -16229,7 +15083,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
