@@ -83,7 +83,7 @@
 <meta name="keywords" content="Deep Learning,Algorithm,Machine Learning,Lee">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ML-Lee Task1">
-<meta property="og:url" content="http://yoursite.com/2019/05/13/ML/Lee-1/index.html">
+<meta property="og:url" content="http://yoursite.com/Machine-Learning/ML/Lee-1/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
 <meta property="og:description" content="what is Machine learning *Machine learning** (**ML*) is the scientific study of algorithms and statistical models that computer systems use to effectively perform a specific task without using explic">
 <meta property="og:locale" content="en">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/13/ML/Lee-1/">
+  <link rel="canonical" href="http://yoursite.com/Machine-Learning/ML/Lee-1/">
 
 
 
@@ -275,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/13/ML/Lee-1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Machine-Learning/ML/Lee-1/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JiangJin">
@@ -340,6 +340,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Machine-Learning/ML/Lee-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Machine-Learning/ML/Lee-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -536,7 +546,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/12/mRTS/microRTS/" rel="next" title="MicroRTS">
+              <a href="/Week-Report/mRTS/microRTS/" rel="next" title="MicroRTS">
                 <i class="fa fa-chevron-left"></i> MicroRTS
               </a>
             
@@ -546,7 +556,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/18/DL/collafiltering/" rel="prev" title="Collaborative filtering">
+              <a href="/Recommendation-System/DL/collafiltering/" rel="prev" title="Collaborative filtering">
                 Collaborative filtering <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -577,6 +587,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -861,6 +874,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz# your leancloud application appid',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732# your leancloud application appkey',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

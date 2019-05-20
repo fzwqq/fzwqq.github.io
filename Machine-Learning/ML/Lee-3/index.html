@@ -82,7 +82,7 @@
 <meta name="keywords" content="Deep Learning,Machine Learning,Lee">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ML-Lee Task3">
-<meta property="og:url" content="http://yoursite.com/2019/05/20/ML/Lee-3/index.html">
+<meta property="og:url" content="http://yoursite.com/Machine-Learning/ML/Lee-3/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2019-05-20T06:44:32.549Z">
@@ -117,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/20/ML/Lee-3/">
+  <link rel="canonical" href="http://yoursite.com/Machine-Learning/ML/Lee-3/">
 
 
 
@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/20/ML/Lee-3/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Machine-Learning/ML/Lee-3/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JiangJin">
@@ -335,6 +335,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Machine-Learning/ML/Lee-3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Machine-Learning/ML/Lee-3/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -15538,7 +15548,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/19/mRTS/microRTS_2/" rel="next" title="MicroRTS-2">
+              <a href="/Week-Report/mRTS/microRTS_2/" rel="next" title="MicroRTS-2">
                 <i class="fa fa-chevron-left"></i> MicroRTS-2
               </a>
             
@@ -15575,6 +15585,9 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -15834,6 +15847,28 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz# your leancloud application appid',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732# your leancloud application appkey',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

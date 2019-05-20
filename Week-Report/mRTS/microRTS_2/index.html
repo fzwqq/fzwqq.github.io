@@ -83,7 +83,7 @@
 <meta name="keywords" content="microRTS,Week Report">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MicroRTS-2">
-<meta property="og:url" content="http://yoursite.com/2019/05/19/mRTS/microRTS_2/index.html">
+<meta property="og:url" content="http://yoursite.com/Week-Report/mRTS/microRTS_2/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
 <meta property="og:description" content="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
 <meta property="og:locale" content="en">
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/19/mRTS/microRTS_2/">
+  <link rel="canonical" href="http://yoursite.com/Week-Report/mRTS/microRTS_2/">
 
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/19/mRTS/microRTS_2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Week-Report/mRTS/microRTS_2/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JiangJin">
@@ -343,6 +343,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Week-Report/mRTS/microRTS_2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Week-Report/mRTS/microRTS_2/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -465,7 +475,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/18/DL/collafiltering/" rel="next" title="Collaborative filtering">
+              <a href="/Recommendation-System/DL/collafiltering/" rel="next" title="Collaborative filtering">
                 <i class="fa fa-chevron-left"></i> Collaborative filtering
               </a>
             
@@ -475,7 +485,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/20/ML/Lee-3/" rel="prev" title="ML-Lee Task3">
+              <a href="/Machine-Learning/ML/Lee-3/" rel="prev" title="ML-Lee Task3">
                 ML-Lee Task3 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -506,6 +516,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -790,6 +803,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz# your leancloud application appid',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732# your leancloud application appkey',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
