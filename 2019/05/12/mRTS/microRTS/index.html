@@ -399,7 +399,7 @@
 </li>
 <li><p>按照17年STT搭建网络模型, 训练。(Task-1)</p>
 <blockquote>
-<p>*网络训练过程, 需要编程实现的部分*  </p>
+<p><strong>网络训练过程, 需要编程实现的部分</strong>  </p>
 <ul>
 <li><p>一个进程用来跑SSS* 做数据</p>
 </li>
@@ -451,7 +451,7 @@
 <li>利用SSS对局面的分类函数对其进行分类,再对特定类套用MCTS</li>
 </ul>
 </li>
-<li><ol>
+<li><ol start="2">
 <li>结合STT , 和 SSS</li>
 </ol>
 <ul>
@@ -472,19 +472,19 @@
 <li>对State S , 以 SSS中所提算法分类Units , 并提供充足时间运行完该type下的全部可选的SCRIPTS集合,直至它得出此时所选最优script Spt;</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="2">
 <li>将该局面保存, 清除非该type下的己方Units 作为新的State S‘.</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="3">
 <li>将S’ 作为输入数据, Spt 作为标签 , 设计神经网络进行监督学习训练.</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="4">
 <li>设一共被分成N个Types , 则一共训练出N个神经网络模型.</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="5">
 <li>对局时, 则是:</li>
 </ol>
 <ul>
@@ -492,7 +492,7 @@
 <li>对Units进行分类;</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="2">
 <li>以对应分类学习的神经网络模型作出决策.</li>
 </ol>
 </li>
@@ -518,7 +518,7 @@
 <li>通过监督学习 学习专家走法——策略网络;</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="2">
 <li>通过MCTS 进行模拟;</li>
 </ol>
 <ul>
@@ -533,7 +533,7 @@
 <li>减少搜索树的宽度</li>
 </ul>
 </li>
-<li><ol>
+<li><ol start="2">
 <li>通过价值网络在MCTS对局至一定深度时做预测</li>
 </ol>
 <ul>
@@ -561,8 +561,8 @@
 <li>对模拟后的对局局面 , 利用训练好的 估值网络进行 估值打分; 更新(MCTS )搜索树.<ul>
 <li>举个例子: 进化算法一共选出5种scripts集合; 对局面一共划分成3类且训练出 3 种策略网络;<ul>
 <li>1 对当前局面State S, 某类棋子 Tpye , 利用策略网络对其预测, 选出top 2的策略作为该State-Type下的备选策略集合;</li>
-<li><ol>
-<li>则至多 222 = 8 种策略组合,对该State 下 此8种scripts 进行评估,选出最优.</li>
+<li><ol start="2">
+<li>则至多 2<em>2</em>2 = 8 种策略组合,对该State 下 此8种scripts 进行评估,选出最优.</li>
 </ol>
 </li>
 </ul>
@@ -702,7 +702,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
