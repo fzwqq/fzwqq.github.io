@@ -11,7 +11,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-
+<script>
+    (function () {
+        if ('') {
+            if (prompt('Please Enter the Password') !== '') {
+                alert('Password Error！');
+                if (history.length === 1) {
+                    location.replace("https://fzwqq.github.io/"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
 
@@ -68,7 +81,7 @@
 
 
 
-  <meta name="keywords" content="Machine Learning,Deep Learning,Lee,">
+  <meta name="keywords" content="Deep Learning,Machine Learning,Lee,">
 
 
 
@@ -79,7 +92,7 @@
 
 
 
-<meta name="keywords" content="Machine Learning,Deep Learning,Lee">
+<meta name="keywords" content="Deep Learning,Machine Learning,Lee">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ML-Lee Task3">
 <meta property="og:url" content="http://yoursite.com/2019/05/20/ML/Lee-3/index.html">
@@ -15531,9 +15544,9 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
       
         <div class="post-tags">
           
-            <a href="/tags/Machine-Learning/" rel="tag"> <i class="fa fa-tag"></i> Machine Learning</a>
-          
             <a href="/tags/Deep-Learning/" rel="tag"> <i class="fa fa-tag"></i> Deep Learning</a>
+          
+            <a href="/tags/Machine-Learning/" rel="tag"> <i class="fa fa-tag"></i> Machine Learning</a>
           
             <a href="/tags/Lee/" rel="tag"> <i class="fa fa-tag"></i> Lee</a>
           
@@ -15631,7 +15644,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -15706,11 +15719,11 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
   <span class="post-meta-divider">|</span>
 
-
+<!--
 
   <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
-
+-->
 
 
         

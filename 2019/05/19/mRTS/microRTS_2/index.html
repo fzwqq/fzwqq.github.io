@@ -11,7 +11,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-
+<script>
+    (function () {
+        if ('') {
+            if (prompt('Please Enter the Password') !== '') {
+                alert('Password Error！');
+                if (history.length === 1) {
+                    location.replace("https://fzwqq.github.io/"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
 
@@ -378,7 +391,7 @@
       
 
       
-        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件"></a>进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件</h3><blockquote>
+        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件"></a>进展一 跑通了gui的SSS<em> 能生成对战的SSS</em> trace.xml文件</h3><blockquote>
 <p>作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPlayoutLookahead</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> LOOKAHEAD;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPlayoutLookahead</span><span class="params">(<span class="keyword">int</span> a_pola)</span> </span>&#123;</span><br><span class="line">&gt;         LOOKAHEAD = a_pola;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;     </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getI</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> I;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setI</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         I = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getR</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> R;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setR</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         R = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> EvaluationFunction <span class="title">getEvaluationFunction</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> evaluation;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setEvaluationFunction</span><span class="params">(EvaluationFunction a_ef)</span> </span>&#123;</span><br><span class="line">&gt;         evaluation = a_ef;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> PathFinding <span class="title">getPathFinding</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPathFinding</span><span class="params">(PathFinding a_pf)</span> </span>&#123;</span><br><span class="line">&gt;         pf = a_pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
@@ -395,9 +408,9 @@
 <ul>
 <li><p>目前遇到的障碍:   </p>
 <ul>
-<li><p>作者提供的脚本运行*环境都是基于  torque PBS cluster*  ;</p>
+<li><p>作者提供的脚本运行<strong>环境都是基于 * torque PBS cluster</strong> * ;</p>
 <ul>
-<li><p>里面使用的命令*qsub**等都基于**PBS* ,本机macOS无法安装. ((而且部分路径还需要一个个手动调整))</p>
+<li><p>里面使用的命令<strong>qsub</strong>等都基于<strong>PBS</strong> ,本机macOS无法安装. ((而且部分路径还需要一个个手动调整))</p>
 </li>
 <li><p>部分故障:</p>
 </li>
@@ -406,11 +419,9 @@
 <li><blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> No available formula with the name "qsub"</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching for a previously deleted formula (in the last month)...</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
-<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> brew install PBS</span><br><span class="line"><span class="meta">&gt;</span> Error: No available formula with the name "pbs"</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
-<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> ./UpGASOA.sh: line 8: module: command not found</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
@@ -432,7 +443,7 @@
 <li>以下是scriptstable 部分, 表示没看懂.</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224033881.png" alt="image-20190519224033881"> </p>
-<ol>
+<ol start="2">
 <li><p>需要将他代码几乎看懂,才方便修改参数,但是:</p>
 <ul>
 <li>注释如下??</li>
@@ -567,7 +578,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -658,11 +669,11 @@
 
   <span class="post-meta-divider">|</span>
 
-
+<!--
 
   <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
-
+-->
 
 
         
