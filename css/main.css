@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #e57d90;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2677,7 +2677,8 @@ body {
   width: 85%;
 }
 .header-inner {
-  background: url("https://source.unsplash.com/random/1600x900?wallpapers");
+  background: rgba(255,255,255,0.9);
+  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-Photo%20by%20Colton%20Duke%20-UExx0KnnkjY-.jpg");
   height: 40px;
 }
 .footer {
