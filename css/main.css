@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9feb18;
+  background: #879a40;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2677,7 +2677,7 @@ body {
   width: 85%;
 }
 .header-inner {
-  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-UNADJUSTEDNONRAW_thumb_670.jpg");
+  background: url("https://source.unsplash.com/random/1600x900?wallpapers");
   height: 40px;
 }
 .footer {
@@ -2686,7 +2686,7 @@ body {
 }
 header {
   max-width: $white_max_width;
-  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-UNADJUSTEDNONRAW_thumb_670.jpg");
+  background: url("https://source.unsplash.com/random/1600x900?wallpapers");
 }
 header.post-header {
   width: auto !important;
