@@ -1,5 +1,17 @@
 /* global NexT: true */
-
+window.onload=function(){
+    var bwol=document.body.offsetWidth;
+    if(bwol < 975){
+        $('aside#sidebar').css("display","none");
+        $('body').css("paddingLeft","0px");
+    }
+}
+window.onresize = function(){
+    var bwos=document.body.offsetWidth;
+    bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
+    if($('aside#sidebar').css('display') != 'none' && $('aside#sidebar').css('width')!='0px')
+        $('body').velocity('stop').velocity({paddingLeft: 350},0);
+}
 $(document).ready(function () {
   NexT.motion = {};
 
@@ -54,22 +66,25 @@ $(document).ready(function () {
   var sidebarToggleLine1st = new SidebarToggleLine({
     el: '.sidebar-toggle-line-first',
     status: {
-      arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
-      close: {width: '100%', rotateZ: '-45deg', top: '5px'}
+      arrow: {width: '50%', rotateZ: '45deg', top: '2px', left: '6px'},
+      // close: {width: '100%', rotateZ: '-45deg', top: '5px', left: '0px'} //叉字形
+      close: {width: '50%', rotateZ: '-45deg', top: '2px', left: '0px'} //箭头形
     }
   });
   var sidebarToggleLine2nd = new SidebarToggleLine({
     el: '.sidebar-toggle-line-middle',
     status: {
       arrow: {width: '90%'},
-      close: {opacity: 0}
+      // close: {opacity: 0}  //箭头形
+      close: {width: '90%'}
     }
   });
   var sidebarToggleLine3rd = new SidebarToggleLine({
     el: '.sidebar-toggle-line-last',
     status: {
-      arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
-      close: {width: '100%', rotateZ: '45deg', top: '-5px'}
+      arrow: {width: '50%', rotateZ: '-45deg', top: '-2px', left: '6px'},
+      // close: {width: '100%', rotateZ: '45deg', top: '-5px', left: '0px'} //叉字形
+      close: {width: '50%', rotateZ: '45deg', top: '-2px', left: '0px'} //箭头形
     }
   });
 
@@ -98,7 +113,7 @@ $(document).ready(function () {
       $(document)
         .on('sidebar.isShowing', function () {
           NexT.utils.isDesktop() && $('body').velocity('stop').velocity(
-            {paddingRight: SIDEBAR_WIDTH},
+            {paddingLeft: SIDEBAR_WIDTH},
             SIDEBAR_DISPLAY_DURATION
           );
         })
@@ -164,7 +179,7 @@ $(document).ready(function () {
       this.sidebarEl.trigger('sidebar.isShowing');
     },
     hideSidebar: function () {
-      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingRight: 0});
+      NexT.utils.isDesktop() && $('body').velocity('stop').velocity({paddingLeft: 0});
       this.sidebarEl.find('.motion-element').velocity('stop').css('display', 'none');
       this.sidebarEl.velocity('stop').velocity({width: 0}, {display: 'none'});
 
