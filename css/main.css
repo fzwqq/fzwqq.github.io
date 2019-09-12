@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d7ff60;
+  background: #a4b3ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2684,19 +2684,18 @@ body {
   height: 10px;
 }
 header {
-  width: 100% !important;
+  width: 0% !important;
   max-width: $white_max_width;
-  height: 120px;
 }
 header.post-header {
-  width: auto !important;
+  width: 80% !important;
 }
 .container .main-inner {
   width: 80%;
   max-width: $white_max_width;
 }
 .content-wrap {
-  width: calc(100% - 260px);
+  width: calc(100% - 50px);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
