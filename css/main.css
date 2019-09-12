@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff58e;
+  background: #df01ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2677,7 +2677,8 @@ body {
   width: 85%;
 }
 .header-inner {
-  background: rgba(0,0,0,0.9);
+  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-UNADJUSTEDNONRAW_thumb_670.jpg");
+  height: 40px;
 }
 .footer {
   background: rgba(0,0,0,0.8) none repeat scroll !important;
