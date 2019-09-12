@@ -35,7 +35,16 @@
 
 
 
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
   
@@ -79,13 +88,13 @@
 
 
 
-<meta name="description" content="进展一 跑通了gui的SSS* 能生成对战的SSS* trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
+<meta name="description" content="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
 <meta name="keywords" content="Week Report,microRTS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MicroRTS-2">
 <meta property="og:url" content="http://yoursite.com/2019/05/19/mRTS/microRTS_2/index.html">
 <meta property="og:site_name" content="Jinger&#39;s Home">
-<meta property="og:description" content="进展一 跑通了gui的SSS* 能生成对战的SSS* trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
+<meta property="og:description" content="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519223510530.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519223217062.png">
@@ -94,7 +103,7 @@
 <meta property="og:updated_time" content="2019-09-11T13:50:09.062Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MicroRTS-2">
-<meta name="twitter:description" content="进展一 跑通了gui的SSS* 能生成对战的SSS* trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
+<meta name="twitter:description" content="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件 作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下 12345678910111213141516171819202122232425262728293031323334353637383940&amp;gt; public int getPlayoutLookahead() &amp;#123;&amp;gt;">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519223510530.png">
 
 
@@ -357,7 +366,7 @@
       
 
       
-        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS* 能生成对战的SSS* trace.xml文件"></a>进展一 跑通了gui的SSS* 能生成对战的SSS* trace.xml文件</h3><blockquote>
+        <h3 id="进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><a href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件" class="headerlink" title="进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件"></a>进展一 跑通了gui的SSS<em> 能生成对战的SSS</em> trace.xml文件</h3><blockquote>
 <p>作者源代码和平台需添加连接关系,且需在tiamat.java添加代码 : 部分如下</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPlayoutLookahead</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> LOOKAHEAD;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPlayoutLookahead</span><span class="params">(<span class="keyword">int</span> a_pola)</span> </span>&#123;</span><br><span class="line">&gt;         LOOKAHEAD = a_pola;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;     </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getI</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> I;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setI</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         I = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getR</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> R;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setR</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">&gt;         R = a;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> EvaluationFunction <span class="title">getEvaluationFunction</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> evaluation;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setEvaluationFunction</span><span class="params">(EvaluationFunction a_ef)</span> </span>&#123;</span><br><span class="line">&gt;         evaluation = a_ef;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> PathFinding <span class="title">getPathFinding</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&gt;         <span class="keyword">return</span> pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; </span><br><span class="line">&gt;     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPathFinding</span><span class="params">(PathFinding a_pf)</span> </span>&#123;</span><br><span class="line">&gt;         pf = a_pf;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
@@ -426,7 +435,7 @@
     
     
     
-
+    
     
 
     
@@ -598,7 +607,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><span class="nav-number">1.</span> <span class="nav-text">进展一 跑通了gui的SSS* 能生成对战的SSS* trace.xml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进展二-跑通了作者提供的GA-能生成一堆script-table-以便于我们调参-产生新的scripts"><span class="nav-number">2.</span> <span class="nav-text">进展二 跑通了作者提供的GA, 能生成一堆script table , 以便于我们调参,产生新的scripts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题一-缺少运行sh文件的torque-PBS-cluster环境"><span class="nav-number">3.</span> <span class="nav-text">问题一 缺少运行sh文件的torque PBS cluster环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#目标需求与目前障碍"><span class="nav-number">3.1.</span> <span class="nav-text">目标需求与目前障碍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18年winner作者提供18年比赛的循环赛代码-可用他"><span class="nav-number">3.2.</span> <span class="nav-text">18年winner作者提供18年比赛的循环赛代码, 可用他:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题二-trace-xml-数据不足"><span class="nav-number">4.</span> <span class="nav-text">问题二 trace.xml 数据不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题三-scrite-table-源码较难懂"><span class="nav-number">5.</span> <span class="nav-text">问题三 scrite table , 源码较难懂</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#进展一-跑通了gui的SSS-能生成对战的SSS-trace-xml文件"><span class="nav-number">1.</span> <span class="nav-text">进展一 跑通了gui的SSS 能生成对战的SSS trace.xml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进展二-跑通了作者提供的GA-能生成一堆script-table-以便于我们调参-产生新的scripts"><span class="nav-number">2.</span> <span class="nav-text">进展二 跑通了作者提供的GA, 能生成一堆script table , 以便于我们调参,产生新的scripts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题一-缺少运行sh文件的torque-PBS-cluster环境"><span class="nav-number">3.</span> <span class="nav-text">问题一 缺少运行sh文件的torque PBS cluster环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#目标需求与目前障碍"><span class="nav-number">3.1.</span> <span class="nav-text">目标需求与目前障碍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18年winner作者提供18年比赛的循环赛代码-可用他"><span class="nav-number">3.2.</span> <span class="nav-text">18年winner作者提供18年比赛的循环赛代码, 可用他:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题二-trace-xml-数据不足"><span class="nav-number">4.</span> <span class="nav-text">问题二 trace.xml 数据不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题三-scrite-table-源码较难懂"><span class="nav-number">5.</span> <span class="nav-text">问题三 scrite table , 源码较难懂</span></a></li></ol></div>
             
 
           </div>
@@ -626,7 +635,7 @@
 
   
 </div>
-
+<!--
 
   <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
@@ -638,7 +647,7 @@
 
   <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
-
+-->
 
 
         

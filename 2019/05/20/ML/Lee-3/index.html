@@ -35,7 +35,16 @@
 
 
 
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
   
@@ -353,7 +362,7 @@
 <script src="http://code.jquery.com/jquery-2.0.0.js"></script> 
 
 
-<iframe id="ipynb" marginheight="0" frameborder="0" width="924px" srcdoc="<!DOCTYPE html>
+<iframe id="ipynb" marginheight="0" frameborder="0" width="924px" height="680px" srcdoc="<!DOCTYPE html>
 <html>
 <head><meta charset='utf-8' />
 
@@ -15481,6 +15490,7 @@ dtype: object</pre>
 
 </html>
 " style="scrolling:no;">
+
 </iframe>
 
 <script>
@@ -15489,9 +15499,8 @@ $("#ipynb").load( function() {
 console.log($("#ipynb").contents().find("body").find("#notebook"));
 document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;
 })
-</script> 
+</script>
     
-
 
 
       
@@ -15499,7 +15508,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
     
     
     
-
+    
     
 
     
@@ -15537,7 +15546,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/02/WeekReport/temp/" rel="prev" title="template">
+              <a href="/2019/09/02/WeekReport/Week1/" rel="prev" title="template">
                 template <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -15676,7 +15685,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
   
 </div>
-
+<!--
 
   <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
@@ -15688,7 +15697,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
   <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
-
+-->
 
 
         
