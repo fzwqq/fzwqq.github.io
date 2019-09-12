@@ -314,6 +314,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/09/12/temp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/12/temp/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -344,7 +354,7 @@
     
     
     
-    
+
     
 
     
@@ -362,7 +372,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/02/WeekReport/temp/" rel="next" title="template">
+              <a href="/2019/09/02/WeekReport/Week1/" rel="next" title="template">
                 <i class="fa fa-chevron-left"></i> template
               </a>
             
@@ -399,6 +409,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -660,6 +673,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732',
+        placeholder: 'feel free to comment',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
 
 
 

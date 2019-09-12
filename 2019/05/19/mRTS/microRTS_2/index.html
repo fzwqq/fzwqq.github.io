@@ -342,6 +342,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/19/mRTS/microRTS_2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/19/mRTS/microRTS_2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -394,9 +404,11 @@
 <li><blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> No available formula with the name "qsub"</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching for a previously deleted formula (in the last month)...</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
+<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> brew install PBS</span><br><span class="line"><span class="meta">&gt;</span> Error: No available formula with the name "pbs"</span><br><span class="line"><span class="meta">&gt;</span> ...</span><br><span class="line"><span class="meta">&gt;</span> ==&gt; Searching taps on GitHub...</span><br><span class="line"><span class="meta">&gt;</span> Error: No formulae found in taps.</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
+<p>&gt;</p>
 <blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> ./UpGASOA.sh: line 8: module: command not found</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
@@ -418,7 +430,7 @@
 <li>以下是scriptstable 部分, 表示没看懂.</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190519224033881.png" alt="image-20190519224033881"> </p>
-<ol start="2">
+<ol>
 <li><p>需要将他代码几乎看懂,才方便修改参数,但是:</p>
 <ul>
 <li>注释如下??</li>
@@ -435,7 +447,7 @@
     
     
     
-    
+
     
 
     
@@ -446,9 +458,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Week-Report/" rel="tag"># Week Report</a>
+            <a href="/tags/Week-Report/" rel="tag"> <i class="fa fa-tag"></i> Week Report</a>
           
-            <a href="/tags/microRTS/" rel="tag"># microRTS</a>
+            <a href="/tags/microRTS/" rel="tag"> <i class="fa fa-tag"></i> microRTS</a>
           
         </div>
       
@@ -502,6 +514,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -788,6 +803,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732',
+        placeholder: 'feel free to comment',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
 
 
 

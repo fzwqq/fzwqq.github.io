@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="Deep Learning,Machine Learning,Lee,Algorithm,">
+  <meta name="keywords" content="Machine Learning,Deep Learning,Lee,Algorithm,">
 
 
 
@@ -89,7 +89,7 @@
 
 
 <meta name="description" content="what is Machine learning Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to effectively perform a specific task without using explicit ins">
-<meta name="keywords" content="Deep Learning,Machine Learning,Lee,Algorithm">
+<meta name="keywords" content="Machine Learning,Deep Learning,Lee,Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ML-Lee Task1">
 <meta property="og:url" content="http://yoursite.com/2019/05/13/ML/Lee-1/index.html">
@@ -339,6 +339,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/13/ML/Lee-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/13/ML/Lee-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -374,8 +384,7 @@
 <li><p>In <a href="https://en.wikipedia.org/wiki/Probability_theory" target="_blank" rel="noopener">probability theory</a>, the <strong>normal</strong> (or <strong>Gaussian</strong> or <strong>Gauss</strong> or <strong>Laplace–Gauss</strong>) <strong>distribution</strong> is a very common <a href="https://en.wikipedia.org/wiki/Continuous_probability_distribution" target="_blank" rel="noopener">continuous probability distribution</a>. Normal distributions are important in <a href="https://en.wikipedia.org/wiki/Statistics" target="_blank" rel="noopener">statistics</a> and are often used in the <a href="https://en.wikipedia.org/wiki/Natural_science" target="_blank" rel="noopener">natural</a> and <a href="https://en.wikipedia.org/wiki/Social_science" target="_blank" rel="noopener">social sciences</a> to represent real-valued <a href="https://en.wikipedia.org/wiki/Random_variable" target="_blank" rel="noopener">random variables</a> whose distributions are not known.<a href="https://en.wikipedia.org/wiki/Normal_distribution#cite_note-1" target="_blank" rel="noopener">[1]</a><a href="https://en.wikipedia.org/wiki/Normal_distribution#cite_note-2" target="_blank" rel="noopener">[2]</a> A <a href="https://en.wikipedia.org/wiki/Random_variable" target="_blank" rel="noopener">random variable</a> with a Gaussian distribution is said to be <strong>normally distributed</strong> and is called a <strong>normal deviate</strong>. </p>
 </li>
 <li><p>The <a href="https://en.wikipedia.org/wiki/Probability_density" target="_blank" rel="noopener">probability density</a> of the normal distribution is:</p>
-<p> $$ f(x\mid \mu ,\sigma ^{2})={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}$$ </p>
-</li>
+<script type="math/tex; mode=display">f(x\mid \mu ,\sigma ^{2})={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}</script></li>
 </ul>
 <h4 id="Maximum-likelihood-estimation"><a href="#Maximum-likelihood-estimation" class="headerlink" title=" Maximum likelihood estimation"></a><strong> Maximum likelihood estimation</strong></h4><ul>
 <li>In statistics, <strong>maximum likelihood estimation</strong> (<strong>MLE</strong>) is a method of <a href="https://en.wikipedia.org/wiki/Estimator" target="_blank" rel="noopener">estimating</a> the <a href="https://en.wikipedia.org/wiki/Statistical_parameter" target="_blank" rel="noopener">parameters</a> of a <a href="https://en.wikipedia.org/wiki/Statistical_model" target="_blank" rel="noopener">statistical model</a>, given observations. The method obtains the parameter estimates by finding the parameter values that maximize the <a href="https://en.wikipedia.org/wiki/Likelihood_function" target="_blank" rel="noopener">likelihood function</a>. The estimates are called <strong>maximum likelihood estimates</strong>, which is also abbreviated as MLE.</li>
@@ -396,13 +405,13 @@
 </ul>
 <h5 id="Mean-squared-error-Quadratic-loss-L2-Loss"><a href="#Mean-squared-error-Quadratic-loss-L2-Loss" class="headerlink" title="Mean squared error, Quadratic loss, L2 Loss"></a><strong>Mean squared error, Quadratic loss, L2 Loss</strong></h5><ul>
 <li><a href="https://medium.freecodecamp.org/machine-learning-mean-squared-error-regression-line-c7dde9a26b93" target="_blank" rel="noopener">Mean Square Error (MSE)</a> is the most commonly used regression loss function. MSE is the sum of squared distances between our target variable and predicted values.<ul>
-<li>$${  {MSE} = { \frac {1} { n } } \sum _ { i=1 } ^ { n }(Y_{ i } - { \hat { Y_{ i } } }  ) ^ {2}} $$</li>
+<li><script type="math/tex; mode=display">{  {MSE} = { \frac {1} { n } } \sum _ { i=1 } ^ { n }(Y_{ i } - { \hat { Y_{ i } } }  ) ^ {2}}</script></li>
 </ul>
 </li>
 </ul>
 <h5 id="Mean-Absolute-Error-L1-Loss"><a href="#Mean-Absolute-Error-L1-Loss" class="headerlink" title="Mean Absolute Error, L1 Loss"></a><strong>Mean Absolute Error, L1 Loss</strong></h5><ul>
 <li>The Mean Absolute Error is given by:<ul>
-<li>$${ MAE = { \frac { \sum _ { i = 1 }^ { n } \left | y_ { i } - \hat {y_{ i } } \right | } { n } } }$$</li>
+<li><script type="math/tex; mode=display">{ MAE = { \frac { \sum _ { i = 1 }^ { n } \left | y_ { i } - \hat {y_{ i } } \right | } { n } } }</script></li>
 </ul>
 </li>
 </ul>
@@ -420,9 +429,10 @@
 <ul>
 <li><p>given the loss function:</p>
 </li>
-<li><p>$$<br>{f(m,b)} = { \frac {1} { n } } \sum _ { i=1 } ^ { n } ( y_i - (m x_i + b)^{2})<br>$$</p>
-<p>The gradient can be calculated as:<br>$$<br>{ { f^{‘} (m,b) } ={\begin {bmatrix} \frac {df} {dm} \ \frac{df}{db}{} \ \end{bmatrix} } = {\begin {bmatrix} \frac {1} {N} \sum (-2x_i (y_i - (m  x_i + b)))       \ \frac {1} {N} \sum {(- 2( y_i - ( m x_i + b ) ))} \ \end {bmatrix} }}<br>$$</p>
-</li>
+<li><script type="math/tex; mode=display">
+{f(m,b)} = { \frac {1} { n } } \sum _ { i=1 } ^ { n } ( y_i - (m x_i + b)^{2})</script><p>The gradient can be calculated as:</p>
+<script type="math/tex; mode=display">
+{ { f^{'} (m,b) } ={\begin {bmatrix} \frac {df} {dm} \\ \frac{df}{db}{} \\ \end{bmatrix} } = {\begin {bmatrix} \frac {1} {N} \sum (-2x_i (y_i - (m  x_i + b)))       \\ \frac {1} {N} \sum {(- 2( y_i - ( m x_i + b ) ))} \\ \end {bmatrix} }}</script></li>
 </ul>
 <ul>
 <li><p><strong>Code</strong></p>
@@ -438,14 +448,12 @@
 <li>The <strong>taxicab metric</strong> is also known as <strong>rectilinear distance</strong>, <strong>L1 distance</strong>, <strong>L1-Norm</strong> , <strong>Manhattan distance</strong> or <strong>Manhattan length</strong>, with corresponding variations in the name of the geometry. Formally, </li>
 </ul>
 <blockquote>
-<p>$$d_{1}( {p} , {q} )=| {p} -  {q} \ |_{1} = \sum _ {i=1}^ {n} | p_ {i}-q_ {i} |$$</p>
-<p>where (p,q) are vectors.</p>
+<script type="math/tex; mode=display">d_{1}( {p} , {q} )=\| {p} -  {q} \ |_{1} = \sum _ {i=1}^ {n} | p_ {i}-q_ {i} |</script><p>where (p,q) are vectors.</p>
 </blockquote>
 <h5 id="L2-Norm"><a href="#L2-Norm" class="headerlink" title="L2-Norm"></a>L2-Norm</h5><ul>
 <li><p>Euclidean norm — On an <em>n</em>-dimensional <a href="https://en.wikipedia.org/wiki/Euclidean_space" target="_blank" rel="noopener">Euclidean space</a> <strong>R*</strong>n<em>, the intuitive notion of length of the vector <strong>x</strong></em> = (<em>x</em>1, <em>x</em>2, …, xn) is captured by the formula</p>
 <blockquote>
-<p>$${ \left | {  {x} } \right | _ {2} : = { \sqrt {x_ {1}^{2} + \cdots +x_ {n} ^ { 2 } } } } $$</p>
-</blockquote>
+<script type="math/tex; mode=display">{ \left \| {  {x} } \right \| _ {2} : = { \sqrt {x_ {1}^{2} + \cdots +x_ {n} ^ { 2 } } } }</script></blockquote>
 </li>
 </ul>
 <h5 id="L0-Norm"><a href="#L0-Norm" class="headerlink" title="L0-Norm"></a>L0-Norm</h5><ul>
@@ -470,7 +478,8 @@
 <ul>
 <li><p>为什么只对w/Θ做限制，不对b做限制</p>
 <ul>
-<li>$$<br>为防止机器学习过拟合而限制w / \theta 参数. 也即限制模型变得过复杂. b对学习到的模型进行平移修正操作,而不至于增加模型复杂度<br>$$</li>
+<li><script type="math/tex; mode=display">
+为防止机器学习过拟合而限制w / \theta 参数. 也即限制模型变得过复杂. b对学习到的模型进行平移修正操作,而不至于增加模型复杂度</script></li>
 </ul>
 <hr>
 </li>
@@ -505,7 +514,7 @@
     
     
     
-    
+
     
 
     
@@ -516,13 +525,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
+            <a href="/tags/Machine-Learning/" rel="tag"> <i class="fa fa-tag"></i> Machine Learning</a>
           
-            <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+            <a href="/tags/Deep-Learning/" rel="tag"> <i class="fa fa-tag"></i> Deep Learning</a>
           
-            <a href="/tags/Lee/" rel="tag"># Lee</a>
+            <a href="/tags/Lee/" rel="tag"> <i class="fa fa-tag"></i> Lee</a>
           
-            <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+            <a href="/tags/Algorithm/" rel="tag"> <i class="fa fa-tag"></i> Algorithm</a>
           
         </div>
       
@@ -576,6 +585,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -862,6 +874,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732',
+        placeholder: 'feel free to comment',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
 
 
 

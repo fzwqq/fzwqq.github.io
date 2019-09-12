@@ -328,7 +328,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/09/02/WeekReport/temp/" itemprop="url">
+            <a class="post-title-link" href="/2019/09/02/WeekReport/Week1/" itemprop="url">
               
                 <span itemprop="name">template</span>
               
@@ -363,7 +363,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/09/02/WeekReport/Week1/" itemprop="url">
+            <a class="post-title-link" href="/2019/09/02/WeekReport/temp/" itemprop="url">
               
                 <span itemprop="name">template</span>
               
@@ -902,6 +902,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732',
+        placeholder: 'feel free to comment',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
 
 
 
