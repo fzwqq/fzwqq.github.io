@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffb6;
+  background: #ededc1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2669,17 +2669,22 @@ body {
 }
 .content {
   margin-top: 10px;
-  margin-left: 25px;
+  text-align: center;
 }
 .main-inner {
   background: #fff;
   opacity: 0.95;
+  text-align: center;
   width: 85%;
 }
 .header-inner {
   background: rgba(255,255,255,0.9);
+  text-align: center;
   background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-Photo%20by%20Colton%20Duke%20-UExx0KnnkjY-.jpg");
   height: 40px;
+}
+.content-wrap {
+  width: 100%;
 }
 .footer {
   background: rgba(0,0,0,0.8) none repeat scroll !important;
@@ -2696,7 +2701,9 @@ header.post-header {
   max-width: $white_max_width;
 }
 .content-wrap {
-  width: calc(100% - 260px);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
