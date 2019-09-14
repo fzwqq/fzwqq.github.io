@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b3125d;
+  background: #ffff38;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2661,6 +2661,7 @@ embed {
   display: inline-block;
 }
 body {
+  background: url("https://source.unsplash.com/random/1600x900?wallpapers");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2680,7 +2681,8 @@ body {
   padding-bottom: 3%;
 }
 .header-inner {
-  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-Photo%20by%20Colton%20Duke%20-UExx0KnnkjY-.jpg");
+  background: rgba(255,255,255,0.8) none repeat scroll;
+  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-132051.jpg");
   width: 100%;
   padding: 3% 0px 6%;
   text-align: center;
@@ -2695,7 +2697,6 @@ body {
 }
 header {
   max-width: $white_max_width;
-  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-Photo%20by%20Colton%20Duke%20-UExx0KnnkjY-.jpg");
 }
 header.post-header {
   width: auto !important;
