@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e0b3b6;
+  background: #f6ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2696,6 +2696,7 @@ body {
 }
 header {
   max-width: $white_max_width;
+  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-Photo%20by%20Colton%20Duke%20-UExx0KnnkjY-.jpg");
 }
 header.post-header {
   width: auto !important;
