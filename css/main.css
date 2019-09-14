@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffab96;
+  background: #347191;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2681,7 +2681,10 @@ body {
   padding-bottom: 3%;
 }
 .header-inner {
-  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-image-20190912121752916.png");
+  background: #fff none repeat scroll;
+  background: url("https://images.unsplash.com/photo-1501018313157-78d10f597133?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   padding: 3% 0px 6%;
   text-align: center;
