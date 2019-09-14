@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #79ff38;
+  background: #ffab96;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2681,6 +2681,7 @@ body {
   padding-bottom: 3%;
 }
 .header-inner {
+  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-image-20190912121752916.png");
   width: 100%;
   padding: 3% 0px 6%;
   text-align: center;
@@ -2695,9 +2696,6 @@ body {
 }
 header {
   max-width: $white_max_width;
-}
-.header-inner {
-  background: url("https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-9-12-132051.jpg");
 }
 header.post-header {
   width: auto !important;
