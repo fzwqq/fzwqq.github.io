@@ -96,13 +96,13 @@
 <meta property="og:site_name" content="Jinger&#39;s Home">
 <meta property="og:description" content="2学年上 WEEK 1  姓名江锦@COOLA">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/09/15/WeekReport/Week1/image-20190916071220552.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/15/WeekReport/Week1/image-20190916073909806.png">
-<meta property="og:updated_time" content="2019-09-16T00:39:33.737Z">
+<meta property="og:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004025.png">
+<meta property="og:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004031.png">
+<meta property="og:updated_time" content="2019-09-16T00:40:37.307Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2学年上 WEEK 1  江锦@COOLA">
 <meta name="twitter:description" content="2学年上 WEEK 1  姓名江锦@COOLA">
-<meta name="twitter:image" content="http://yoursite.com/2019/09/15/WeekReport/Week1/image-20190916071220552.png">
+<meta name="twitter:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004025.png">
 
 
 
@@ -377,6 +377,7 @@
         <center> 2学年上 WEEK 1  姓名江锦@COOLA </center>
 
 <a id="more"></a>
+
 <ul>
 <li><p>下一时间节点</p>
 <ul>
@@ -403,20 +404,24 @@
 </li>
 </ul>
 </li>
-<li>Day 2 跟进项:  和震涛学长讨论他设计的AI，阅读学长开题报告<ul>
+<li><p>Day 2 跟进项:  和震涛学长讨论他设计的AI，阅读学长开题报告</p>
+<ul>
 <li>问题：可行性待分析，需要跟进alphaStar设计思路</li>
 </ul>
 </li>
-<li>Day 3 跟进项: 学RNN, GRU, LSTM, BRNN, Deep RNN, etc<ul>
+<li><p>Day 3 跟进项: 学RNN, GRU, LSTM, BRNN, Deep RNN, etc</p>
+<ul>
 <li>小结：根据问题背景设计优化RNN</li>
 </ul>
 </li>
-<li>Day4 跟进项：学习attention机制，了解transformer ，阅读 uRTS script源码 和 冠军代码<ul>
+<li><p>Day4 跟进项：学习attention机制，了解transformer ，阅读 uRTS script源码 和 冠军代码</p>
+<ul>
 <li>进展：发现冠军使用了jump point search</li>
 <li>问题：作者尚未出论文，不了解设计思路； 且按作者配置环境暂时也没有运行成功</li>
 </ul>
 </li>
-<li>Day 5 跟进项：优化完blog</li>
+<li><p>Day 5 跟进项：优化完blog</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -439,7 +444,8 @@
 </li>
 <li><p>Paper 1：Counterfactual Multi-Agent Policy Gradients. arXiv:1705.08926v2. 2007</p>
 <ul>
-<li>简要：基于Actor-Critic，构造了一个函数以求解每个agent的贡献；并通过构造COMA网络压缩动作空间而高效求得函数值</li>
+<li><p>简要：基于Actor-Critic，构造了一个函数以求解每个agent的贡献；并通过构造COMA网络压缩动作空间而高效求得函数值</p>
+</li>
 <li><p>Three main ideas underly COMA: </p>
 <ul>
 <li>1) centralised critic to estimate the Q-function; (decentralised actors to optimise the agents’ policies)<ul>
@@ -448,14 +454,14 @@
 </li>
 <li>2) use of a counterfactual baseline;<ul>
 <li>each agent learns from a shaped reward $D^a = r(s, u) − r(s, (u−a, c^a))$ that compares the global reward to the reward received when the action of agent a is replaced with a default action $c^a$</li>
-<li><img src="image-20190916071220552.png" alt="image-20190916071220552"><ul>
+<li><img src="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004025.png" alt="image-20190916071220552"><ul>
 <li>$A^a(s, u^a)$ computes a separate baseline for each agent that uses the centralised critic to reason about counter- factuals in which only a’s action changes,</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>3) use of a critic representation that allows efficient evaluation of the baseline.<ul>
-<li><img src="image-20190916073909806.png" alt="image-20190916073909806"><ul>
+<li><img src="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004031.png" alt="image-20190916073909806"><ul>
 <li>the actions of the other agents,$u_t ^ {-a}$ are part of the input to the network, which outputs a Q-value for each of agent a’s actions。</li>
 </ul>
 </li>
@@ -470,7 +476,7 @@
 <li>不需要额外的模拟，通过fixed actions来获取each agent’s contribution, 以解决credit assignment难点</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="2">
 <li>The counterfactual advantage $A^a(s, u^a)$  can be calculated by a single forward pass of the actor and critic, for each agent. The number of outputs is |U| instead of ($ |U| ^n $).</li>
 </ol>
 </li>
@@ -478,7 +484,8 @@
 </li>
 </ul>
 </li>
-<li>可能的问题/研究点/改进想法：<ul>
+<li><p>可能的问题/研究点/改进想法：</p>
+<ul>
 <li>需跟进项：    <ul>
 <li>跟进用于解决credit assignment，和克服输出动作空间爆炸问题的解决方案，对比这类方案的利弊</li>
 </ul>
@@ -516,7 +523,7 @@
 <li><p>New Idea</p>
 <ul>
 <li>1：找到winner源码，虽未出论文不知整体设计思路，但源码中发现使用了jump point search (A* 优化变种)；故若冠军思路中这是一个亮点的话，可以尝试从这个角度— （路径搜索）进一步优化。<ul>
-<li>（在完成monash课程时，做V2V(车联网)的一个实验场景时，对比A <em>, D </em> ， D *lite 寻路算法，后两者都在动态地图变化下效率更好，在19年bot设计中我也想过用此来优化，但由于时间不足未实现。）</li>
+<li>（在完成monash课程时，做V2V(车联网)的一个实验场景时，对比A *, D * ， D *lite 寻路算法，后两者都在动态地图变化下效率更好，在19年bot设计中我也想过用此来优化，但由于时间不足未实现。）</li>
 <li>需跟进项：冠军源码和待出paper</li>
 </ul>
 </li>
