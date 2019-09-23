@@ -98,7 +98,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-23-135930.png">
 <meta property="og:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-23-135939.png">
-<meta property="og:updated_time" content="2019-09-23T14:01:07.141Z">
+<meta property="og:updated_time" content="2019-09-23T14:03:38.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2学年上 WEEK 2  江锦@COOLA">
 <meta name="twitter:description" content="2学年上 WEEK 2  姓名江锦@COOLA">
@@ -433,7 +433,7 @@
 <li>How: The algo assumes the existence of a pool of scripts $\Sigma$. A script $\hat{\sigma}$ is a function mapping a game state s and a unit u to a legal action m for u at s. In every game state s in which a unit u is ready to perform an action, a search algorithm selects a script $\hat{\sigma}$ from $\Sigma$ for u.  The two scripts were used in PGS which named No-OverKill-Attack-Value (NOK-AV) and Kiter. The algorithm can be broken down into three main parts.  Furthermore, PGS uses a playout-based evaluation. <ul>
 <li>In the first part, it set the player’s initial seed policy to the best performing script found via the process that iterate over all scripts, and then perform a playout with each iteration.</li>
 <li>In the second part, it uses a hill-climbing procedure to search for each script in the scripts set exactly once for each unit. At each iteration, it performs a playout with the individual unit-script assignments and records the result. After performing desired improvement iterations, all units’ script is set to the best one found via the playout process.   </li>
-<li>The third part is to repeatedly improve the two players in turns based on the current stronger opponent via the second procedure.<img src="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-23-135930.png" alt="image-20190923204619241" style="zoom:150%;"></li>
+<li>The third part is to repeatedly improve the two players in turns based on the current stronger opponent via the second procedure.<img src="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-23-135930.png" alt="image-20190923204619241" style="zoom:100%;"></li>
 </ul>
 </li>
 <li>What:  PGS uses a playout-based evaluation which would cause incorrectly evaluates action containing non-offensive scripts.It was improved by another hill-climbing search algorithm Stratified Strategy Selection (SSS) designed by Lelis </li>
