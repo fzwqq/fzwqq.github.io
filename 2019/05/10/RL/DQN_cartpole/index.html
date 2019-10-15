@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="Reforcement Learning,Algorithm,Deep Learning,">
+  <meta name="keywords" content="Algorithm,Deep Learning,Reforcement Learning,">
 
 
 
@@ -89,7 +89,7 @@
 
 
 <meta name="description" content="Human-level control through deep reinforcement learning">
-<meta name="keywords" content="Reforcement Learning,Algorithm,Deep Learning">
+<meta name="keywords" content="Algorithm,Deep Learning,Reforcement Learning">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DQN in CartPole">
 <meta property="og:url" content="http://yoursite.com/2019/05/10/RL/DQN_cartpole/index.html">
@@ -376,13 +376,11 @@
 
       
         <h3 id="Human-level-control-through-deep-reinforcement-learning"><a href="#Human-level-control-through-deep-reinforcement-learning" class="headerlink" title=" Human-level control through deep reinforcement learning "></a><center> Human-level control through deep reinforcement learning </center></h3><a id="more"></a>
-
 <ul>
-<li><p>使用CNN 近似Q值计算<br>$$Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]$$</p>
-</li>
+<li><p>使用CNN 近似Q值计算</p>
+<script type="math/tex; mode=display">Q^{*}(s,a) = \max \limits_{\pi} \mathbb{E}[r_t + \gamma{r_{t+1}} + \gamma{r_{t+2}} + …| s_t = s , a_t = a, \pi]</script></li>
 <li><p>Loss funciton</p>
-<p>$$L_i(\theta_i) =  \mathbb{E} _ {(s, a, r, s’) \sim U(D) }[( r + \gamma {\max \limits_ { a’} } Q(s’, a’; \theta_i^-)  -Q(s,a; \theta _i))^2]$$</p>
-</li>
+<script type="math/tex; mode=display">L_i(\theta_i) =  \mathbb{E} _ {(s, a, r, s') \sim U(D) }[( r + \gamma {\max \limits_ { a'} } Q(s', a'; \theta_i^-)  -Q(s,a; \theta _i))^2]</script></li>
 <li><p>DQN 经验回放算法流程 $y_j$更新Q值.</p>
 </li>
 <li><p><img src="https://raw.githubusercontent.com/fzwqq/Pic/master/image-20190511125151010.png" alt></p>
@@ -393,10 +391,8 @@
 </li>
 <li><p>Off-policy — 更新策略和选择的策略不一定要求同一个.</p>
 </li>
-<li><p><strong>Experience replay</strong> — 打乱相关性, 存储&lt;$s_j , aj, r_j , s_{j+1}$&gt;再随机获取学习</p>
-</li>
-<li><p>Fixed Q-targets — 保证更新Q值时的稳定</p>
-</li>
+<li><strong>Experience replay</strong> — 打乱相关性, 存储&lt;$s<em>j , aj, r_j , s</em>{j+1}$&gt;再随机获取学习</li>
+<li>Fixed Q-targets — 保证更新Q值时的稳定</li>
 </ul>
 </li>
 </ul>
@@ -432,11 +428,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Reforcement-Learning/" rel="tag"> <i class="fa fa-tag"></i> Reforcement Learning</a>
-          
             <a href="/tags/Algorithm/" rel="tag"> <i class="fa fa-tag"></i> Algorithm</a>
           
             <a href="/tags/Deep-Learning/" rel="tag"> <i class="fa fa-tag"></i> Deep Learning</a>
+          
+            <a href="/tags/Reforcement-Learning/" rel="tag"> <i class="fa fa-tag"></i> Reforcement Learning</a>
           
         </div>
       
