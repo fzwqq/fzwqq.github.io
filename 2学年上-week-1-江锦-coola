@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Week Report,Plan,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="2学年上 WEEK 1  姓名江锦@COOLA">
+<meta name="keywords" content="Week Report,Plan">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2学年上 WEEK 1  江锦@COOLA">
+<meta property="og:url" content="http://yoursite.com/2学年上-week-1-江锦-coola">
+<meta property="og:site_name" content="Jinger&#39;s Home">
+<meta property="og:description" content="2学年上 WEEK 1  姓名江锦@COOLA">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004025.png">
+<meta property="og:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004031.png">
+<meta property="og:updated_time" content="2019-09-23T14:01:11.075Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2学年上 WEEK 1  江锦@COOLA">
+<meta name="twitter:description" content="2学年上 WEEK 1  姓名江锦@COOLA">
+<meta name="twitter:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004025.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2学年上-week-1-江锦-coola">
+
+
+
+
+
+  <title>2学年上 WEEK 1  江锦@COOLA | Jinger's Home</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jinger's Home</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2学年上-week-1-江锦-coola">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiangJin">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-12-image-20190912121752916.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jinger's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">2学年上 WEEK 1  江锦@COOLA</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-15T20:10:00+08:00">
+                2019-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Week-Report/" itemprop="url" rel="index">
+                    <span itemprop="name">Week Report</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2学年上-week-1-江锦-coola#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2学年上-week-1-江锦-coola" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><center> 2学年上 WEEK 1  姓名江锦@COOLA </center><br><a id="more"></a></p>
+<ul>
+<li><p>下一时间节点</p>
+<ul>
+<li>下一普通节点：提交Mixed Bot AI report给老师</li>
+<li>下一重要节点：</li>
+</ul>
+</li>
+<li><p>周记录</p>
+<ul>
+<li><p>Day 1 跟进项：梳理<strong>Mixed version</strong> microRTS</p>
+<ul>
+<li><p>小结：算法整体思路基于17冠军的Strategy，Tactics进行修改</p>
+<ol>
+<li><p>其中，Strategy是用的改进的18冠军Tiamat；Tactics是用的改进的18Capivara版本；</p>
+</li>
+<li><ol>
+<li>其中，Tiamat，我们根据自己选出的AI模拟赛的比赛结果，新加入的候选集有POWorkerRush(utt)，原本的script集合基本保留</li>
+<li>搜索根据18年冠军论文里的比赛情况，根据地图调用了对应的修整过的SSS、PGS版本。（其中主要新加入了超时判断）</li>
+</ol>
+</li>
+<li><p>根据不同的地图尺寸和自己的理解调出了对应的初试时间配比Strategy-Tactics，再根据比赛进行时棋盘上交战棋子数量，战斗比赛时间等参数进行动态修正Strategy-Tactics配比</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Day 2 跟进项:  和震涛学长讨论他设计的AI，阅读学长开题报告<ul>
+<li>问题：可行性待分析，需要跟进alphaStar设计思路</li>
+</ul>
+</li>
+<li>Day 3 跟进项: 学RNN, GRU, LSTM, BRNN, Deep RNN, etc<ul>
+<li>小结：根据问题背景设计优化RNN</li>
+</ul>
+</li>
+<li>Day4 跟进项：学习attention机制，了解transformer ，阅读 uRTS script源码 和 冠军代码<ul>
+<li>进展：发现冠军使用了jump point search</li>
+<li>问题：作者尚未出论文，不了解设计思路； 且按作者配置环境暂时也没有运行成功</li>
+</ul>
+</li>
+<li>Day 5 跟进项：优化完blog</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>本周进展总结</p>
+<ul>
+<li><p>1：梳理19比赛Bot</p>
+</li>
+<li><p>2：补充 AlphaStar 设计思路下的知识</p>
+</li>
+</ul>
+</li>
+<li><p>阅读/调研</p>
+<ul>
+<li><p>Topic 1： </p>
+<ul>
+<li>相关研究进展：</li>
+<li>可跟进项：</li>
+</ul>
+</li>
+<li><p>Paper 1：Counterfactual Multi-Agent Policy Gradients. arXiv:1705.08926v2. 2007</p>
+<ul>
+<li>简要：基于Actor-Critic，构造了一个函数以求解每个agent的贡献；并通过构造COMA网络压缩动作空间而高效求得函数值</li>
+<li><p>Three main ideas underly COMA: </p>
+<ul>
+<li>1) centralised critic to estimate the Q-function; (decentralised actors to optimise the agents’ policies)<ul>
+<li>COMA learns a centralised critic, Q(s, u) that estimates Q-values for the joint action u con- ditioned on the central state s. </li>
+</ul>
+</li>
+<li>2) use of a counterfactual baseline;<ul>
+<li>each agent learns from a shaped reward $D^a = r(s, u) − r(s, (u−a, c^a))$ that compares the global reward to the reward received when the action of agent a is replaced with a default action $c^a$</li>
+<li><img src="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004025.png" alt="image-20190916071220552"><ul>
+<li>$A^a(s, u^a)$ computes a separate baseline for each agent that uses the centralised critic to reason about counter- factuals in which only a’s action changes,</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3) use of a critic representation that allows efficient evaluation of the baseline.<ul>
+<li><img src="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-16-004031.png" alt="image-20190916073909806"><ul>
+<li>the actions of the other agents,$u_t ^ {-a}$ are part of the input to the network, which outputs a Q-value for each of agent a’s actions。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>优缺点分析：</p>
+<ul>
+<li>优点：<ul>
+<li><ol>
+<li>不需要额外的模拟，通过fixed actions来获取each agent’s contribution, 以解决credit assignment难点</li>
+</ol>
+</li>
+<li><ol>
+<li>The counterfactual advantage $A^a(s, u^a)$  can be calculated by a single forward pass of the actor and critic, for each agent. The number of outputs is |U| instead of ($ |U| ^n $).</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>可能的问题/研究点/改进想法：<ul>
+<li>需跟进项：    <ul>
+<li>跟进用于解决credit assignment，和克服输出动作空间爆炸问题的解决方案，对比这类方案的利弊</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Paper 2：Multiagent Bidirectionally-Coordinated Nets Emergence of Human-level Coordination in Learning to Play StarCraft Combat Games  </p>
+<ul>
+<li>简要：通过BRNN作为Multi-agent的通信，以提高Starcraft Combat Games 团战能力</li>
+<li>未完待续</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>讨论记录</p>
+<ul>
+<li>主题: 基于多智能体设计uRTS (和震涛学长)</li>
+<li>内容<ul>
+<li>1：基于alphaStar 模仿和改造：<ul>
+<li>CNN + BiLSTM + Attention + Relational Model + A2C</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>需跟进项：openAI blog, Attention</li>
+<li>主题：关于19比赛提交bot讨论 (和吴老师)</li>
+<li>内容<ul>
+<li>1：寻找历届winner设计思路得源头，进行更深度得优化或改造，关注创新点</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>New Idea</p>
+<ul>
+<li>1：找到winner源码，虽未出论文不知整体设计思路，但源码中发现使用了jump point search (A* 优化变种)；故若冠军思路中这是一个亮点的话，可以尝试从这个角度— （路径搜索）进一步优化。<ul>
+<li>（在完成monash课程时，做V2V(车联网)的一个实验场景时，对比A <em>, D </em> ， D *lite 寻路算法，后两者都在动态地图变化下效率更好，在19年bot设计中我也想过用此来优化，但由于时间不足未实现。）</li>
+<li>需跟进项：冠军源码和待出paper</li>
+</ul>
+</li>
+<li>2：对于scripts 的优化，可尝试Evolutionary Strategies，但遗传算法已经从script优化角度尝试过，尝试价值可能不大<ul>
+<li>若能加入神经网络，通过神经进化算法去优化script，且能产生可行script，将会是个亮点</li>
+</ul>
+</li>
+<li>3：对于战略部分，和学长讨论也许可通过尝试self-attention来标注出地图的重要位置进行预分析</li>
+</ul>
+</li>
+<li><p>预计下次需要非定期讨论的时间为</p>
+<ul>
+<li>时间：week3</li>
+<li>内容：多智能体优化</li>
+</ul>
+</li>
+<li><p>回顾与计划</p>
+<ul>
+<li>下周计划<ul>
+<li>阅读 Relational Reinforcement Learning/ Bidirectional LSTM with Attention；跟进alphaStar思路</li>
+<li>和皓鹏出Mixed Bot report</li>
+<li>DRL实践 积累经验</li>
+</ul>
+</li>
+<li>不足/困难之处<ul>
+<li>需及时整理和记录</li>
+<li>DRL 实践经验不足</li>
+<li>Multi-agent 方面阅读量不足</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Week-Report/" rel="tag"> <i class="fa fa-tag"></i> Week Report</a>
+          
+            <a href="/tags/Plan/" rel="tag"> <i class="fa fa-tag"></i> Plan</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/microrts-2" rel="next" title="MicroRTS-2">
+                <i class="fa fa-chevron-left"></i> MicroRTS-2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2学年上-week-2-江锦-coola" rel="prev" title="2学年上 WEEK 2  江锦@COOLA">
+                2学年上 WEEK 2  江锦@COOLA <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-09-12-image-20190912121752916.png" alt="JiangJin">
+            
+              <p class="site-author-name" itemprop="name">JiangJin</p>
+              <p class="site-description motion-element" itemprop="description">welcome</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JiangJin</span>
+
+  
+</div>
+<!--
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+-->
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'HJK5zMwEvUBsDUCsoe7QWDI6-gzGzoHsz',
+        appKey: 'G6SmeDMX7JvgVm1QIU6do732',
+        placeholder: 'feel free to comment',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
