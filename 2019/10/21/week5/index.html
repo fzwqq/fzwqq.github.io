@@ -97,7 +97,7 @@
 <meta property="og:description" content="2学年上 WEEK 5  姓名江锦@COOLA">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://jinger-1258958225.cos.ap-shanghai.myqcloud.com/2019-10-22-132437.png">
-<meta property="og:updated_time" content="2019-10-29T08:22:38.589Z">
+<meta property="og:updated_time" content="2019-10-29T13:26:28.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2学年上 WEEK 5  江锦@COOLA">
 <meta name="twitter:description" content="2学年上 WEEK 5  姓名江锦@COOLA">
@@ -373,9 +373,12 @@
       
 
       
-        <p><center> 2学年上 WEEK 5  姓名江锦@COOLA </center><br><a id="more"></a></p>
+        <center> 2学年上 WEEK 5  姓名江锦@COOLA </center>
+<a id="more"></a>
+
 <ul>
-<li>下一时间节点<ul>
+<li><p>下一时间节点</p>
+<ul>
 <li>下一普通节点： 3rd version report; </li>
 <li>下一重要节点：</li>
 </ul>
@@ -410,19 +413,22 @@
 </li>
 <li><p>阅读/调研</p>
 <ul>
-<li>Topic 1：To survey whether Neural evolutionary algorithm could be used in RTS<ul>
+<li><p>Topic 1：To survey whether Neural evolutionary algorithm could be used in RTS</p>
+<ul>
 <li>相关研究进展：发现了18，19年各一篇论文用神经进化算法来设计micro</li>
 <li>可跟进项：理解算法设计的原理和清楚算法的应用场景，看如何迁移使用在microRTS上</li>
 </ul>
 </li>
-<li>Paper 1: The Combinatorial Multi-Armed Bandit Problem and Its Application to Real-Time Strategy Games<ul>
+<li><p>Paper 1: The Combinatorial Multi-Armed Bandit Problem and Its Application to Real-Time Strategy Games</p>
+<ul>
 <li>内容：将多agent RTS问题类比成CMAB问题,通过引入一个假设，将原问题变化成n+1个MAB问题，从而构造出了一个explore-exploit问题。再以MCTS方式求解。n个MAB对应的是n个units，每个unit的合法动作数即arm臂数——也即一个unit对应一个多臂赌博机模型。</li>
 <li>Why: 在不增加新的采样的基础上，提高样本的利用率。</li>
 <li>How：通过引入Naive assumption, 将CMAB问题简化成n+1个MAB问题，Global MAB为exploit，n个MAB作为explore。并从理论上算得regret——与最优期望reward差值 为线性增长： $ρT = O(T(1−p)∆)$ </li>
 <li>what：采样方式仍有改进空间。动作空间集合依旧庞大。</li>
 </ul>
 </li>
-<li>Paper 2：Action Abstractions for Combinatorial Multi-Armed Bandit Tree Search<ul>
+<li><p>Paper 2：Action Abstractions for Combinatorial Multi-Armed Bandit Tree Search</p>
+<ul>
 <li>内容：改进$NaïveMCTS$  状态动作集合，提出了A1N,A2N,A3N. A1N,通过action abstraction的想法，引入script 来一定程度缩小原来状态下的合法动作集合；A2N通过将units进行分类后，对同类别的unit进行同集合的scripts搜索；A3N通过改变局面中unit使用scripts的数量，介于$NaïveMCTS$（0个unit使用script——unrestrict） 与A1N（restrict）之间。<ul>
 <li>Why:  $NaïveMCTS$ 的采样方式，使得样本利用率提高了，但他每步的动作搜索空间依旧没有变化，通过action abstraction的，引入专家知识（script）来一定程度上缩小动作空间。</li>
 <li>How: A1N,通过引入合适的scripts；A2N，通过将units进行分类成economy和combat。再分别搜索对应的scripts集合；A3N，将已有的units分类给预定义的类别中，如closest to an enemy(CE), Less life(HP-), More attack value(AV+)等， 并调整使用scripts来进行MCTS的units数量。</li>
@@ -441,7 +447,7 @@
 <li><p>How：</p>
 <ul>
 <li>1.宏观规划和微观搜索，在执行一个frame时，每次需要规划则花&gt;80%时间规划（plan 多个tasks），余下搜索；否则都给搜索（依次执行每个task）</li>
-<li><ol>
+<li><ol start="2">
 <li>每个task，根据task的性质，分成多个目标，形成多目标优化问题。再根据作者理解分配每个目标的权重，最后加权平均作为这个task的函数，然后传给MCTS作为最后选择action的评估函数。</li>
 </ol>
 </li>
@@ -475,10 +481,10 @@
 <li><p>回顾与计划</p>
 <ul>
 <li>前两周计划/Idea 完成情况<ul>
-<li>[x] second version Report </li>
-<li>[ ] Practice DRL （AC)</li>
-<li>[ ] paper: Relational Reinforcement Learning/ Bidirectional LSTM with Attention</li>
-<li>[x] survey whether Neural evolutionary algorithm could be used in RTS</li>
+<li><input checked disabled type="checkbox"> second version Report </li>
+<li><input disabled type="checkbox"> Practice DRL （AC)</li>
+<li><input disabled type="checkbox"> paper: Relational Reinforcement Learning/ Bidirectional LSTM with Attention</li>
+<li><input checked disabled type="checkbox"> survey whether Neural evolutionary algorithm could be used in RTS</li>
 </ul>
 </li>
 <li>下周计划<ul>
